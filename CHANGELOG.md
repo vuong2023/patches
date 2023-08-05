@@ -1,3 +1,10 @@
+## [2.187.2](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.1...v2.187.2) (2023-08-05)
+
+
+### Bug Fixes
+
+* Wrong string ([7ceef44](https://github.com/YT-Advanced/ReX-patches/commit/7ceef44debec041942e680856c3087d7b85ae2ca))
+
 # [2.160.0](https://github.com/revanced/revanced-patches/compare/v2.159.0...v2.160.0) (2023-02-10)
 
 
