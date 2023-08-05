@@ -516,7 +516,7 @@ Known issue: autoplay does not work"</string>
     <string name="revanced_whitelisting_empty">There are no whitelisted channels</string>
     <string name="revanced_whitelisting_excluded">Not added to whitelist</string>
     <string name="revanced_whitelisting_fetch_failed">Failed to retrieve channel details, received message %d</string>
-    <string name="revanced_whitelisting_missing_api_key">Received HTTP 403 Error Code while fetch channelId. Please check your API key</string>
+    <string name="revanced_whitelisting_missing_api_key">Received HTTP 403 Error while fetching channelId. Please check your API key in Whitelist settings</string>
     <string name="revanced_whitelisting_included">Added to whitelist</string>
     <string name="revanced_whitelisting_reboot">Reboot to apply channel whitelist settings</string>
     <string name="revanced_whitelisting_removed" formatted="false">Channel %s was removed from the %s whitelist</string>
@@ -529,7 +529,7 @@ Known issue: autoplay does not work"</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>
     <string name="revanced_whitelisting_title">Channel Whitelist</string>
     <string name="revanced_whitelist_api_key_title">Youtube API Key</string>
-    <string name="revanced_whitelist_api_key_summary">Youtube API key v3 used by whitelist feature</string>
+    <string name="revanced_whitelist_api_key_summary">Youtube API Key v3 used by whitelist feature</string>
     <string name="revanced_hide_view_products_summary_off">View products banner is shown</string>
     <string name="revanced_hide_view_products_summary_on">View products banner is hidden</string>
     <string name="revanced_hide_view_products_title">Hide view products banner</string>
