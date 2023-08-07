@@ -510,8 +510,6 @@ Known issue: autoplay does not work"</string>
     <string name="revanced_hide_video_ads_title">Hide video ads</string>
     <string name="revanced_whitelisting_added" formatted="false">Channel %s was added to the %s whitelist</string>
     <string name="revanced_whitelisting_add_failed" formatted="false">Failed to add channel %s to the %s whitelist</string>
-    <string name="revanced_whitelisting_ads">Video Ads</string>
-    <string name="revanced_whitelisting_ads_button">Ads</string>
     <string name="revanced_whitelisting_channel_name">Channel Name</string>
     <string name="revanced_whitelisting_empty">There are no whitelisted channels</string>
     <string name="revanced_whitelisting_excluded">Not added to whitelist</string>
