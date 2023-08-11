@@ -1,3 +1,11 @@
+# [2.188.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.2...v2.188.0) (2023-08-11)
+
+
+### Features
+
+* **youtube/layout:** Hide reminder button ([356fead](https://github.com/YT-Advanced/ReX-patches/commit/356feaddba902214517696b931eae61b5d150cb4))
+* **youtube/spoof-player-parameters:** Readd short parameter ([bd7b678](https://github.com/YT-Advanced/ReX-patches/commit/bd7b6785a239f903ba5b3ae6a8d606f639767702))
+
 ## [2.187.2](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.1...v2.187.2) (2023-08-05)
 
 
