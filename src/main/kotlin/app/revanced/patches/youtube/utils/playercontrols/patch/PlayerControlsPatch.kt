@@ -21,6 +21,7 @@ import app.revanced.patches.youtube.utils.playercontrols.fingerprints.PlayerCont
 import app.revanced.patches.youtube.utils.playercontrols.fingerprints.PlayerControlsVisibilityModelFingerprint
 import app.revanced.patches.youtube.utils.playercontrols.fingerprints.SeekEDUVisibleFingerprint
 import app.revanced.patches.youtube.utils.playercontrols.fingerprints.UserScrubbingFingerprint
+import app.revanced.patches.youtube.utils.playercontrols.fingerprints.QuickSeekVisibleFingerprint
 import app.revanced.patches.youtube.utils.resourceid.patch.SharedResourceIdPatch
 import app.revanced.util.bytecode.getStringIndex
 import com.android.tools.smali.dexlib2.Opcode
@@ -72,6 +73,14 @@ class PlayerControlsPatch : BytecodePatch(
                         classDef
                     )
                 }.result?.mutableMethod ?: return UserScrubbingFingerprint.toErrorResult()
+            
+            QuickSeekVisibleMutableMethod =
+                QuickSeekVisibleFingerprint.also {
+                    it.resolve(
+                        context,
+                        classDef
+                    )
+                }.result?.mutableMethod ?: return QuickSeekVisibleFingerprint.toErrorResult()
         } ?: return PlayerControlsVisibilityModelFingerprint.toErrorResult()
 
         YouTubeControlsOverlayFingerprint.result?.classDef?.let { classDef ->
@@ -120,7 +129,8 @@ class PlayerControlsPatch : BytecodePatch(
         lateinit var playerControlsVisibilityMutableMethod: MutableMethod
         lateinit var seekEDUVisibleMutableMethod: MutableMethod
         lateinit var userScrubbingMutableMethod: MutableMethod
-
+        lateinit var QuickSeekVisibleMutableMethod: MutableMethod
+        
         lateinit var fullscreenEngagementSpeedEduVisibleMutableMethod: MutableMethod
         lateinit var fullscreenEngagementViewVisibleReference: Reference
         lateinit var speedEDUVisibleReference: Reference
@@ -182,7 +192,11 @@ class PlayerControlsPatch : BytecodePatch(
                 descriptor,
                 "changeVisibilityNegatedImmediate"
             )
-
+            QuickSeekVisibleMutableMethod.injectVisibilityCall(
+                descriptor,
+                "changeVisibilityNegatedImmediate"
+            )
+            
             injectFullscreenEngagementSpeedEduViewVisibilityCall(
                 fullscreenEngagementViewVisibleReference,
                 descriptor
