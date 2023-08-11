@@ -90,7 +90,7 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                     addInstructions(
                         targetIndex + 1,
                         """
-                            invoke-static {}, $INTEGRATIONS_CLASS_DESCRIPTOR->getSeekbarThumbnailOverrideValue()Z
+                            invoke-static {v$targetRegister}, $INTEGRATIONS_CLASS_DESCRIPTOR->getSeekbarThumbnailOverrideValue(Z)Z
                             move-result v$targetRegister
                             return v$targetRegister
                             """
