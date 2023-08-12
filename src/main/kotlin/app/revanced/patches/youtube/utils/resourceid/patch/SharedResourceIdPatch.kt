@@ -61,7 +61,6 @@ class SharedResourceIdPatch : ResourcePatch {
         var ReelDynShare: Long = -1
         var ReelPlayerBadge: Long = -1
         var ReelPlayerBadge2: Long = -1
-        var ReelPlayerFooter: Long = -1
         var ReelPlayerInfoPanel: Long = -1
         var ReelPlayerPausedStateButton: Long = -1
         var ReelRightDislikeIcon: Long = -1
@@ -137,7 +136,6 @@ class SharedResourceIdPatch : ResourcePatch {
         ReelDynShare = find(ID, "reel_dyn_share")
         ReelPlayerBadge = find(ID, "reel_player_badge")
         ReelPlayerBadge2 = find(ID, "reel_player_badge2")
-        ReelPlayerFooter = find(LAYOUT, "reel_player_dyn_footer_vert_stories3")
         ReelPlayerInfoPanel = find(ID, "reel_player_info_panel")
         ReelPlayerPausedStateButton = find(ID, "reel_player_paused_state_buttons")
         ReelRightDislikeIcon = find(DRAWABLE, "reel_right_dislike_icon")
