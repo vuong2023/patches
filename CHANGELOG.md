@@ -1,3 +1,17 @@
+# [2.188.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.2...v2.188.0) (2023-08-14)
+
+
+### Bug Fixes
+
+* **youtube/overlay-button:** Overlay buttons are not hidden when swiping the seekbar with new thumbnail preview ([d43184c](https://github.com/YT-Advanced/ReX-patches/commit/d43184c3b488269fd706b5372076437496e31b35))
+* **youtube/save-video-quality:** Video Quality Preset not worked ([a3c207d](https://github.com/YT-Advanced/ReX-patches/commit/a3c207dfb849a077ea6478c4b675d73c562336d9))
+
+
+### Features
+
+* **youtube/layout:** Hide reminder button ([356fead](https://github.com/YT-Advanced/ReX-patches/commit/356feaddba902214517696b931eae61b5d150cb4))
+* **youtube/spoof-player-parameters:** Readd short parameter ([bd7b678](https://github.com/YT-Advanced/ReX-patches/commit/bd7b6785a239f903ba5b3ae6a8d606f639767702))
+
 # [2.188.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.2...v2.188.0) (2023-08-11)
 
 
