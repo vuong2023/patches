@@ -32,6 +32,7 @@
 
         <!-- SETTINGS: BUTTON_CONTAINER
         <Preference android:title=" " android:selectable="false" android:summary="@string/revanced_button_container_title" />
+        <SwitchPreference android:title="@string/revanced_hide_action_buttons_title" android:key="revanced_hide_action_buttons" android:defaultValue="false" android:summaryOn="@string/revanced_hide_action_buttons_summary_on" android:summaryOff="@string/revanced_hide_action_buttons_summary_off" />
         <SwitchPreference android:title="@string/revanced_hide_button_create_clip_title" android:key="revanced_hide_button_create_clip" android:defaultValue="false" android:summaryOn="@string/revanced_hide_button_create_clip_summary_on" android:summaryOff="@string/revanced_hide_button_create_clip_summary_off" />
         <SwitchPreference android:title="@string/revanced_hide_button_dislike_title" android:key="revanced_hide_button_dislike" android:defaultValue="false" android:summaryOn="@string/revanced_hide_button_dislike_summary_on" android:summaryOff="@string/revanced_hide_button_dislike_summary_off" />
         <SwitchPreference android:title="@string/revanced_hide_button_download_title" android:key="revanced_hide_button_download" android:defaultValue="false" android:summaryOn="@string/revanced_hide_button_download_summary_on" android:summaryOff="@string/revanced_hide_button_download_summary_off" />
@@ -280,7 +281,7 @@
 
         <!-- SETTINGS: SPOOF_PLAYER_PARAMETER
         <SwitchPreference android:title="@string/revanced_spoof_player_parameter_title" android:key="revanced_spoof_player_parameter" android:defaultValue="false" android:summary="@string/revanced_spoof_player_parameter_summary" />
-        <SwitchPreference android:title="@string/revanced_spoof_player_parameter_type_title" android:key="revanced_spoof_player_parameter_type" android:defaultValue="false" android:summaryOn="@string/revanced_spoof_player_parameter_type_summary_on" android:summaryOff="@string/revanced_spoof_player_parameter_type_summary_off" />SETTINGS: SPOOF_PLAYER_PARAMETER -->
+        <SwitchPreference android:title="@string/revanced_spoof_player_parameter_type_title" android:key="revanced_spoof_player_parameter_type" android:defaultValue="true" android:summaryOn="@string/revanced_spoof_player_parameter_type_summary_on" android:summaryOff="@string/revanced_spoof_player_parameter_type_summary_off" />SETTINGS: SPOOF_PLAYER_PARAMETER -->
 	
         <Preference android:title=" " android:selectable="false" android:summary="@string/pref_about_category" />
         <PreferenceScreen android:title="@string/revanced_patches_information"  android:summary="@string/revanced_patches_information_summary" >
