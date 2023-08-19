@@ -1,3 +1,15 @@
+# [2.189.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.188.0...v2.189.0) (2023-08-19)
+
+
+### Bug Fixes
+
+* **music/hide-upgrade-button:** Not worked correctly ([16b0589](https://github.com/YT-Advanced/ReX-patches/commit/16b05894840f8cdf6aaea3ef14d774cc17d963ba))
+
+
+### Features
+
+* **youtube:** Alternative video thumbnails ([25dedd2](https://github.com/YT-Advanced/ReX-patches/commit/25dedd21a94245d1220718e023d35d2ca4cf23e9))
+
 # [2.188.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.187.2...v2.188.0) (2023-08-14)
 
 
