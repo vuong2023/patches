@@ -10,6 +10,7 @@ The official ReVanced Extended Patches.
 | 💊 Patch | 📜 Description | 🏹 Target Version |
 |:--------:|:--------------:|:-----------------:|
 | `add-splash-animation` | Adds splash animation, which was removed in YT v18.19.36+. This patch cannot be used with 'custom-branding-icon' patch | 18.31.40 |
+| `alternative-thumbnails` | Adds an option to replace video thumbnails with still image captures of the video. | 18.31.40 |
 | `bypass-ambient-mode-restrictions` | Bypass ambient mode restrictions in battery saver mode. | 18.31.40 |
 | `change-homepage` | Change home page to subscription feed. | 18.31.40 |
 | `custom-branding-youtube-name` | Rename the YouTube app to the name specified in options.json. | 18.31.40 |
