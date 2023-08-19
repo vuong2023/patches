@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">Activer les contrôles d\'accessibilité pour le lecteur vidéo ?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Vos contrôles sont modifiés car un service d\'accessibilité est activé.</string>
     <string name="microg_not_installed_notice">Veuillez installer MicroG</string>
     <string name="microg_not_installed_warning">MicroG n’est pas installé</string>
-    <string name="microg_not_running_warning">MicroG ne fonctionne pas en arrière-plan</string>
+    <string name="microg_not_running_warning">MicroG ne s\'exécute pas en arrière-plan</string>
     <string name="microg_settings_summary">Activez les paramètres de messagerie cloud pour recevoir les notifications</string>
     <string name="microg_settings_title">Ouvrir MicroG</string>
     <string name="revanced_ads">Pubs</string>
-    <string name="revanced_backup_summary">Importer les paramètres ReVanced à partir d\'un fichier ou les exporter vers un fichier</string>
+    <string name="revanced_backup_summary">Importer/exporter les paramètres ReVanced depuis/vers un fichier</string>
     <string name="revanced_bottom_player">Boutons sous la vidéo</string>
     <string name="revanced_button_container_title">Boutons sous la vidéo</string>
     <string name="revanced_bypass_ambient_mode_restrictions_summary_off">Le mode ambiant est désactivé en mode économie d\'énergie</string>
@@ -16,20 +14,20 @@
     <string name="revanced_bypass_ambient_mode_restrictions_title">Contourner les restrictions du mode ambiant</string>
     <string name="revanced_change_homepage_summary_off">Page d\'accueil actuelle : Accueil</string>
     <string name="revanced_change_homepage_summary_on">Page d\'accueil actuelle : Abonnements</string>
-    <string name="revanced_change_homepage_title">Change la page d\'accueil par \"Abonnements\"</string>
+    <string name="revanced_change_homepage_title">Définir la page d\'accueil sur \"Abonnements\"</string>
     <string name="revanced_comments_title">Commentaires</string>
     <string name="revanced_copy_video_timestamp_success">Horodatage copié dans le presse-papiers</string>
-    <string name="revanced_custom_filter_strings_summary">Filtrer les composants par noms séparés par un saut de ligne</string>
+    <string name="revanced_custom_filter_strings_summary">Filtrer les noms des composants par une virgule</string>
     <string name="revanced_custom_filter_strings_title">Modifier le filtre personnalisé</string>
     <string name="revanced_custom_filter_summary_off">Le filtre personnalisé est désactivé</string>
     <string name="revanced_custom_filter_summary_on">Le filtre personnalisé est activé</string>
-    <string name="revanced_custom_filter_title">Le filtre personnalisé</string>
-    <string name="revanced_custom_playback_speeds_invalid">Vitesses vidéo invalides. Rétablissez les valeurs par défaut.</string>
-    <string name="revanced_custom_playback_speeds_warning" formatted="false">Les vitesses personnalisées doivent être inférieures à %sx. Rétablissez les valeurs par défaut.</string>
-    <string name="revanced_custom_playback_speeds_summary">Ajouter ou modifier les vitesses disponibles</string>
-    <string name="revanced_custom_playback_speeds_title">Modifier les vitesses vidéo personnalisées</string>
-    <string name="revanced_custom_seekbar_color_value_summary">Saisissez le code hex de la couleur de la barre de progression </string>
-    <string name="revanced_custom_seekbar_color_value_title">Couleur de la barre (hex)</string>
+    <string name="revanced_custom_filter_title">Activer le filtre personnalisé</string>
+    <string name="revanced_custom_playback_speeds_invalid">Vitesses de lecture invalides. Rétablissez les valeurs par défaut.</string>
+    <string name="revanced_custom_playback_speeds_warning" formatted="false">Les vitesses persos doivent être &lt; %sx. Rétab. les valeurs par défaut.</string>
+    <string name="revanced_custom_playback_speeds_summary">Ajouter ou modifier les vitesses de lecture disponibles</string>
+    <string name="revanced_custom_playback_speeds_title">Vitesses de lecture personnalisées</string>
+    <string name="revanced_custom_seekbar_color_value_summary">Saisissez le code hexadécimal de la couleur de la barre de progression</string>
+    <string name="revanced_custom_seekbar_color_value_title">Couleur de la barre de progression</string>
     <string name="revanced_default_app_settings_summary">Pour ouvrir RVX depuis votre navigateur, activez l\'option \"Ouvrir les liens compatibles\" et activez les liens Web compatibles</string>
     <string name="revanced_default_app_settings_title">Paramètres \"Ouvrir par défaut\"</string>
     <string name="revanced_default_playback_speed_title">Vitesse de lecture par défaut</string>
@@ -38,9 +36,9 @@
     <string name="revanced_description_title">Description</string>
     <string name="revanced_disable_auto_captions_summary_off">Les sous-titres automatiques sont forcés</string>
     <string name="revanced_disable_auto_captions_summary_on">Les sous-titres automatiques ne sont pas forcés</string>
-    <string name="revanced_disable_auto_captions_title">Sous-titres automatiques forcés</string>
-    <string name="revanced_disable_default_playback_speed_live_summary_off">La vitesse par défaut des diffusions en direct est activée</string>
-    <string name="revanced_disable_default_playback_speed_live_summary_on">La vitesse par défaut des diffusions en direct est désactivée</string>
+    <string name="revanced_disable_auto_captions_title">Désactiver les sous-titres forcés</string>
+    <string name="revanced_disable_default_playback_speed_live_summary_off">La vitesse de lecture par défaut est activée pour les diffusions en direct</string>
+    <string name="revanced_disable_default_playback_speed_live_summary_on">La vitesse de lecture par défaut est désactivée pour les diffusions en direct</string>
     <string name="revanced_disable_default_playback_speed_live_title">Vitesse par défaut des diffusions en direct</string>
     <string name="revanced_disable_haptic_feedback_chapters_summary_off">Le retour haptique lors de la sélection de chapitres est activé</string>
     <string name="revanced_disable_haptic_feedback_chapters_summary_on">La retour haptique lors de la sélection de chapitres est désactivé</string>
@@ -50,26 +48,26 @@
     <string name="revanced_disable_haptic_feedback_scrubbing_title">Retour haptique du balayage</string>
     <string name="revanced_disable_haptic_feedback_seek_summary_off">Le retour haptique de la barre de progression est activé</string>
     <string name="revanced_disable_haptic_feedback_seek_summary_on">Le retour haptique de la barre de progression est désactivé</string>
-    <string name="revanced_disable_haptic_feedback_seek_title">La vibration lors du clic sur la barre de progression</string>
-    <string name="revanced_disable_haptic_feedback_zoom_summary_off">La vibration lors du zoom est activé</string>
-    <string name="revanced_disable_haptic_feedback_zoom_summary_on">La vibration lors du zoom est désactivé</string>
-    <string name="revanced_disable_haptic_feedback_zoom_title">La vibration lors du zoom</string>
+    <string name="revanced_disable_haptic_feedback_seek_title">Retour haptique de la barre de progression</string>
+    <string name="revanced_disable_haptic_feedback_zoom_summary_off">Le retour haptique lors du zoom est activé</string>
+    <string name="revanced_disable_haptic_feedback_zoom_summary_on">Le retour haptique lors du zoom est desactivé</string>
+    <string name="revanced_disable_haptic_feedback_zoom_title">Retour haptique lors du zoom</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">La luminosité HDR automatique est activée</string>
-    <string name="revanced_disable_hdr_auto_brightness_summary_on">La luminosité HDR automatique est désactivé</string>
-    <string name="revanced_disable_hdr_auto_brightness_title">La luminosité HDR automatique</string>
+    <string name="revanced_disable_hdr_auto_brightness_summary_on">La luminosité HDR automatique est désactivée</string>
+    <string name="revanced_disable_hdr_auto_brightness_title">Luminosité HDR automatique</string>
     <string name="revanced_disable_hdr_video_summary_off">La vidéo HDR est activée</string>
     <string name="revanced_disable_hdr_video_summary_on">La vidéo HDR est désactivée</string>
-    <string name="revanced_disable_hdr_video_title">La vidéo HDR (Qualité dynamique)</string>
-    <string name="revanced_disable_landscape_mode_summary_off">Le mode paysage lorsque vous passez en plein écran est activé</string>
-    <string name="revanced_disable_landscape_mode_summary_on">Le mode paysage lorsque vous passez en plein écran est désactivé</string>
-    <string name="revanced_disable_landscape_mode_title">Le mode paysage en plein écran</string>
+    <string name="revanced_disable_hdr_video_title">Vidéo HDR</string>
+    <string name="revanced_disable_landscape_mode_summary_off">Le passage en mode paysage en plein écran est activé</string>
+    <string name="revanced_disable_landscape_mode_summary_on">Le passage en mode paysage en plein écran est désactivé</string>
+    <string name="revanced_disable_landscape_mode_title">Mode paysage</string>
     <string name="revanced_disable_startup_shorts_player_summary_off">Les Shorts sont activés au démarrage de l\'application</string>
     <string name="revanced_disable_startup_shorts_player_summary_on">Les Shorts sont désactivés au démarrage de l\'application</string>
-    <string name="revanced_disable_startup_shorts_player_title">Les Shorts au démarrage</string>
-    <string name="revanced_disable_quic_protocol_summary">"Désactiver le protocole QUIC de CronetEngine (QUIC est un protocole Internet plus rapide et plus sûr utilisé par Google et d'autres entreprises pour leurs services en ligne)"</string>
-    <string name="revanced_disable_quic_protocol_title">Le protocole QUIC</string>
-    <string name="revanced_double_back_timeout_summary">Le nombre de secondes que met l\'application pour se fermer après avoir appuyé deux fois sur le bouton retour de votre téléphone (secondes)</string>
-    <string name="revanced_double_back_timeout_title">Délai de l\'application pour se fermer</string>
+    <string name="revanced_disable_startup_shorts_player_title">Shorts au démarrage de l\'application</string>
+    <string name="revanced_disable_quic_protocol_summary">"Désactiver le protocole QUIC de CronetEngine"</string>
+    <string name="revanced_disable_quic_protocol_title">Protocole QUIC</string>
+    <string name="revanced_double_back_timeout_summary">Le nombre de secondes pour la fermeture en double pression sur le bouton Retour</string>
+    <string name="revanced_double_back_timeout_title">Délai de fermeture de l\'application</string>
     <string name="revanced_enable_compact_controls_overlay_summary_off">La superposition des contrôles compacts est désactivée</string>
     <string name="revanced_enable_compact_controls_overlay_summary_on">La superposition des contrôles compacts est activé</string>
     <string name="revanced_enable_compact_controls_overlay_title">La superposition des contrôles compacts</string>
@@ -461,6 +459,9 @@ Disponible uniquement sur YouTube v18.24.37+"</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">Le bouton \"S\'abonner\" est affiché</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">Le bouton \"S\'abonner\" est caché</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">Le bouton \"S\'abonner\"</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Le bouton \"Son\" est affiché</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Le bouton \"Son\" est caché</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">Le bouton \"Son\"</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">La boîte a message discrète est affichée</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">La boîte a message discrète est cachée</string>
     <string name="revanced_hide_shorts_player_toolbar_title">La boîte a message discrète</string>
@@ -494,6 +495,9 @@ Disponible uniquement sur YouTube v18.24.37+"</string>
     <string name="revanced_hide_timed_reactions_summary_off">Les réactions chronométrées sont affichées</string>
     <string name="revanced_hide_timed_reactions_summary_on">Les réactions chronométrées sont cachées</string>
     <string name="revanced_hide_timed_reactions_title">Les réactions chronométrées</string>
+    <string name="revanced_hide_reminder_button_summary_off">Le bouton \"M\'avertir\" est affiché</string>
+    <string name="revanced_hide_reminder_button_summary_on">Le bouton \"M\'avertir\" est masqué</string>
+    <string name="revanced_hide_reminder_button_title">Bouton \"M\'avertir\"</string>
     <string name="revanced_hide_time_stamp_summary_off">La durée de la vidéo est affiché</string>
     <string name="revanced_hide_time_stamp_summary_on">La durée de la vidéo est caché</string>
     <string name="revanced_hide_time_stamp_title">La durée de la vidéo</string>
@@ -506,6 +510,26 @@ Disponible uniquement sur YouTube v18.24.37+"</string>
     <string name="revanced_hide_video_ads_summary_off">Les pubs vidéos sont affichées</string>
     <string name="revanced_hide_video_ads_summary_on">Les pubs vidéos sont masquées</string>
     <string name="revanced_hide_video_ads_title">Les publicités vidéo</string>
+    <string name="revanced_whitelisting_added" formatted="false">La chaîne %s a été ajoutée à la liste blanche %s</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">Impossible d\'ajouter la chaîne %s à la liste blanche %s</string>
+    <string name="revanced_whitelisting_channel_name">Nom de la chaîne</string>
+    <string name="revanced_whitelisting_empty">Il n\'y a pas de chaînes dans la liste blanche</string>
+    <string name="revanced_whitelisting_excluded">Non ajouté à la liste blanche</string>
+    <string name="revanced_whitelisting_fetch_failed">Impossible de récupérer les détails de la chaîne, message reçu %d</string>
+    <string name="revanced_whitelisting_missing_api_key">Erreur HTTP 403 reçue lors de la récupération de channelId. Veuillez vérifier votre clé API dans les paramètres de la liste blanche</string>
+    <string name="revanced_whitelisting_included">Ajouté à la liste blanche</string>
+    <string name="revanced_whitelisting_reboot">Redémarrer pour appliquer les paramètres de la liste blanche</string>
+    <string name="revanced_whitelisting_removed" formatted="false">La chaîne %s a été retirée de la liste blanche %s</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">Impossible de supprimer la chaîne %s de la liste blanche %s</string>
+    <string name="revanced_whitelisting_settings_summary">Vérifier ou supprimer la liste des chaînes ajoutées à la liste blanche</string>
+    <string name="revanced_whitelisting_settings_title">Paramètres de la liste blanche</string>
+    <string name="revanced_whitelisting_speed">Vitesse de la vidéo</string>
+    <string name="revanced_whitelisting_speed_button">Vitesse</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">Liste blanche des chaînes</string>
+    <string name="revanced_whitelist_api_key_title">Clé API YouTube </string>
+    <string name="revanced_whitelist_api_key_summary">Clé YouTube API v3 utilisé pour la fonction de liste blanche</string>
     <string name="revanced_hide_view_products_summary_off">La bannière \"Voir les produits\" est affichée</string>
     <string name="revanced_hide_view_products_summary_on">La bannière \"Voir les produits\" est cachée</string>
     <string name="revanced_hide_view_products_title">La bannière des produits</string>
@@ -536,6 +560,9 @@ Cliquez longuement pour copier la vidéo horodatée"</string>
     <string name="revanced_overlay_button_copy_video_url_timestamp_title">Le bouton \"Copie du lien horodaté\"</string>
     <string name="revanced_overlay_button_external_downloader_summary">Appuyez pour lancer le téléchargeur externe</string>
     <string name="revanced_overlay_button_external_downloader_title">Bouton de téléchargement externe</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">Le bouton \"Liste Blanche\" est caché</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">Le bouton \"Liste Blanche\" est caché</string>
+    <string name="revanced_overlay_button_whitelist_title">Le bouton \"Liste Blanche\"</string>
     <string name="revanced_overlay_button_speed_dialog_reset">Vitesse de la vidéo réinitialisée (1.0x)</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Appuyez pour obtenir des paramètres de vitesse
 Appuyez longuement pour régler la vitesse de la vidéo sur 1.0x"</string>
@@ -550,61 +577,88 @@ Appuyez longuement pour régler la vitesse de la vidéo sur 1.0x"</string>
     <string name="revanced_quick_actions_title">Actions rapides</string>
     <string name="revanced_reboot_first_run">Redémarrer pour charger la mise en page normalement</string>
     <string name="revanced_reboot_warning_general">"Comme il s’agit toujours d’un élément expérimental, il peut y avoir d’autres questions inconnues. Êtes-vous sûr de vouloir continuer?"</string>
-    <string name="revanced_reboot_warning_phone">"\"Aide le dpi à modifier certaines dispositions de téléphone. Si vous activez ce paramètre, les fonctionnalités suivantes sont disponibles :
+    <string name="revanced_reboot_warning_phone">"Modifie le DPI pour activer certaines mises en page pour les téléphones.
 
- - Publications communautaires 
- - La liste de lecture Mix"</string>
-    <string name="revanced_reboot_warning_quic">Il est recommandé de ne pas l\'utiliser si votre vitesse Internet n\'est pas assez rapide (Désactiver le protocole QUIC peut aider à résoudre des problèmes de qualité vidéo, mais peut aussi ralentir le temps de réaction de l\'appli et la vitesse de chargement de celle-ci)</string>
-    <string name="revanced_reboot_warning_tablet">"Permet de modifier certaines mises en page pour les tablettes. Si vous activez ce paramètre, les fonctionnalités suivantes ne sont pas disponibles : 
+Si vous activez ce paramètre, les fonctionnalités suivantes ne seront pas disponibles :
+- Posts destinés à la communauté
+- Masquer les Mix YouTube"</string>
+    <string name="revanced_reboot_warning_quic">Il est recommandé de ne pas l\'utiliser si votre connexion internet n\'est pas suffisamment rapide</string>
+    <string name="revanced_reboot_warning_tablet">"Modifie le Dpi pour activer certaines mises en page pour les tablettes.
 
- - Mode ambiant 
- - Publications communautaires"</string>
-    <string name="revanced_reboot_warning_vp9">"Modifie les informations de l'appareil pour activer le codec VP9
+Si vous activez ce paramètre, les fonctionnalités suivantes ne seront pas disponibles :
+- Posts destinés à la communauté"</string>
+    <string name="revanced_reboot_warning_vp9">"Falsifie les informations de l'appareil pour activer le codec VP9
 
-Ce paramètre étant obsolètes, il se peut qu'ils ne soient plus valables"</string>
-    <string name="revanced_ryd_attribution_summary">Les données sur YouTube Dislike sont fournies par l\'API Return YouTube Dislike Cliquez ici pour en savoir plus</string>
-    <string name="revanced_ryd_compact_layout_summary_off">Le bouton \"J\'aime\" est séparé par un trait</string>
-    <string name="revanced_ryd_compact_layout_summary_on">Le bouton \"J\'aime\" n\'est pas séparé par un trait</string>
-    <string name="revanced_ryd_compact_layout_title">Design du bouton \"J\'aime\"</string>
-    <string name="revanced_ryd_dislike_percentage_summary_off">Les dislikes sont affichées sous forme de nombre</string>
-    <string name="revanced_ryd_dislike_percentage_summary_on">Les dislikes sont affichés sous forme de pourcentage</string>
-    <string name="revanced_ryd_dislike_percentage_title">Dislikes en pourcentage</string>
-    <string name="revanced_ryd_enable_summary_off">Les dislikes ne sont pas affichés</string>
-    <string name="revanced_ryd_enable_summary_on">Les dislikes sont affichées</string>
-    <string name="revanced_ryd_enable_title">Retour des dislikes YouTube</string>
-    <string name="revanced_ryd_failure_client_rate_limit_requested">Les dislikes ne sont disponible (limite de clients d\'API atteinte)</string>
-    <string name="revanced_ryd_shorts_summary_off">Dislikes sur les Shorts cachés</string>
-    <string name="revanced_ryd_shorts_summary_on">Dislikes sur les Shorts affichés</string>
-    <string name="revanced_ryd_shorts_title">Les dislikes sur les Shorts</string>
-    <string name="revanced_ryd_video_likes_hidden_by_video_owner">Caché</string>
-    <string name="revanced_save_playback_speed">Changer la vitesse par défaut en :</string>
-    <string name="revanced_save_video_quality_mobile">Changer la qualité des données mobiles par défaut en :</string>
-    <string name="revanced_save_video_quality_none">Échec de la définition de qualité</string>
-    <string name="revanced_save_video_quality_wifi">Changer la qualité Wi-Fi par défaut en :</string>
-    <string name="revanced_seekbar">Barre de progression et durée de la vidéo</string>
+Ce paramètre étant obsolète, il pourrait ne plus fonctionner"</string>
+    <string name="revanced_ryd_attribution_summary">Les données des \"Je n\'aime pas\" sont fournies par l\'API de Return YouTube Dislike. Appuyez ici pour en savoir plus.</string>
+    <string name="revanced_ryd_compact_layout_summary_off">Le bouton \"J\'aime\" est séparé par un trait pour une meilleure apparence</string>
+    <string name="revanced_ryd_compact_layout_summary_on">Le bouton \"J\'aime\" n\'est pas séparé par un trait pour une largeur minimale</string>
+    <string name="revanced_ryd_compact_layout_title">Bouton \"J\'aime\" compact</string>
+    <string name="revanced_ryd_dislike_percentage_summary_off">Les \"Je n\'aime pas\" sont affichés sous forme de nombre</string>
+    <string name="revanced_ryd_dislike_percentage_summary_on">Les \"Je n\'aime pas\" sont affichés sous forme de pourcentage</string>
+    <string name="revanced_ryd_dislike_percentage_title">\"Je n\'aime pas\" en pourcentage</string>
+    <string name="revanced_ryd_enable_summary_off">Les \"Je n\'aime pas\" ne sont pas affichés</string>
+    <string name="revanced_ryd_enable_summary_on">Les \"Je n\'aime pas\" sont affichés</string>
+    <string name="revanced_ryd_enable_title">Return YouTube Dislike</string>
+    <string name="revanced_ryd_failure_client_rate_limit_requested">Les dislikes sont indisponibles (limite d\'API client atteinte)</string>
+    <string name="revanced_ryd_shorts_summary_off">Les dislikes sont masqués sur les Shorts</string>
+    <string name="revanced_ryd_shorts_summary_on">Les dislikes sont affichés sur les Shorts</string>
+    <string name="revanced_ryd_shorts_title">Dislikes sur les Shorts</string>
+    <string name="revanced_ryd_video_likes_hidden_by_video_owner">Masqué</string>
+    <string name="revanced_save_playback_speed">Changement de la vitesse par défaut en :</string>
+    <string name="revanced_save_video_quality_mobile">Changement de la qualité par défaut sur les données mobiles en :</string>
+    <string name="revanced_save_video_quality_none">Échec du réglage de la qualité</string>
+    <string name="revanced_save_video_quality_wifi">Changement de la qualité par défaut en Wi-Fi en :</string>
+    <string name="revanced_seekbar">Barre de progression</string>
     <string name="revanced_shorts">Shorts</string>
-    <string name="revanced_shorts_player_title">Lecteur Shorts</string>
-    <string name="revanced_show_fullscreen_title_summary">Problème connu : le titre disparaît lorsqu\'on clique dessus</string>
-    <string name="revanced_show_fullscreen_title_title">Le titre en plein écran</string>
-    <string name="revanced_sponsorblock_settings_summary">Paramètre de SponsorBlock</string>
-    <string name="revanced_spoof_app_version_summary">"Utilise l'ancienne interface avec des risques d'effets inconnus. Supprimé les données pour retirer complètement si l'interface ne change pas"</string>
-    <string name="revanced_spoof_app_version_title">Interface de l\'application</string>
-    <string name="revanced_spoof_app_version_target_entry_0">18.20.39 - Restaure l\'ancienne mise en page du lecteur</string>
-    <string name="revanced_spoof_app_version_target_entry_1">18.09.39 - Restaure l\'ancienne mise en page de la catégorie \"Bibliothèque\"</string>
-    <string name="revanced_spoof_app_version_target_entry_2">17.41.37 - La catégorie \"Playlist\" dans la \"Bibliothèque\" suit l\'ancienne mise en page</string>
+    <string name="revanced_shorts_player_title">Lecteur de Shorts</string>
+    <string name="revanced_show_fullscreen_title_summary">Problème connu : Le titre disparaît lorsqu\'on appuie dessus</string>
+    <string name="revanced_show_fullscreen_title_title">Titre en plein écran</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Miniatures alternatives</string>
+    <string name="revanced_alt_thumbnail_title">Activer les miniatures alternative</string>
+    <string name="revanced_alt_thumbnail_summary_on">Miniatures YouTube remplacées par des miniatures alternatives</string>
+    <string name="revanced_alt_thumbnail_summary_off">La miniature originelle est affichée</string>
+    <string name="revanced_alt_thumbnail_type_title">De quel moment la vidéo doit être prise</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Début de la vidéo</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Au milieu de la vidéo</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">Fin de la vidéo</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Utiliser des miniatures alternatives rapides</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Utiliser des vidéos de qualité moyenne. Les miniatures se chargeront plus vite, mais les  diffusions en direct, non publié, ou les très vieilles vidéos peuvent afficher des miniatures vides</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Utiliser des miniatures de haute qualité mais aura plus de délai</string>
+    <string name="revanced_alt_thumbnail_about_title">À propos</string>
+    <string name="revanced_alt_thumbnail_about_summary">Les miniatures alternatives sont toujours des images de début/milieu/fin de chaque vidéo. Aucune API externe n\'est utilisée, car ces images sont intégrées dans YouTube</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Paramètres de miniature de la vidéo</string>
+    <string name="revanced_sponsorblock_settings_summary">Paramètres relatifs à SponsorBlock</string>
+    <string name="revanced_spoof_app_version_summary">"Falsification de l'ancienne version du client
+
+Celle-ci modifiera l'apparence de l'application, mais des effets indésirables inconnus peuvent se produire
+Si elle est désactivée ultérieurement, l'ancienne interface utilisateur peut subsister jusqu'à ce que les données de l'application soient effacées"</string>
+    <string name="revanced_spoof_app_version_title">Falsifier la version de l\'app</string>
+    <string name="revanced_spoof_app_version_target_entry_0">18.20.39 - Restaure l\'ancien menu déroulant des paramètres du lecteur</string>
+    <string name="revanced_spoof_app_version_target_entry_1">18.09.39 - Restaure l\'ancienne mise en page de l\'onglet \"Bibliothèque\"</string>
+    <string name="revanced_spoof_app_version_target_entry_2">17.41.37 - Restaure l\'ancienne mise en page des listes de lecture dans l\'onglet \"Bibliothèque\"</string>
     <string name="revanced_spoof_app_version_target_entry_3">17.08.35 - Restaure l\'ancienne mise en page de l\'interface</string>
-    <string name="revanced_spoof_app_version_target_entry_4">16.08.35 - Restaure le bouton \"Explorer\"</string>
-    <string name="revanced_spoof_app_version_target_entry_title">Falsifier la version de l\'application</string>
-    <string name="revanced_spoof_app_version_target_summary">Tapez la version de l\'application à fausser</string>
-    <string name="revanced_spoof_app_version_target_title">Falsifier la version de l\'application</string>
-    <string name="revanced_spoof_player_parameter_summary">"Paramètres du lecteur pour éviter les problèmes de lecture
+    <string name="revanced_spoof_app_version_target_entry_4">16.08.35 - Restaure l\'onglet \"Explorer\"</string>
+    <string name="revanced_spoof_app_version_target_entry_title">Version cible pour la falsification</string>
+    <string name="revanced_spoof_app_version_target_summary">Saisissez la version cible de l\'application à falsifier</string>
+    <string name="revanced_spoof_app_version_target_title">Modifier la version de l\'application à falsifier</string>
+    <string name="revanced_spoof_player_parameter_type_summary_off">"Paramètres du lecteur de Shorts
 
 Problèmes connus
-• Le mode Ambiant peut ne pas fonctionner
-• L'extrait de la vidéo enregistré peut pas être lu normalement
-• Le téléchargement de vidéos peut ne pas fonctionner
-• Les bandes de films sont toujours cachée
-• La barre de progression sur les miniatures sont cachées"</string>
+- La vidéo peut rencontrer des problèmes de lecture à 1:10
+- Le filigrane de la chaîne est toujours masqué
+- Le téléchargement de vidéos peut ne pas fonctionner
+- Les vidéos suggérées sur l'écran de fin sont toujours masquées"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"Paramètres du lecteur en mode navigation privée
+
+Problèmes connus
+- Le mode ambiant peut ne pas fonctionner
+- Les clips ne peuvent pas être lus normalement
+- Le téléchargement de vidéos peut ne pas fonctionner
+- Les incrustations de la bande de film sont toujours masquées
+- Les vignettes de la barre de progression sont masquées"</string>
+    <string name="revanced_spoof_player_parameter_type_title">Type de paramètre du lecteur a falsifié</string>
+    <string name="revanced_spoof_player_parameter_summary">Falsifie les paramètres du lecteur pour empêcher les problèmes de lecture</string>
     <string name="revanced_spoof_player_parameter_title">Falsifier les paramètres du lecteur</string>
     <string name="revanced_swipe_controls">Commandes de balayage</string>
     <string name="revanced_swipe_magnitude_threshold_summary">L\'intensité de balayage correspond à la mesure de glissement utilisée pour ajuster le niveau sonore ou de luminosité</string>
@@ -615,165 +669,162 @@ Problèmes connus
     <string name="revanced_swipe_overlay_text_size_title">Taille du texte superposé</string>
     <string name="revanced_swipe_overlay_timeout_summary">La quantité de millisecondes pendant laquelle la superposition est visible</string>
     <string name="revanced_swipe_overlay_timeout_title">Délai de superposition</string>
-    <string name="revanced_switching_create_notification_summary_off">Le bouton \"Créer\" et le bouton \"Notification\" ne changent pas de place</string>
-    <string name="revanced_switching_create_notification_summary_on">Le bouton \"Créer\" et le bouton \"Notification\" changent de place</string>
-    <string name="revanced_switching_create_notification_title">Inverser les boutons \"Créer\" et \"Notification\"</string>
-    <string name="revanced_tool_used">Outils utilisés</string>
-    <string name="revanced_video">Qualité et vitesse des vidéos</string>
-    <string name="pref_app_language_dialog_message">&lt;b&gt;%1$s&lt;/b&gt;&lt;br&gt;&lt;br&gt;Modifier la langue utilisée sur YouTube, comprenant les boutons, le texte et les boîtes de dialogue, mais ne modifiera pas la langue des paramètres de ReVanced Extended.</string>
-    <string name="pref_app_language_dialog_message_no_lang_name">Modifier la langue utilisée sur YouTube, comprenant les boutons, le texte et les boîtes de dialogue, mais ne modifiera pas la langue des paramètres de ReVanced Extended</string>
+    <string name="revanced_switching_create_notification_summary_off">Le bouton \"Créer\" n\'est pas échangé avec le bouton \"Notifications\"</string>
+    <string name="revanced_switching_create_notification_summary_on">Le bouton \"Créer\" est échangé avec le bouton \"Notifications\"</string>
+    <string name="revanced_switching_create_notification_title">Échanger les boutons \"Créer\" et \"Notifications\"</string>
+    <string name="revanced_tool_used">Outil utilisé</string>
+    <string name="revanced_video">Vidéo</string>
     <string name="sb_enable_sb">SponsorBlock</string>
-    <string name="sb_enable_sb_sum">SponsorBlock est un système reposant sur la communauté qui permet de sauter les passages ennuyeux des vidéos YouTube</string>
+    <string name="sb_enable_sb_sum">SponsorBlock est un systèmede production participative permettant de passer les parties ennuyeuses des vidéos YouTube</string>
     <string name="sb_appearance_category">Apparence</string>
-    <string name="sb_enable_voting">Le bouton de vote</string>
-    <string name="sb_enable_voting_sum_on">Le bouton de vote pour passer le moment est affiché</string>
-    <string name="sb_enable_voting_sum_off">Le bouton de vote pour passer le moment n\'est pas affiché</string>
-    <string name="sb_enable_compact_skip_button">Utilise un bouton pour passer un moment</string>
-    <string name="sb_enable_compact_skip_button_sum_on">La taille du bouton \"Passer\" est réduit</string>
+    <string name="sb_enable_voting">Bouton de vote</string>
+    <string name="sb_enable_voting_sum_on">Le bouton de vote pour les segments est affiché</string>
+    <string name="sb_enable_voting_sum_off">Le bouton de vote pour les segments n\'est pas affiché</string>
+    <string name="sb_enable_compact_skip_button">Bouton \"Passer\" compact</string>
+    <string name="sb_enable_compact_skip_button_sum_on">La taille du bouton \"Passer\" est réduite</string>
     <string name="sb_enable_compact_skip_button_sum_off">Meilleure apparence pour le bouton \"Passer\"</string>
-    <string name="sb_enable_auto_hide_skip_segment_button">Cache automatiquement le bouton \"Passer\"</string>
-    <string name="sb_enable_auto_hide_skip_segment_button_sum_on">Le bouton \"Passer\" se cache après quelques secondes</string>
-    <string name="sb_enable_auto_hide_skip_segment_button_sum_off">Le bouton \"Passer\" est affichée tout le long du moment</string>
-    <string name="sb_general_skiptoast">Afficher un message lorsqu\'un moment est passé automatiquement</string>
-    <string name="sb_general_skiptoast_sum_on">Un message sera affiché lorsqu\'un moment est automatiquement passé. Appuyez ici pour voir un exemple</string>
-    <string name="sb_general_skiptoast_sum_off">Un message ne s\'affichera pas lorsqu\'un moment est automatiquement passé. Appuyez ici pour voir un exemple</string>
-    <string name="sb_general_time_without">Temps d\'affichage sans compter les sponsors ou autre</string>
-    <string name="sb_general_time_without_sum_on">Durée de la vidéo sans compter les moments (à côté de la durée totale de la vidéo)</string>
-    <string name="sb_general_time_without_sum_off">Le temps de la vidéo est affiché normalement</string>
-    <string name="sb_create_segment_category">Crée un nouveau moment</string>
-    <string name="sb_enable_create_segment">L\'ajout d\'un nouveau moment à passée</string>
-    <string name="sb_enable_create_segment_sum_on">Le bouton pour pouvoir ajouter un nouveau moment à passé est affiché</string>
-    <string name="sb_enable_create_segment_sum_off">Le bouton pour pouvoir ajouter un nouveau moment à passé n\'est pas affiché</string>
+    <string name="sb_enable_auto_hide_skip_segment_button">Masquage automatique du bouton \"Passer\"</string>
+    <string name="sb_enable_auto_hide_skip_segment_button_sum_on">Le bouton \"Passer\" disparaît après quelques secondes</string>
+    <string name="sb_enable_auto_hide_skip_segment_button_sum_off">Le bouton \"Passer\" est affiché pendant toute la durée du segment</string>
+    <string name="sb_general_skiptoast">Toast lors du passage automatique</string>
+    <string name="sb_general_skiptoast_sum_on">Les notifications toast sont affichées lorsqu\'un segment est automatiquement passé. Appuyez ici pour voir un exemple</string>
+    <string name="sb_general_skiptoast_sum_off">Les notifications toast ne sont pas affichées. Appuyez ici pour voir un exemple</string>
+    <string name="sb_general_time_without">Durée de la vidéo sans les segments</string>
+    <string name="sb_general_time_without_sum_on">La durée de la vidéo sans les segments est affichée entre parenthèses à côté de la durée complète</string>
+    <string name="sb_general_time_without_sum_off">La durée complète de la vidéo est affichée</string>
+    <string name="sb_create_segment_category">Création de nouveaux segments</string>
+    <string name="sb_enable_create_segment">Afficher le bouton de création de segment</string>
+    <string name="sb_enable_create_segment_sum_on">Le bouton de création d\'un nouveau segment est affiché</string>
+    <string name="sb_enable_create_segment_sum_off">Le bouton de création d\'un nouveau segment n\'est pas affiché</string>
     <string name="sb_general_adjusting">Ajuster le nouveau moment</string>
-    <string name="sb_general_adjusting_sum">Ajuster la durée en millisecondes lors de la création de nouveaux moments</string>
+    <string name="sb_general_adjusting_sum">Ajuster l\'intervalle de déplacement des boutons d\'ajustement du minutage (en millisecondes) lors de la création de nouveaux segments</string>
     <string name="sb_general_adjusting_invalid">La valeur doit être un nombre positif</string>
-    <string name="sb_guidelines_preference_title">Afficher les règles</string>
-    <string name="sb_guidelines_preference_sum">Les règles contiennent des conseils et des règles sur la soumission de moments</string>
-    <string name="sb_guidelines_popup_title">Suivre les règles</string>
-    <string name="sb_guidelines_popup_content">Il est recommandé de lire les règles SponsorBlock avant de soumettre un moment</string>
+    <string name="sb_guidelines_preference_title">Voir les directives</string>
+    <string name="sb_guidelines_preference_sum">Les directives contiennent des règles et des conseils pour créer de nouveaux segments</string>
+    <string name="sb_guidelines_popup_title">Suivez les directives</string>
+    <string name="sb_guidelines_popup_content">Lisez les directives de SponsorBlock avant de créer de nouveaux segments</string>
     <string name="sb_guidelines_popup_already_read">Déjà lu</string>
     <string name="sb_guidelines_popup_open">Me montrer</string>
-    <string name="sb_general">Générale</string>
-    <string name="sb_general_skipcount">Compteur de moments passés</string>
-    <string name="sb_general_skipcount_sum_on">Affiche le temps que vous auriez perdu si vous n\'aviez pas passé de moments</string>
-    <string name="sb_general_skipcount_sum_off">Le compteur de moments passés est désactivé</string>
-    <string name="sb_general_min_duration">Durée minimale du moment</string>
-    <string name="sb_general_min_duration_sum">Les moments plus courts que cette valeur (en secondes) ne seront pas affichés ou passées</string>
-    <string name="sb_general_uuid">Votre identifiant d\'utilisateur personnel</string>
-    <string name="sb_general_uuid_sum">Cela doit rester privé. Il s\'agit d\'un mot de passe qui ne doit être communiqué à personne. Si quelqu’un l\'a, il peut usurper votre identité !</string>
+    <string name="sb_general">Général</string>
+    <string name="sb_general_skipcount">Compteur de segments passés</string>
+    <string name="sb_general_skipcount_sum_on">Permet au classement SponsorBlock de connaître le temps gagné. Un message est envoyé au classement à chaque fois qu\'un segment est passé</string>
+    <string name="sb_general_skipcount_sum_off">Le compteur de segments passés est désactivé</string>
+    <string name="sb_general_min_duration">Durée minimale du segment</string>
+    <string name="sb_general_min_duration_sum">Les segments plus courts que cette valeur (en secondes) ne seront ni affichés ni passés</string>
+    <string name="sb_general_uuid">Votre identifiant privé</string>
+    <string name="sb_general_uuid_sum">Cette information doit rester confidentielle. Il s\'agit d\'un mot de passe qui ne doit être communiqué à personne. Si quelqu\'un l\'a, il peut se faire passer pour vous</string>
     <string name="sb_general_uuid_invalid">L\'identifiant de l\'utilisateur ne peut être vide</string>
     <string name="sb_general_api_url">Modifier l\'URL de l\'API</string>
-    <string name="sb_general_api_url_sum">L\'adresse utilisée par SponsorBlock pour appeler le serveur. &lt;b&gt;Ne le modifiez pas à moins que vous sachiez ce que vous faites&lt;/b&gt;</string>
+    <string name="sb_general_api_url_sum">L\'adresse que SponsorBlock utilise pour faire des appels au serveur. Ne la modifiez pas à moins de savoir ce que vous faites</string>
     <string name="sb_api_url_reset">Réinitialiser l\'URL de l\'API</string>
     <string name="sb_api_url_invalid">L\'URL de l\'API est invalide</string>
     <string name="sb_api_url_changed">L\'URL de l\'API a été modifiée</string>
-    <string name="sb_settings_ie_sum">Votre configuration SponsorBlock au format JSON peut être importé/exporté vers ReVanced ou sur d\'autres plateformes. Cela inclut votre identifiant personnel. Partagez-le avec prudence</string>
-    <string name="sb_diff_segments">Que doivent faire les différents moments</string>
-    <string name="sb_segments_sponsor">Sponsor</string>
-    <string name="sb_segments_sponsor_sum">Promotion payée, parrainage payé et publicités directes. Non destiné à l\'auto-promotion ou aux mentions gratuites pour des causes/créateurs/sites web/produits qu\'ils apprécient</string>
-    <string name="sb_segments_selfpromo">Auto-promotion/Non Rémunérée</string>
-    <string name="sb_segments_selfpromo_sum">Similaire à \'Sponsor\', sauf pour la promotion non rémunérée ou l\'auto-promotion. Comprend des sections sur les marchandises, les dons ou des informations sur les personnes avec qui ils ont collaboré</string>
-    <string name="sb_segments_interaction">Rappel d\'interaction (S\'abonner)</string>
-    <string name="sb_segments_interaction_sum">Un rappel bref pour aimer, s\'abonner ou les suivre au milieu du contenu. S\'il est long ou concerne quelque chose de spécifique, il devrait plutôt être considéré comme de l\'auto-promotion</string>
-    <string name="sb_segments_highlight">Les moments forts</string>
-    <string name="sb_segments_highlight_sum">La partie de la vidéo qui est particulièrement intéressante ou importante pour la plupart des gens</string>
-    <string name="sb_segments_intro">Intro/Entracte</string>
-    <string name="sb_segments_intro_sum">Un intervalle sans contenu réel. Il peut s\'agir d\'une pause, d\'une image fixe ou d\'une animation répétitive. N\'inclus pas les transitions contenant des informations</string>
-    <string name="sb_segments_outro">Outro/Crédits</string>
-    <string name="sb_segments_outro_sum">Crédits ou les vidéos suggérées apparaissent en fin de vidéo. Non destiné aux conclusions contenant des informations</string>
-    <string name="sb_segments_preview">Aperçu/Récapitulatif</string>
-    <string name="sb_segments_preview_sum">Un récapitulatif montrant ce qu\'il va se passer ou qui s\'est passé dans cette vidéo, dans une autre vidéo ou provenant une série de vidéos, lorsque des informations se répètes</string>
-    <string name="sb_segments_filler">Remplissage/Blagues</string>
-    <string name="sb_segments_filler_sum">Le moment Remplissage et Blagues sont à ajouter uniquement lors des scènes de remplissage ou d\'humour qui ne sont pas nécessaires à la compréhension de la vidéo. Ne conviens pas pour les moments fournissant un contexte ou des détails</string>
+    <string name="sb_settings_ie_sum">Votre configuration SponsorBlock au format JSON qui peut être importée/exportée vers ReVanced et d\'autres plates-formes SponsorBlock. Celle-ci inclut votre identifiant d\'utilisateur privé. Partagez-la prudemment</string>
+    <string name="sb_diff_segments">Options de passage et de couleurs</string>
+    <string name="sb_segments_sponsor">Message sponsorisé</string>
+    <string name="sb_segments_sponsor_sum">Promotion rémunérée, parrainages rémunérés et publicités directes. Ne concerne pas l\'autopromotion ou les mentions gratuites pour des causes/créateurs/sites web/produits qu\'ils apprécient</string>
+    <string name="sb_segments_selfpromo">Non rémunéré/autopromotion</string>
+    <string name="sb_segments_selfpromo_sum">Semblable à \"Message sponsorisé\", excepté pour la promotion non rémunérée ou l\'autopromotion. Inclut le marchandisage, les dons ou les informations sur les collaborations</string>
+    <string name="sb_segments_interaction">Rappel d\'interaction (abonnement)</string>
+    <string name="sb_segments_interaction_sum">Un bref rappel pour aimer ou s\'abonner en milieu de vidéo. Si le message est long ou concerne quelque chose de spécifique, il devrait plutôt être classé dans \"autopromotion\"</string>
+    <string name="sb_segments_highlight">Point essentiel</string>
+    <string name="sb_segments_highlight_sum">La partie de la vidéo que la plupart des gens veut voir</string>
+    <string name="sb_segments_intro">Entracte/Animation d\'introduction</string>
+    <string name="sb_segments_intro_sum">Intervalle sans réel contenu. Il peut s\'agir d\'une pause, d\'une image statique ou d\'une animation répétitive. Ne comprend pas les transitions contenant des informations</string>
+    <string name="sb_segments_outro">Écrans de fin/Crédits</string>
+    <string name="sb_segments_outro_sum">Crédits ou écran de fin YouTube. Pas pour les conclusions contenant des informations</string>
+    <string name="sb_segments_preview">Aperçu/Résumé</string>
+    <string name="sb_segments_preview_sum">Collection de clips montrant ce qui va arriver ou ce qui s\'est passé dans la vidéo ou dans d\'autres vidéos d\'une série, où toutes les informations sont répétées ailleurs</string>
+    <string name="sb_segments_filler">Remplissage Digressions/Blagues</string>
+    <string name="sb_segments_filler_sum">Scènes secondaires ajoutées uniquement à des fins de remplissage ou d\'humour qui ne sont pas nécessaires à la compréhension du contenu principal de la vidéo. N\'inclut pas les segments fournissant du contexte ou des détails de fond</string>
     <string name="sb_segments_nomusic">Musique : Section non musicale</string>
-    <string name="sb_segments_nomusic_sum">Uniquement destiné aux vidéos musicales. Sections de vidéos musicales sans musique, qui ne sont pas déjà couvertes par une autre catégorie</string>
+    <string name="sb_segments_nomusic_sum">Uniquement pour les vidéos musicales. À utiliser uniquement pour les sections non couvertes par une autre catégorie</string>
     <string name="sb_skip_button_compact">Passer</string>
-    <string name="sb_skip_button_compact_highlight">Les moments forts</string>
+    <string name="sb_skip_button_compact_highlight">Point essentiel</string>
     <string name="sb_skip_button_sponsor">Passer le sponsor</string>
-    <string name="sb_skip_button_selfpromo">Passer la promotion</string>
-    <string name="sb_skip_button_interaction">Passer l\'interaction</string>
-    <string name="sb_skip_button_highlight">Passer le moment fort</string>
+    <string name="sb_skip_button_selfpromo">Passer l\'autopromo</string>
+    <string name="sb_skip_button_interaction">Passer le rappel</string>
+    <string name="sb_skip_button_highlight">Passer au point essentiel</string>
     <string name="sb_skip_button_intro_beginning">Passer l\'intro</string>
     <string name="sb_skip_button_outro">Passer l\'outro</string>
-    <string name="sb_skip_button_preview_beginning">Passer l\'aperçu de début</string>
-    <string name="sb_skip_button_filler">Passer le remplissage</string>
-    <string name="sb_skip_button_nomusic">Passer le moment non musical</string>
-    <string name="sb_skip_button_unsubmitted">Passer le moment</string>
-    <string name="sb_skipped_sponsor">La sponso a été passé</string>
-    <string name="sb_skipped_selfpromo">L\'auto-promo a été passée</string>
-    <string name="sb_skipped_interaction">Le moment ennuyeux a été passé</string>
-    <string name="sb_skipped_highlight">Le moment fort a été passée</string>
-    <string name="sb_skipped_intro_beginning">L\'intro a été passée</string>
-    <string name="sb_skipped_outro">L\'outro a été passée</string>
-    <string name="sb_skipped_preview_beginning">L\'aperçu de début a été passé</string>
-    <string name="sb_skipped_filler">Le remplissage a été passé</string>
-    <string name="sb_skipped_nomusic">Le moment non musical a été passé</string>
-    <string name="sb_skipped_unsubmitted">Le moment non désirée a été passé</string>
-    <string name="sb_skipped_multiple_segments">Plusieurs moments ont été passés</string>
+    <string name="sb_skip_button_preview_beginning">Passer l\'aperçu</string>
+    <string name="sb_skip_button_filler">Passer la digression</string>
+    <string name="sb_skip_button_nomusic">Passer la section non musicale</string>
+    <string name="sb_skip_button_unsubmitted">Passer le segment</string>
+    <string name="sb_skipped_sponsor">Message sponsorisé passé</string>
+    <string name="sb_skipped_selfpromo">Autopromotion passée</string>
+    <string name="sb_skipped_interaction">Rappel ennuyeux passé</string>
+    <string name="sb_skipped_highlight">Passé au point essentiel</string>
+    <string name="sb_skipped_intro_beginning">Intro passée</string>
+    <string name="sb_skipped_outro">Outro passée</string>
+    <string name="sb_skipped_preview_beginning">Aperçu passé</string>
+    <string name="sb_skipped_filler">Digression passée</string>
+    <string name="sb_skipped_nomusic">Section non musicale passée</string>
+    <string name="sb_skipped_unsubmitted">Segment non soumis passé</string>
+    <string name="sb_skipped_multiple_segments">Plusieurs segments ont été passés</string>
     <string name="sb_skip_automatically">Passer automatiquement</string>
     <string name="sb_skip_automatically_once">Passer automatiquement une fois</string>
     <string name="sb_skip_showbutton">Afficher un bouton \"Passer\"</string>
     <string name="sb_skip_seekbaronly">Afficher dans la barre de progression</string>
     <string name="sb_skip_ignore">Désactiver</string>
-    <string name="sb_submit_failed_invalid" formatted="false">Impossible de soumettre le moment : %s</string>
-    <string name="sb_submit_failed_timeout">Impossible de soumettre les moments (API expirée)</string>
-    <string name="sb_submit_failed_unknown_error" formatted="false">Impossible de soumettre les moments (erreur): État: %d %s</string>
-    <string name="sb_submit_failed_rate_limit">Impossible d\'envoyer le moment.\nLimite de requêtes atteinte (trop de demande provenant du même utilisateur ou de la même adresse IP)</string>
-    <string name="sb_submit_failed_forbidden" formatted="false">Impossible de soumettre le moment : %s</string>
-    <string name="sb_submit_failed_duplicate">Impossible de soumettre le moment
-Existe déjà</string>
-    <string name="sb_submit_succeeded">Moment soumis avec succès</string>
-    <string name="sb_vote_failed_unknown_error" formatted="false">Impossible de voter pour le moment : État: %d %s</string>
-    <string name="sb_vote_failed_forbidden" formatted="false">Impossible de voter pour le moment : État: %s</string>
+    <string name="sb_submit_failed_invalid" formatted="false">Impossible de soumettre le segment : %s</string>
+    <string name="sb_submit_failed_timeout">Impossible de soumettre les segments (API expirée)</string>
+    <string name="sb_submit_failed_unknown_error" formatted="false">Impossible de soumettre les segments (état : %d %s)</string>
+    <string name="sb_submit_failed_rate_limit">Impossible de soumettre le segment.\nLimite de requêtes dépassée (utilisateur/IP)</string>
+    <string name="sb_submit_failed_forbidden" formatted="false">Impossible de soumettre le segment : %s</string>
+    <string name="sb_submit_failed_duplicate">Impossible de soumettre le segment.\nIl existe déjà</string>
+    <string name="sb_submit_succeeded">Segment soumis avec succès</string>
+    <string name="sb_vote_failed_unknown_error" formatted="false">Impossible de voter pour le segment (état : %d %s)</string>
+    <string name="sb_vote_failed_forbidden" formatted="false">Impossible de voter pour le segment : %s</string>
     <string name="sb_vote_upvote">Voter pour</string>
     <string name="sb_vote_downvote">Voter contre</string>
-    <string name="sb_vote_category">Changement de catégorie</string>
-    <string name="sb_vote_no_segments">Il n\'y a pas de moments pour lesquels voter</string>
-    <string name="sb_new_segment_choose_category">Choisissez la catégorie du moment</string>
-    <string name="sb_new_segment_disabled_category">La catégorie est désactivée dans les paramètres. Activez la catégorie pour soumettre</string>
-    <string name="sb_new_segment_title">Nouveau moment SponsorBlock</string>
-    <string name="sb_new_segment_mark_time_as_question" formatted="false">Définir %02d:%02d:%04d comme début ou fin d\'un nouveau moment ?</string>
-    <string name="sb_new_segment_mark_start">Début</string>
-    <string name="sb_new_segment_mark_end">Fin</string>
-    <string name="sb_new_segment_now">Maintenant</string>
-    <string name="sb_new_segment_time_start">Définir le début du moment à</string>
-    <string name="sb_new_segment_time_end">Définir la fin du moment à</string>
-    <string name="sb_new_segment_confirm_title">Les temps sont-ils corrects ?</string>
-    <string name="sb_new_segment_confirm_content" formatted="false">Le moment dure de %02d:%02d à %02d:%02d (%d minutes %02d secondes) Est-il prêt à être soumis ?</string>
-    <string name="sb_new_segment_start_is_before_end">Le début doit être avant la fin</string>
-    <string name="sb_new_segment_mark_locations_first">Tout d\'abord marquer deux emplacements sur la barre de progression</string>
-    <string name="sb_new_segment_preview_segment_first">Prévisualisez le moment et assurez-vous qu\'il passe sans problème</string>
-    <string name="sb_new_segment_edit_by_hand_title">Editer le temps du moment manuellement</string>
-    <string name="sb_new_segment_edit_by_hand_content">Voulez-vous modifier le moment de début ou de fin du moment ?</string>
-    <string name="sb_new_segment_edit_by_hand_parse_error">Temps non valide</string>
-    <string name="sb_stats">Statistiques</string>
-    <string name="sb_stats_connection_failure">Les statistiques sont temporairement indisponibles (API obsolète)</string>
+    <string name="sb_vote_category">Changer la catégorie</string>
+    <string name="sb_vote_no_segments">Il n\'y a pas de segments pour lesquels voter</string>
+    <string name="sb_new_segment_choose_category">Choisissez la catégorie du segment</string>
+    <string name="sb_new_segment_disabled_category">Catégorie désactivée dans les paramètres. Activez-la pour soumettre.</string>
+    <string name="sb_new_segment_title">Nouveau segment SponsorBlock</string>
+    <string name="sb_new_segment_mark_time_as_question" formatted="false">Définir %02d:%02d:%03d comme début ou fin d\'un nouveau segment ?</string>
+    <string name="sb_new_segment_mark_start">début</string>
+    <string name="sb_new_segment_mark_end">fin</string>
+    <string name="sb_new_segment_now">maintenant</string>
+    <string name="sb_new_segment_time_start">Définir le début du segment à</string>
+    <string name="sb_new_segment_time_end">Définir la fin du segment à</string>
+    <string name="sb_new_segment_confirm_title">Les minutages sont-ils corrects ?</string>
+    <string name="sb_new_segment_confirm_content" formatted="false">Le segment dure de %02d:%02d à %02d:%02d (%d minutes et %02d secondes)\nEst-il prêt à être soumis ?</string>
+    <string name="sb_new_segment_start_is_before_end">Le début doit précéder la fin</string>
+    <string name="sb_new_segment_mark_locations_first">Marquez d\'abord deux points sur la barre de progression</string>
+    <string name="sb_new_segment_preview_segment_first">Prévisualisez le segment et assurez-vous qu\'il se passe sans heurt</string>
+    <string name="sb_new_segment_edit_by_hand_title">Modifier manuellement le minutage du segment</string>
+    <string name="sb_new_segment_edit_by_hand_content">Souhaitez-vous modifier le minutage du début ou de la fin du segment ?</string>
+    <string name="sb_new_segment_edit_by_hand_parse_error">Minutage spécifié invalide</string>
+    <string name="sb_stats">Stats</string>
+    <string name="sb_stats_connection_failure">Stats temporairement indisponibles (API en panne)</string>
     <string name="sb_stats_sb_disabled">SponsorBlock est désactivé</string>
     <string name="sb_stats_username" formatted="false">Votre nom d\'utilisateur : &lt;b&gt;%s&lt;/b&gt;</string>
     <string name="sb_stats_username_change">Modifier votre nom d\'utilisateur</string>
-    <string name="sb_stats_username_change_unknown_error" formatted="false">Impossible de changer le nom d\'utilisateur : Statut %d %s</string>
-    <string name="sb_stats_username_changed">Nom d\'utilisateur changer avec succès</string>
+    <string name="sb_stats_username_change_unknown_error" formatted="false">Impossible de changer le nom d\'utilisateur : Statut : %d %s</string>
+    <string name="sb_stats_username_changed">Nom d\'utilisateur modifié avec succès</string>
     <string name="sb_stats_reputation" formatted="false">Votre réputation est de &lt;b&gt;%.2f&lt;/b&gt;</string>
-    <string name="sb_stats_submissions" formatted="false">Vous avez créé &lt;b&gt;%s&lt;/b&gt; moments</string>
-    <string name="sb_stats_saved_zero">Classement de SponsorBlock</string>
-    <string name="sb_stats_saved" formatted="false">Les gens ont passé &lt;b&gt;%s&lt;/b&gt; moment grâce à vous</string>
+    <string name="sb_stats_submissions" formatted="false">Vous avez créé &lt;b&gt;%s&lt;/b&gt; segments</string>
+    <string name="sb_stats_saved_zero">Classement SponsorBlock</string>
+    <string name="sb_stats_saved" formatted="false">Les gens ont passé &lt;b&gt;%s&lt;/b&gt; segements grâce à vous</string>
     <string name="sb_stats_saved_sum_zero">Appuyez ici pour voir les statistiques globales et les meilleurs contributeurs</string>
-    <string name="sb_stats_saved_sum" formatted="false">Cela représente &lt;b&gt;%s&lt;/b&gt; de leur temps qu\'ils ont économisé Cliquez pour voir le classement</string>
-    <string name="sb_stats_self_saved" formatted="false">Vous avez ignoré &lt;b&gt;%s&lt;/b&gt; moments</string>
+    <string name="sb_stats_saved_sum" formatted="false">Cela représente &lt;b&gt;%s&lt;/b&gt; de leur vie.&lt;br&gt;Appuyez ici pour voir le classement</string>
+    <string name="sb_stats_self_saved" formatted="false">Vous avez passé &lt;b&gt;%s&lt;/b&gt; segments</string>
     <string name="sb_stats_self_saved_sum" formatted="false">Cela représente &lt;b&gt;%s&lt;/b&gt;</string>
-    <string name="sb_stats_self_saved_reset_title">Voulez-vous réinitialiser le compteur de moments ?</string>
-    <string name="sb_stats_saved_hour_format" formatted="false">%d heures %d minutes</string>
-    <string name="sb_stats_saved_minute_format" formatted="false">%d minutes %d secondes</string>
+    <string name="sb_stats_self_saved_reset_title">Réinitialiser le compteur de segements passés ?</string>
+    <string name="sb_stats_saved_hour_format" formatted="false">%d heures et %d minutes</string>
+    <string name="sb_stats_saved_minute_format" formatted="false">%d minutes et %d secondes</string>
     <string name="sb_stats_saved_second_format" formatted="false">%d secondes</string>
     <string name="sb_color_dot_label">Couleur (hex) :</string>
-    <string name="sb_color_changed">Couleur modifiée</string>
-    <string name="sb_color_reset">Couleur réinitialiser</string>
+    <string name="sb_color_changed">Couleur changée</string>
+    <string name="sb_color_reset">Couleur réinitialisée</string>
     <string name="sb_color_invalid">Code de couleur invalide</string>
     <string name="sb_reset_color">Réinitialiser la couleur</string>
     <string name="sb_reset">Réinitialiser</string>
     <string name="sb_about_api_sum">Les données sont fournies par l\'API SponsorBlock. Cliquez ici pour en savoir plus et voir les téléchargements pour d\'autres plateformes</string>
-    <string name="sb_about_made_by">Intégration effectuée par JakubWeg</string>
-    <string name="seconds">secondes</string>
+    <string name="sb_about_made_by">Intégration réalisée par JakubWeg</string>
+    <string name="seconds">sec</string>
     <string name="settings_export_failed">Échec de l\'exportation des paramètres</string>
     <string name="settings_export_successful">Les paramètres ont été exportés avec succès</string>
     <string name="settings_ie">Importer/exporter des paramètres</string>

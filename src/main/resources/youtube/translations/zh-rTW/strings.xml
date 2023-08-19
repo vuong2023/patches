@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">啟用播放器的無障礙功能？</string>
-    <string name="accessibility_settings_edu_opt_out_text">因為無障礙服務已啟用，您的介面已經更改。</string>
     <string name="microg_not_installed_notice">請安裝 MicroG</string>
     <string name="microg_not_installed_warning">找不到 MicroG</string>
     <string name="microg_not_running_warning">MicroG 未在背景執行</string>
-    <string name="microg_settings_summary">啟用線上通知推播以接收影片通知</string>
+    <string name="microg_settings_summary">啟用連網通知推播以接收影片通知</string>
     <string name="microg_settings_title">開啟 MicroG</string>
     <string name="revanced_ads">廣告</string>
-    <string name="revanced_backup_summary">自檔案匯入 ReVanced 設定，或匯出 ReVanced 設定至檔案</string>
+    <string name="revanced_backup_summary">從檔案匯入 ReVanced 設定，或匯出 ReVanced 設定成檔案</string>
     <string name="revanced_bottom_player">播放器按鈕</string>
     <string name="revanced_button_container_title">功能按鈕欄</string>
-    <string name="revanced_bypass_ambient_mode_restrictions_summary_off">省電模式下微光模式已停用</string>
-    <string name="revanced_bypass_ambient_mode_restrictions_summary_on">省電模式下微光模式已啟用</string>
-    <string name="revanced_bypass_ambient_mode_restrictions_title">解除微光模式限制</string>
+    <string name="revanced_bypass_ambient_mode_restrictions_summary_off">省電模式下微光效果已停用</string>
+    <string name="revanced_bypass_ambient_mode_restrictions_summary_on">省電模式下微光效果已啟用</string>
+    <string name="revanced_bypass_ambient_mode_restrictions_title">解除微光效果限制</string>
     <string name="revanced_change_homepage_summary_off">目前主畫面：首頁</string>
     <string name="revanced_change_homepage_summary_on">目前主畫面：訂閱內容</string>
     <string name="revanced_change_homepage_title">設定主畫面為訂閱內容</string>
     <string name="revanced_comments_title">留言</string>
-    <string name="revanced_copy_video_timestamp_success">已複製時間戳記至剪貼簿</string>
-    <string name="revanced_custom_filter_strings_summary">以換行分隔的名稱來過濾元件</string>
-    <string name="revanced_custom_filter_strings_title">編輯自訂篩選</string>
-    <string name="revanced_custom_filter_summary_off">自訂篩選已停用</string>
-    <string name="revanced_custom_filter_summary_on">自訂篩選已啟用</string>
-    <string name="revanced_custom_filter_title">啟用自訂篩選</string>
+    <string name="revanced_copy_video_timestamp_success">已複製時間戳至剪貼簿</string>
+    <string name="revanced_custom_filter_strings_summary">按逗號過濾元件名稱</string>
+    <string name="revanced_custom_filter_strings_title">編輯自訂篩選器</string>
+    <string name="revanced_custom_filter_summary_off">自訂篩選器已停用</string>
+    <string name="revanced_custom_filter_summary_on">自訂篩選器已啟用</string>
+    <string name="revanced_custom_filter_title">啟用自訂篩選器</string>
     <string name="revanced_custom_playback_speeds_invalid">無效的自訂播放速度。已重設為預設值。</string>
     <string name="revanced_custom_playback_speeds_warning" formatted="false">自訂速度必須小於 %sx。已重設為預設值。</string>
-    <string name="revanced_custom_playback_speeds_summary">新增或變更可用的播放速度</string>
+    <string name="revanced_custom_playback_speeds_summary">新增或更換支援的播放速度</string>
     <string name="revanced_custom_playback_speeds_title">編輯自訂播放速度</string>
     <string name="revanced_custom_seekbar_color_value_summary">輸入搜尋欄十六進制代碼</string>
     <string name="revanced_custom_seekbar_color_value_title">自訂搜尋欄顏色</string>
@@ -461,6 +459,9 @@
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">訂閱按鈕已顯示</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">訂閱按鈕已隱藏</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">隱藏訂閱按鈕</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Pivot 按鈕已顯示</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Pivot 按鈕已隱藏</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">隱藏 Pivot 按鈕</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">顯示工具列</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">隱藏工具列</string>
     <string name="revanced_hide_shorts_player_toolbar_title">隱藏工具列</string>
@@ -486,8 +487,8 @@
 - 購物
 - 再次觀看"</string>
     <string name="revanced_hide_suggestions_shelf_title">隱藏首頁推薦欄</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"隱藏建議的下一部影片覆蓋層
-已知問題：自動播放不工作"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"隱藏播放結束後的推薦影片以播放下一部片
+已知問題: 會造成自動播放功能無效"</string>
     <string name="revanced_hide_suggested_video_overlay_title">隱藏建議影片覆蓋層</string>
     <string name="revanced_hide_ticket_shelf_summary_off">購票庫已顯示</string>
     <string name="revanced_hide_ticket_shelf_summary_on">購票庫已隱藏</string>
@@ -495,6 +496,9 @@
     <string name="revanced_hide_timed_reactions_summary_off">即時互動已顯示</string>
     <string name="revanced_hide_timed_reactions_summary_on">即時互動已隱藏</string>
     <string name="revanced_hide_timed_reactions_title">隱藏即時互動</string>
+    <string name="revanced_hide_reminder_button_summary_off">\"通知我\" 按鈕已顯示</string>
+    <string name="revanced_hide_reminder_button_summary_on">\"通知我\" 按鈕已隱藏</string>
+    <string name="revanced_hide_reminder_button_title">隱藏 \"通知我\" 按鈕</string>
     <string name="revanced_hide_time_stamp_summary_off">時間戳已顯示</string>
     <string name="revanced_hide_time_stamp_summary_on">時間戳已隱藏</string>
     <string name="revanced_hide_time_stamp_title">隱藏時間戳</string>
@@ -507,6 +511,26 @@
     <string name="revanced_hide_video_ads_summary_off">顯示影片廣告</string>
     <string name="revanced_hide_video_ads_summary_on">隱藏影片廣告</string>
     <string name="revanced_hide_video_ads_title">隱藏影片廣告</string>
+    <string name="revanced_whitelisting_added" formatted="false">頻道 %s 已新增至白名單 %s</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">將頻道 %s 新增到白名單 %s 失敗</string>
+    <string name="revanced_whitelisting_channel_name">頻道名稱</string>
+    <string name="revanced_whitelisting_empty">沒有在白名單裡的頻道</string>
+    <string name="revanced_whitelisting_excluded">未新增至白名單</string>
+    <string name="revanced_whitelisting_fetch_failed">無法獲取頻道資訊，獲得訊息 %d</string>
+    <string name="revanced_whitelisting_missing_api_key">獲取頻道ID時接收到了 HTTP 403 錯誤. 請於白名單設定中檢查你的 API Key</string>
+    <string name="revanced_whitelisting_included">已新增至白名單</string>
+    <string name="revanced_whitelisting_reboot">重啟以應用頻道白名單設定</string>
+    <string name="revanced_whitelisting_removed" formatted="false">頻道 %s 已從 %s 白名單中刪除</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">無法從 %s 白名單中刪除頻道 %s</string>
+    <string name="revanced_whitelisting_settings_summary">檢查或移除已新增到白名單的頻道列表</string>
+    <string name="revanced_whitelisting_settings_title">白名單設定</string>
+    <string name="revanced_whitelisting_speed">影片速度</string>
+    <string name="revanced_whitelisting_speed_button">速度</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">頻道白名單</string>
+    <string name="revanced_whitelist_api_key_title">YouTube API Key</string>
+    <string name="revanced_whitelist_api_key_summary">Youtube API Key v3 用於白名單功能</string>
     <string name="revanced_hide_view_products_summary_off">觀看商品橫幅已顯示</string>
     <string name="revanced_hide_view_products_summary_on">觀看商品橫幅已隱藏</string>
     <string name="revanced_hide_view_products_title">隱藏檢視商品橫幅</string>
@@ -537,6 +561,9 @@
     <string name="revanced_overlay_button_copy_video_url_timestamp_title">顯示複製時間戳記網址按鈕</string>
     <string name="revanced_overlay_button_external_downloader_summary">點按以啟動外部下載程式</string>
     <string name="revanced_overlay_button_external_downloader_title">顯示外部下載按鈕</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">白名單按鈕已隱藏</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">白名單按鈕已顯示</string>
+    <string name="revanced_overlay_button_whitelist_title">白名單按鈕</string>
     <string name="revanced_overlay_button_speed_dialog_reset">已重設播放速度（1.0x）</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"點擊以開啟速度對話框
 長按以將播放速度設定為 1.0x"</string>
@@ -590,6 +617,20 @@
     <string name="revanced_shorts_player_title">Shorts 播放器</string>
     <string name="revanced_show_fullscreen_title_summary">已知問題 : 標題被點擊時會消失</string>
     <string name="revanced_show_fullscreen_title_title">顯示全螢幕標題</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">替代縮圖</string>
+    <string name="revanced_alt_thumbnail_title">啟用替代縮圖</string>
+    <string name="revanced_alt_thumbnail_summary_on">將Youtube影片後製縮圖更換為影片內擷取的縮圖</string>
+    <string name="revanced_alt_thumbnail_summary_off">原來的Youtube縮圖已顯示</string>
+    <string name="revanced_alt_thumbnail_type_title">選擇作為替代影片縮圖的段落</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">影片的開頭</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">影片的中間</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">影片的結尾</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">使用快速的方式產生影片縮圖</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">製作中等畫質縮圖. 縮圖會快速地被製作出來, 但直播, 未發布影片(直播) 或非常舊的影片可能會顯示空白的縮圖.</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">製作高畫質的縮圖, 但縮圖會延遲顯示</string>
+    <string name="revanced_alt_thumbnail_about_title">關於 --唐懂翻譯</string>
+    <string name="revanced_alt_thumbnail_about_summary">替代縮圖是從每個影片的開頭/中間/結尾所擷取的圖片. 所以並未使用到外部的API.</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">影片縮圖設定</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock 相關設定</string>
     <string name="revanced_spoof_app_version_summary">"將應用程式版本偽裝成舊版本
 
@@ -604,14 +645,30 @@
     <string name="revanced_spoof_app_version_target_entry_title">欺騙應用程式版本目標</string>
     <string name="revanced_spoof_app_version_target_summary">輸入欺騙的應用程式版本目標</string>
     <string name="revanced_spoof_app_version_target_title">編輯欺騙應用程式版本</string>
-    <string name="revanced_spoof_player_parameter_summary">"為了避免播放問題，這個應用程式對播放器的參數進行了欺騙。
+    <string name="revanced_spoof_player_parameter_type_summary_off">"短片播放器參數
+
+已知問題：
+- 影片可能會在 1:10 秒後遇到播放問題
+- 頻道浮水印始終隱藏
+- 下載影片可能無法運作
+- 結尾畫面卡片始終隱藏"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"為了避免播放問題，這個應用程式對播放器的參數進行偽裝。
+
+已知問題：
+• 微光效果可能無法執行
+• 不能正常播放片段
+• 下載影片可能無法運作
+• 電影帶疊加畫面始終被隱藏
+• 搜尋軸縮略圖被隱藏"</string>
+    <string name="revanced_spoof_player_parameter_type_title">欺騙播放器參數類型</string>
+    <string name="revanced_spoof_player_parameter_summary">為了避免播放問題，這個應用程式對播放器的參數進行了欺騙。
 
 已知問題：
 • 環境模式可能無法運作
 • 不能正常播放片段
 • 下載影片可能無法運作
 • 電影帶疊加畫面始終被隱藏
-• 搜尋軸縮略圖被隱藏"</string>
+• 搜尋軸縮略圖被隱藏</string>
     <string name="revanced_spoof_player_parameter_title">欺騙播放器參數</string>
     <string name="revanced_swipe_controls">滑動控制</string>
     <string name="revanced_swipe_magnitude_threshold_summary">滑動時調整的數值量</string>
@@ -627,8 +684,6 @@
     <string name="revanced_switching_create_notification_title">將創作按鈕更換為通知按鈕</string>
     <string name="revanced_tool_used">使用的工具 --唐懂翻譯</string>
     <string name="revanced_video">影片</string>
-    <string name="pref_app_language_dialog_message">&lt;b&gt;%1$s&lt;/b&gt;&lt;br&gt;&lt;br&gt;您的Youtube語言將會進行更改,包括按鈕,項目文字,日誌...等,但這項設定並不會更改 ReVanced Extended 的語言</string>
-    <string name="pref_app_language_dialog_message_no_lang_name">您的應用程式將會進行更改，包括按鈕、項目文字、日誌，但這項設定並不會更改 ReVanced Extended 的語言</string>
     <string name="sb_enable_sb">啟用 SponsorBlock</string>
     <string name="sb_enable_sb_sum">SponsorBlock 是透過使用者共同編輯新增片段來跳過 YouTube 的擾人片段</string>
     <string name="sb_appearance_category">應用程式外觀</string>

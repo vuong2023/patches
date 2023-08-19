@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">Bedienungshilfen für den Video-Player aktivieren?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Deine Steuerelemente wurden geändert, weil ein Barrierefreiheitsdienst aktiviert ist.</string>
     <string name="microg_not_installed_notice">Bitte MicroG installieren</string>
     <string name="microg_not_installed_warning">MicroG wurde nicht gefunden</string>
     <string name="microg_not_running_warning">MicroG läuft nicht im Hintergrund</string>
@@ -26,7 +24,7 @@
     <string name="revanced_custom_filter_title">Benutzerdefinierte Filter aktivieren</string>
     <string name="revanced_custom_playback_speeds_invalid">Ungültige benutzerdefinierte Wiedergabegeschwindigkeiten. Auf Standardwerte zurücksetzen.</string>
     <string name="revanced_custom_playback_speeds_warning" formatted="false">Benutzerdefinierte Geschwindigkeiten müssen kleiner als %sx sein. Auf Standardwerte zurücksetzen.</string>
-    <string name="revanced_custom_playback_speeds_summary">Verfügbare Wiedergabegeschwindigkeiten hinzufügen oder ändern</string>
+    <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds</string>
     <string name="revanced_custom_playback_speeds_title">Benutzerdefinierte Wiedergabegeschwindigkeiten bearbeiten</string>
     <string name="revanced_custom_seekbar_color_value_summary">Hex-Code der Suchleisten-Farbe eingeben</string>
     <string name="revanced_custom_seekbar_color_value_title">Benutzerdefinierter Farbwert für die Suchleiste</string>
@@ -416,11 +414,13 @@
     <string name="revanced_hide_player_overlay_filter_title">Verstecke Player-Overlay-Filter</string>
     <string name="revanced_hook_download_button_summary">"Ersetze den Download-Button mit externem Download-Button
 nur auf YouTube v18.24.37+ verfügbar"</string>
+    <string name="revanced_hook_download_button_title">Hook download button</string>
     <string name="revanced_hide_preview_comment_off">Vorschau-Kommentar wird angezeigt</string>
     <string name="revanced_hide_preview_comment_on">Vorschau-Kommentar ist versteckt</string>
     <string name="revanced_hide_preview_comment_title">Verstecke Vorschau-Kommentar</string>
     <string name="revanced_hide_previous_next_button_summary_off">Schaltflächen werden angezeigt</string>
     <string name="revanced_hide_previous_next_button_summary_on">Schaltflächen sind versteckt</string>
+    <string name="revanced_hide_previous_next_button_title">Hide previous &amp; next button</string>
     <string name="revanced_hide_quick_actions_comment_summary_off">Kommentar Button wird angezeigt</string>
     <string name="revanced_hide_quick_actions_comment_summary_on">Kommentar Button wird versteckt</string>
     <string name="revanced_hide_quick_actions_comment_title">Verstecke Kommentar Button</string>
@@ -439,6 +439,12 @@ nur auf YouTube v18.24.37+ verfügbar"</string>
     <string name="revanced_hide_seekbar_thumbnail_summary_on">Thumbnail-Suchleiste ist versteckt</string>
     <string name="revanced_hide_seekbar_thumbnail_title">Verstecke Thumbnail-Suchleiste</string>
     <string name="revanced_hide_seekbar_title">Verstecke Video-Player-Suchleiste</string>
+    <string name="revanced_hide_seek_message_summary_off">Seek message is shown</string>
+    <string name="revanced_hide_seek_message_summary_on">Seek message is hidden</string>
+    <string name="revanced_hide_seek_message_title">Hide seek message</string>
+    <string name="revanced_hide_self_sponsor_cards_summary_off">Self sponsored cards are shown</string>
+    <string name="revanced_hide_self_sponsor_cards_summary_on">Self sponsored cards are hidden</string>
+    <string name="revanced_hide_self_sponsor_cards_title">Hide self sponsored cards</string>
     <string name="revanced_hide_shorts_button_summary_off">Shorts Schaltfläche wird angezeigt</string>
     <string name="revanced_hide_shorts_button_summary_on">Shorts Schaltfläche ist versteckt</string>
     <string name="revanced_hide_shorts_button_title">Verstecke Shorts Schaltfläche</string>
@@ -447,6 +453,16 @@ nur auf YouTube v18.24.37+ verfügbar"</string>
     <string name="revanced_hide_shorts_player_navigation_bar_summary_off">Navigationsleiste wird angezeigt</string>
     <string name="revanced_hide_shorts_player_navigation_bar_summary_on">Navigationsleiste ist versteckt</string>
     <string name="revanced_hide_shorts_player_navigation_bar_title">Navigationsleiste ausblenden</string>
+    <string name="revanced_hide_shorts_player_comments_button_summary_off">Comments button is shown</string>
+    <string name="revanced_hide_shorts_player_comments_button_summary_on">Comments button is hidden</string>
+    <string name="revanced_hide_shorts_player_comments_button_title">Hide comments button</string>
+    <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">Subscriptions button is shown</string>
+    <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">Subscriptions button is hidden</string>
+    <string name="revanced_hide_shorts_player_subscriptions_button_title">Hide subscriptions button</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Pivot button is shown</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Pivot button is hidden</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">Hide pivot button</string>
+    <string name="revanced_hide_shorts_player_toolbar_summary_off">Toolbar is shown</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">Toolbar ist versteckt</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Toolbar verstecken</string>
     <string name="revanced_hide_shorts_shelf_summary_off">Ausschnitte aus Shorts in Kanälen werden angezeigt</string>
@@ -471,8 +487,8 @@ nur auf YouTube v18.24.37+ verfügbar"</string>
 - Shopping
 - Erneut anschauen"</string>
     <string name="revanced_hide_suggestions_shelf_title">Vorschläge-Abschnitt verstecken</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"Versteckt Overlay mit nächstem vorgeschlagenen Video
-Bekanntes Problem: Autoplay funktioniert nicht"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"Hides suggested video overlay to play next
+Known issue: Autoplay does not work"</string>
     <string name="revanced_hide_suggested_video_overlay_title">Vorgeschlagenes Video-Overlay verstecken</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Ticket-Abschnitte werden angezeigt</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Ticket-Abschnitte sind versteckt</string>
@@ -480,22 +496,78 @@ Bekanntes Problem: Autoplay funktioniert nicht"</string>
     <string name="revanced_hide_timed_reactions_summary_off">Zeitgesteuerte Reaktionen werden angezeigt</string>
     <string name="revanced_hide_timed_reactions_summary_on">Zeitgesteuerte Reaktionen sind versteckt</string>
     <string name="revanced_hide_timed_reactions_title">Zeitgesteuerte Reaktionen verstecken</string>
+    <string name="revanced_hide_reminder_button_summary_off">Notify me buttons are shown</string>
+    <string name="revanced_hide_reminder_button_summary_on">Notify me buttons are hidden</string>
+    <string name="revanced_hide_reminder_button_title">Hide notify me button</string>
     <string name="revanced_hide_time_stamp_summary_off">Der Zeitstempel wird angezeigt</string>
     <string name="revanced_hide_time_stamp_summary_on">Der Zeitstempel ist ausgeblendet</string>
     <string name="revanced_hide_time_stamp_title">Zeitstempel ausblenden</string>
+    <string name="revanced_hide_transcript_section_summary_off">Transcript sections are shown</string>
+    <string name="revanced_hide_transcript_section_summary_on">Transcript sections are hidden</string>
+    <string name="revanced_hide_transcript_section_title">Hide transcript sections</string>
+    <string name="revanced_hide_trending_searches_summary_off">Trending searches are shown</string>
+    <string name="revanced_hide_trending_searches_summary_on">Trending searches are hidden</string>
+    <string name="revanced_hide_trending_searches_title">Hide trending searches</string>
     <string name="revanced_hide_video_ads_summary_off">Videowerbung wird angezeigt</string>
     <string name="revanced_hide_video_ads_summary_on">Videowerbung ist versteckt</string>
     <string name="revanced_hide_video_ads_title">Verstecke Videowerbung</string>
+    <string name="revanced_whitelisting_added" formatted="false">Channel %s was added to the %s whitelist</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">Failed to add channel %s to the %s whitelist</string>
+    <string name="revanced_whitelisting_channel_name">Channel Name</string>
+    <string name="revanced_whitelisting_empty">There are no whitelisted channels</string>
+    <string name="revanced_whitelisting_excluded">Not added to whitelist</string>
+    <string name="revanced_whitelisting_fetch_failed">Failed to retrieve channel details, received message %d</string>
+    <string name="revanced_whitelisting_missing_api_key">Received HTTP 403 Error while fetching channelId. Please check your API key in Whitelist settings</string>
+    <string name="revanced_whitelisting_included">Added to whitelist</string>
+    <string name="revanced_whitelisting_reboot">Reboot to apply channel whitelist settings</string>
+    <string name="revanced_whitelisting_removed" formatted="false">Channel %s was removed from the %s whitelist</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">Failed to remove channel %s from the %s whitelist</string>
+    <string name="revanced_whitelisting_settings_summary">Check or remove the list of channels added to the whitelist</string>
+    <string name="revanced_whitelisting_settings_title">Whitelist settings</string>
+    <string name="revanced_whitelisting_speed">Video Speed</string>
+    <string name="revanced_whitelisting_speed_button">Speed</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">Channel Whitelist</string>
+    <string name="revanced_whitelist_api_key_title">Youtube API Key</string>
+    <string name="revanced_whitelist_api_key_summary">Youtube API Key v3 used by whitelist feature</string>
     <string name="revanced_hide_view_products_summary_off">Produkt-Banner anzeigen</string>
+    <string name="revanced_hide_view_products_summary_on">View products banner is hidden</string>
+    <string name="revanced_hide_view_products_title">Hide view products banner</string>
+    <string name="revanced_hide_web_search_results_summary_off">Web search results are shown</string>
+    <string name="revanced_hide_web_search_results_summary_on">Web search results are hidden</string>
+    <string name="revanced_hide_web_search_results_title">Hide web search results</string>
     <string name="revanced_hide_youtube_music_button_summary_off">YouTube Musik-Button wird angezeigt</string>
     <string name="revanced_hide_youtube_music_button_summary_on">YouTube Musik-Button ist ausgeblendet</string>
     <string name="revanced_hide_youtube_music_button_title">YouTube Musik-Button ausblenden</string>
     <string name="revanced_import_settings_summary">Empfohlene Einstellungen aus gespeicherter Datei abrufen</string>
     <string name="revanced_import_settings_title">Einstellungen importieren</string>
+    <string name="revanced_layout_title">Layout</string>
     <string name="revanced_misc">Sonstiges</string>
     <string name="revanced_navigation">Navigation</string>
+    <string name="revanced_open_library_startup_summary_off">Library is not opened at app startup</string>
+    <string name="revanced_open_library_startup_summary_on">Library is opened at app startup</string>
+    <string name="revanced_open_library_startup_title">Open library on app startup</string>
     <string name="revanced_others">Weitere</string>
     <string name="revanced_overlay_button">Overlay-Schaltfläche</string>
+    <string name="revanced_overlay_button_always_repeat_summary">"Tap to toggle always repeat states
+Tap and hold to toggle pause after repeat states"</string>
+    <string name="revanced_overlay_button_always_repeat_title">Show always repeat button</string>
+    <string name="revanced_overlay_button_copy_video_url_summary">"Tap to copy video URL
+Tap and hold to copy video URL with timestamp"</string>
+    <string name="revanced_overlay_button_copy_video_url_title">Show copy video URL button</string>
+    <string name="revanced_overlay_button_copy_video_url_timestamp_summary">"Tap to copy video URL with timestamp
+Tap and hold to copy video timestamp"</string>
+    <string name="revanced_overlay_button_copy_video_url_timestamp_title">Show copy timestamp URL button</string>
+    <string name="revanced_overlay_button_external_downloader_summary">Tap to launch external downloader</string>
+    <string name="revanced_overlay_button_external_downloader_title">Show external download button</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">Whitelist button is hidden</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">Whitelist button is shown</string>
+    <string name="revanced_overlay_button_whitelist_title">Show whitelist button</string>
+    <string name="revanced_overlay_button_speed_dialog_reset">Playback speed reseted (1.0x)</string>
+    <string name="revanced_overlay_button_speed_dialog_summary">"Tap to open speed dialog
+Tap and hold to set playback speed to 1.0x"</string>
+    <string name="revanced_overlay_button_speed_dialog_title">Show speed dialog button</string>
     <string name="revanced_override_premium_header_summary_off">Aktuelle Kopfzeile: Standard-Kopfzeile</string>
     <string name="revanced_override_premium_header_summary_on">Aktuelle Kopfzeile: Premium-Kopfzeile</string>
     <string name="revanced_override_premium_header_title">Premium-Header</string>
@@ -503,6 +575,8 @@ Bekanntes Problem: Autoplay funktioniert nicht"</string>
     <string name="revanced_patches_information_summary">Informationen über angewandte Patches</string>
     <string name="revanced_player_flyout_panel_title">Player Flyout Panel</string>
     <string name="revanced_player">Player</string>
+    <string name="revanced_quick_actions_title">Quick actions</string>
+    <string name="revanced_reboot_first_run">Restart to load the layout normally</string>
     <string name="revanced_reboot_warning_general">"Da dies noch ein experimentelles Feature ist, könnte es weitere unbekannte Probleme geben.
 Bist du sicher, dass du fortfahren möchtest?"</string>
     <string name="revanced_reboot_warning_phone">"Umgehe die DPI um einige Layouts auf Handy-Layouts zu ändern.
@@ -510,6 +584,7 @@ Bist du sicher, dass du fortfahren möchtest?"</string>
 Wenn du diese Einstellung aktivierst, sind folgende Funktionen verfügbar:
 - Community-Beiträge
 - Mix-Wiedergabeliste ausblenden"</string>
+    <string name="revanced_reboot_warning_quic">It is recommended not to use it if your internet speed is not fast enough</string>
     <string name="revanced_reboot_warning_tablet">"Umgehe die DPI um einige Layouts auf Handy-Layouts zu ändern.
 
 Wenn diese Einstellung aktiviert wird, sind folgende Funktionen nicht verfügbar:
@@ -529,7 +604,11 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="revanced_ryd_enable_summary_on">Dislikes werden angezeigt</string>
     <string name="revanced_ryd_enable_title">Return YouTube Dislike aktivieren</string>
     <string name="revanced_ryd_failure_client_rate_limit_requested">Dislikes nicht verfügbar (Client-API Limit erreicht)</string>
+    <string name="revanced_ryd_shorts_summary_off">Dislikes hidden on Shorts</string>
+    <string name="revanced_ryd_shorts_summary_on">Dislikes shown on Shorts</string>
+    <string name="revanced_ryd_shorts_title">Show dislikes on Shorts</string>
     <string name="revanced_ryd_video_likes_hidden_by_video_owner">Versteckt</string>
+    <string name="revanced_save_playback_speed">Changing default speed to:</string>
     <string name="revanced_save_video_quality_mobile">Ändern der standardmäßigen mobilen Datenqualität zu:</string>
     <string name="revanced_save_video_quality_none">Fehler beim Festlegen der Qualität</string>
     <string name="revanced_save_video_quality_wifi">Ändern der Standard-WLAN-Qualität in:</string>
@@ -538,7 +617,52 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="revanced_shorts_player_title">Shorts Player</string>
     <string name="revanced_show_fullscreen_title_summary">Bekanntes Problem: Titel verschwindet, wenn er angeklickt wird</string>
     <string name="revanced_show_fullscreen_title_title">Zeige Vollbild Titel</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_title">Enable alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_summary_on">Youtube thumbnails replaced with alternative ones</string>
+    <string name="revanced_alt_thumbnail_summary_off">Original YouTube thumbnails shown</string>
+    <string name="revanced_alt_thumbnail_type_title">Video time to take the still from</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Beginning of video</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Middle of video</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">End of video</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Use fast alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Using medium quality stills. Thumbnails will load faster, but live streams, unreleased, or very old videos may show blank thumbnails</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Using high quality stills but will have more delay</string>
+    <string name="revanced_alt_thumbnail_about_title">About</string>
+    <string name="revanced_alt_thumbnail_about_summary">Alternative thumbnails are still images from the beginning/middle/end of each video. No external API is used, as these images are built into YouTube</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Video thumbnail settings</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock bezogene Einstellungen</string>
+    <string name="revanced_spoof_app_version_summary">"Spoofing the client version to the old version
+
+This will change the appearance of the app, but unknown side effects may occur
+If later turned off, the old UI may remain until clear the app data"</string>
+    <string name="revanced_spoof_app_version_title">Spoof app version</string>
+    <string name="revanced_spoof_app_version_target_entry_0">18.20.39 - Restore old-style player flyout panel</string>
+    <string name="revanced_spoof_app_version_target_entry_1">18.09.39 - Restore old-style library tab</string>
+    <string name="revanced_spoof_app_version_target_entry_2">17.41.37 - Restore old-style playlist shelf in the library tab</string>
+    <string name="revanced_spoof_app_version_target_entry_3">17.08.35 - Restore old UI layout</string>
+    <string name="revanced_spoof_app_version_target_entry_4">16.08.35 - Restore explore tab</string>
+    <string name="revanced_spoof_app_version_target_entry_title">Spoof app version target</string>
+    <string name="revanced_spoof_app_version_target_summary">Type the spoof app version target</string>
+    <string name="revanced_spoof_app_version_target_title">Edit spoof app version</string>
+    <string name="revanced_spoof_player_parameter_type_summary_off">"Player parameters of Shorts
+
+Known issues
+- Video may get playback issues at 1:10
+- Channel watermark is always hidden
+- Downloading videos may not work
+- End screen cards are always hidden"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"Player parameters of incognito mode
+
+Known issues
+- Ambient mode may not work
+- Clip cannot be played normally
+- Downloading videos may not work
+- Filmstrip overlay is always hidden
+- Seekbar thumbnails are hidden"</string>
+    <string name="revanced_spoof_player_parameter_type_title">Spoof player parameter type</string>
+    <string name="revanced_spoof_player_parameter_summary">Spoofs player parameters to prevent playback issues</string>
+    <string name="revanced_spoof_player_parameter_title">Spoof player parameter</string>
     <string name="revanced_swipe_controls">Wisch Bedienelemente</string>
     <string name="revanced_swipe_magnitude_threshold_summary">Der Schwellenwert für das Wischen</string>
     <string name="revanced_swipe_magnitude_threshold_title">Wischgrößen-Schwellenwert</string>
@@ -548,11 +672,35 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="revanced_swipe_overlay_text_size_title">Wischüberlagerung Textgröße</string>
     <string name="revanced_swipe_overlay_timeout_summary">Die Anzahl der Millisekunden, die das Overlay sichtbar ist</string>
     <string name="revanced_swipe_overlay_timeout_title">Swipe Overlay-Zeitüberschreitung</string>
+    <string name="revanced_switching_create_notification_summary_off">Create button is not switched with notifications</string>
+    <string name="revanced_switching_create_notification_summary_on">Create button is switched with notifications</string>
+    <string name="revanced_switching_create_notification_title">Switch create with notifications button</string>
     <string name="revanced_tool_used">Werkzeug verwendet</string>
     <string name="revanced_video">Video</string>
     <string name="sb_enable_sb">SponsorBlock aktivieren</string>
+    <string name="sb_enable_sb_sum">SponsorBlock is a crowd-sourced system for skipping annoying parts of YouTube videos</string>
     <string name="sb_appearance_category">Erscheinungsbild</string>
+    <string name="sb_enable_voting">Show voting button</string>
+    <string name="sb_enable_voting_sum_on">Segment voting button is shown</string>
+    <string name="sb_enable_voting_sum_off">Segment voting button is not shown</string>
+    <string name="sb_enable_compact_skip_button">Use compact skip button</string>
+    <string name="sb_enable_compact_skip_button_sum_on">Skip button styled for minimum width</string>
+    <string name="sb_enable_compact_skip_button_sum_off">Skip button styled for best appearance</string>
+    <string name="sb_enable_auto_hide_skip_segment_button">Automatically hide skip button</string>
+    <string name="sb_enable_auto_hide_skip_segment_button_sum_on">Skip button hides after a few seconds</string>
+    <string name="sb_enable_auto_hide_skip_segment_button_sum_off">Skip button displayed for entire segment</string>
+    <string name="sb_general_skiptoast">Show a toast when skipping automatically</string>
+    <string name="sb_general_skiptoast_sum_on">Toast shown when a segment is automatically skipped. Tap here to see an example</string>
+    <string name="sb_general_skiptoast_sum_off">Toast not shown. Tap here to see an example</string>
+    <string name="sb_general_time_without">Show video length without segments</string>
+    <string name="sb_general_time_without_sum_on">Video length minus all segments, shown in parentheses next to the full video length</string>
+    <string name="sb_general_time_without_sum_off">Full video length shown</string>
     <string name="sb_create_segment_category">Neue Segmente erstellen</string>
+    <string name="sb_enable_create_segment">Show create new segment button</string>
+    <string name="sb_enable_create_segment_sum_on">Create new segment button is shown</string>
+    <string name="sb_enable_create_segment_sum_off">Create new segment button is not shown</string>
+    <string name="sb_general_adjusting">Adjust new segment step</string>
+    <string name="sb_general_adjusting_sum">Number of milliseconds the time adjustment buttons move when creating new segments</string>
     <string name="sb_general_adjusting_invalid">Wert muss eine positive Zahl sein</string>
     <string name="sb_guidelines_preference_title">Richtlinien anzeigen</string>
     <string name="sb_guidelines_preference_sum">Richtlinien enthalten Tipps und Regeln zum Einreichen von Segmenten</string>
@@ -561,19 +709,39 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="sb_guidelines_popup_already_read">Bereits gelesen</string>
     <string name="sb_guidelines_popup_open">Zeig es mir</string>
     <string name="sb_general">Allgemein</string>
+    <string name="sb_general_skipcount">Enable skip count tracking</string>
+    <string name="sb_general_skipcount_sum_on">Lets the SponsorBlock leaderboard know how much time is saved. A message is sent to the leaderboard each time a segment is skipped</string>
+    <string name="sb_general_skipcount_sum_off">Skip count tracking is not enabled</string>
+    <string name="sb_general_min_duration">Minimum segment duration</string>
+    <string name="sb_general_min_duration_sum">Segments shorter than this value (in seconds) will not be shown or skipped</string>
     <string name="sb_general_uuid">Ihre private Benutzer-ID</string>
     <string name="sb_general_uuid_sum">Dies sollte privat gehalten werden. Es ist wie ein Passwort und sollte nicht an andere weitergegeben werden. Wenn jemand es hat, kann er sich für Sie ausgeben</string>
     <string name="sb_general_uuid_invalid">Benutzer-ID darf nicht leer sein</string>
     <string name="sb_general_api_url">API-URL ändern</string>
+    <string name="sb_general_api_url_sum">The address SponsorBlock uses to make calls to the server. Do not change this unless you know what you\'re doing</string>
     <string name="sb_api_url_reset">API-URL zurückgesetzt</string>
     <string name="sb_api_url_invalid">API-URL ist ungültig</string>
     <string name="sb_api_url_changed">API-URL wurde geändert</string>
+    <string name="sb_settings_ie_sum">Your SponsorBlock JSON configuration that can be imported/exported to ReVanced and other SponsorBlock platforms. This includes your private user id. Be sure to share this wisely</string>
+    <string name="sb_diff_segments">Change segment behavior</string>
     <string name="sb_segments_sponsor">Sponsor</string>
+    <string name="sb_segments_sponsor_sum">Paid promotion, paid referrals and direct advertisements. Not for self-promotion or free shout-outs to causes/creators/websites/products they like</string>
+    <string name="sb_segments_selfpromo">Unpaid/Self Promotion</string>
+    <string name="sb_segments_selfpromo_sum">Similar to \'Sponsor\' except for unpaid or self promotion. Includes sections about merchandise, donations, or information about who they collaborated with</string>
+    <string name="sb_segments_interaction">Interaction Reminder (Subscribe)</string>
+    <string name="sb_segments_interaction_sum">A short reminder to like, subscribe or follow them in the middle of content. If it is long or about something specific, it should instead be under self promotion</string>
     <string name="sb_segments_highlight">Highlight</string>
+    <string name="sb_segments_highlight_sum">The part of the video that most people are looking for</string>
     <string name="sb_segments_intro">Unterbrechung/Introanimation</string>
+    <string name="sb_segments_intro_sum">An interval without actual content. Could be a pause, static frame, or repeating animation. Does not include transitions containing information</string>
     <string name="sb_segments_outro">Endkarten/Credits</string>
+    <string name="sb_segments_outro_sum">Credits or when the YouTube endcards appear. Not for conclusions with information</string>
     <string name="sb_segments_preview">Vorschau/Zusammenfassung</string>
+    <string name="sb_segments_preview_sum">Collection of clips that show what is coming up or what happened in the video or in other videos of a series, where all information is repeated elsewhere</string>
+    <string name="sb_segments_filler">Filler Tangent/Jokes</string>
+    <string name="sb_segments_filler_sum">Tangential scenes added only for filler or humor that are not required to understand the main content of the video. Does not include segments providing context or background details</string>
     <string name="sb_segments_nomusic">Musik: Nicht-Musik-Bereich</string>
+    <string name="sb_segments_nomusic_sum">Only for use in music videos. Sections of music videos without music, that aren\'t already covered by another category</string>
     <string name="sb_skip_button_compact">Überspringen</string>
     <string name="sb_skip_button_compact_highlight">Highlight</string>
     <string name="sb_skip_button_sponsor">Sponsor überspringen</string>
@@ -602,8 +770,10 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="sb_skip_showbutton">Überspringen Schaltfläche anzeigen</string>
     <string name="sb_skip_seekbaronly">In der Suchleiste anzeigen</string>
     <string name="sb_skip_ignore">Deaktivieren</string>
+    <string name="sb_submit_failed_invalid" formatted="false">Can\'t submit the segment: %s</string>
     <string name="sb_submit_failed_timeout">Segmente können nicht übermittelt werden (API Timeout)</string>
     <string name="sb_submit_failed_unknown_error" formatted="false">Segmente können nicht übermittelt werden (status: %d %s)</string>
+    <string name="sb_submit_failed_rate_limit">Can\'t submit the segment.\nRate Limited (too many from the same user or IP)</string>
     <string name="sb_submit_failed_forbidden" formatted="false">Das Segment kann nicht gesendet werden: %s</string>
     <string name="sb_submit_failed_duplicate">Das Segment kann nicht abgesendet werden. \nBereits vorhanden</string>
     <string name="sb_submit_succeeded">Segment erfolgreich gesendet</string>
@@ -614,11 +784,19 @@ Da diese Einstellung veraltet ist, ist sie möglicherweise nicht gültig"</strin
     <string name="sb_vote_category">Kategorie ändern</string>
     <string name="sb_vote_no_segments">Es gibt keine Segmente zur Abstimmung</string>
     <string name="sb_new_segment_choose_category">Wähle eine Segmentkategorie aus</string>
+    <string name="sb_new_segment_disabled_category">Category is disabled in settings. Enable category to submit.</string>
     <string name="sb_new_segment_title">Neues SponsorBlock Segment</string>
+    <string name="sb_new_segment_mark_time_as_question" formatted="false">Set %02d:%02d:%03d as the start or end of a new segment?</string>
     <string name="sb_new_segment_mark_start">Start</string>
     <string name="sb_new_segment_mark_end">Ende</string>
     <string name="sb_new_segment_now">Jetzt</string>
+    <string name="sb_new_segment_time_start">Time the segment begins at</string>
+    <string name="sb_new_segment_time_end">Time the segment ends at</string>
     <string name="sb_new_segment_confirm_title">Sind die Zeiten korrekt?</string>
+    <string name="sb_new_segment_confirm_content" formatted="false">The segment lasts from %02d:%02d to %02d:%02d (%d minutes %02d seconds)\nIs it ready to submit?</string>
+    <string name="sb_new_segment_start_is_before_end">Start must be before the end</string>
+    <string name="sb_new_segment_mark_locations_first">Mark two locations on the time bar first</string>
+    <string name="sb_new_segment_preview_segment_first">Preview the segment, and ensure it skips smoothly</string>
     <string name="sb_new_segment_edit_by_hand_title">Zeiten des Abschnitts manuell bearbeiten</string>
     <string name="sb_new_segment_edit_by_hand_content">Willst du die Start- oder Endzeiten für den Abschnitt bearbeiten?</string>
     <string name="sb_new_segment_edit_by_hand_parse_error">Ungültige Zeit angegeben</string>

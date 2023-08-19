@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">Включить специальные возможности для видеоплеера?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Управление изменено, поскольку служба специальных возможностей включена</string>
     <string name="microg_not_installed_notice">Пожалуйста, установите MicroG</string>
     <string name="microg_not_installed_warning">MicroG не установлен</string>
     <string name="microg_not_running_warning">MicroG не работает в фоновом режиме</string>
@@ -26,7 +24,7 @@
     <string name="revanced_custom_filter_title">Пользовательский фильтр</string>
     <string name="revanced_custom_playback_speeds_invalid">Недопустимые пользовательские скорости воспроизведения. Сброс к значениям по умолчанию</string>
     <string name="revanced_custom_playback_speeds_warning" formatted="false">Пользовательские скорости должны быть меньше %sx. Сброс к значениям по умолчанию</string>
-    <string name="revanced_custom_playback_speeds_summary">Добавить или изменить доступные скорости воспроизведения</string>
+    <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds</string>
     <string name="revanced_custom_playback_speeds_title">Пользовательские скорости</string>
     <string name="revanced_custom_seekbar_color_value_summary">Введите HEX код цвета прогресса воспроизведения</string>
     <string name="revanced_custom_seekbar_color_value_title">Пользовательское значение цвета</string>
@@ -461,6 +459,9 @@
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">Кнопка \"Подписаться\" отображена</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">Кнопка \"Подписаться\" скрыта</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">Подписаться</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Кнопка \"Трек\" отображена</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Кнопка \"Трек\" скрыта</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">Трек</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">Панель инструментов отображена</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">Панель инструментов скрыта</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Панель инструментов</string>
@@ -486,8 +487,8 @@
 - Покупки
 - Смотреть снова"</string>
     <string name="revanced_hide_suggestions_shelf_title">Секция рекомендаций</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"Скрывает заставку рекомендованного к воспроизведению следующим видео
-Известная проблема: автовоспроизведение не работает"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"Hides suggested video overlay to play next
+Known issue: Autoplay does not work"</string>
     <string name="revanced_hide_suggested_video_overlay_title">Заставка следующего видео</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Секции билетов отображены</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Секции билетов скрыты</string>
@@ -495,6 +496,9 @@
     <string name="revanced_hide_timed_reactions_summary_off">Временные реакции отображены</string>
     <string name="revanced_hide_timed_reactions_summary_on">Временные реакции скрыты</string>
     <string name="revanced_hide_timed_reactions_title">Временные реакции</string>
+    <string name="revanced_hide_reminder_button_summary_off">Кнопка \"Уведомить меня\" отображена</string>
+    <string name="revanced_hide_reminder_button_summary_on">Кнопка \"Уведомить меня\" скрыта</string>
+    <string name="revanced_hide_reminder_button_title">Уведомить меня</string>
     <string name="revanced_hide_time_stamp_summary_off">Время воспроизведения отображено</string>
     <string name="revanced_hide_time_stamp_summary_on">Время воспроизведения скрыто</string>
     <string name="revanced_hide_time_stamp_title">Время воспроизведения</string>
@@ -507,6 +511,26 @@
     <string name="revanced_hide_video_ads_summary_off">Реклама в видео отображена</string>
     <string name="revanced_hide_video_ads_summary_on">Реклама в видео скрыта</string>
     <string name="revanced_hide_video_ads_title">Реклама в видео</string>
+    <string name="revanced_whitelisting_added" formatted="false">Канал %s был добавлен в белый список %s</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">Не удалось добавить канал %s в белый список %s</string>
+    <string name="revanced_whitelisting_channel_name">Название канала</string>
+    <string name="revanced_whitelisting_empty">Нет каналов из белого списка</string>
+    <string name="revanced_whitelisting_excluded">Не добавлено в белый список</string>
+    <string name="revanced_whitelisting_fetch_failed">Не удалось получить данные о канале - полученное сообщение %d</string>
+    <string name="revanced_whitelisting_missing_api_key">Произошла ошибка HTTP 403 при получении идентификатора канала. Пожалуйста, проверьте ключ API в настройках белого списка</string>
+    <string name="revanced_whitelisting_included">Добавлено в белый список</string>
+    <string name="revanced_whitelisting_reboot">Перезапустите для применения настроек белого списка каналов</string>
+    <string name="revanced_whitelisting_removed" formatted="false">Канал %s удален из белого списка %s</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">Не удалось удалить канал %s из белого списка %s</string>
+    <string name="revanced_whitelisting_settings_summary">Проверить или удалить список каналов, добавленных в белый список</string>
+    <string name="revanced_whitelisting_settings_title">Настройки белого списка</string>
+    <string name="revanced_whitelisting_speed">Скорость видео</string>
+    <string name="revanced_whitelisting_speed_button">Скорость</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">Белый список каналов</string>
+    <string name="revanced_whitelist_api_key_title">Ключ API YouTube</string>
+    <string name="revanced_whitelist_api_key_summary">Ключ API Youtube v3 используется в белом списке</string>
     <string name="revanced_hide_view_products_summary_off">Баннер товаров отображен</string>
     <string name="revanced_hide_view_products_summary_on">Баннер товаров скрыт</string>
     <string name="revanced_hide_view_products_title">Баннер товаров</string>
@@ -537,6 +561,9 @@
     <string name="revanced_overlay_button_copy_video_url_timestamp_title">Копирование URL отметки времени</string>
     <string name="revanced_overlay_button_external_downloader_summary">Нажатие на кнопку запускает внешний загрузчик</string>
     <string name="revanced_overlay_button_external_downloader_title">Внешний загрузчик</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">Кнопка \"Белый список\" скрыта</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">Кнопка \"Белый список\" отображена</string>
+    <string name="revanced_overlay_button_whitelist_title">Белый список</string>
     <string name="revanced_overlay_button_speed_dialog_reset">Скорость воспроизведения сброшена (1.0x)</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Нажатие на кнопку открывает диалог выбора скорости воспроизведения
 Нажатие и удержание кнопки устанавливает скорость воспроизведения в 1.0x"</string>
@@ -589,6 +616,20 @@
     <string name="revanced_shorts_player_title">Плеер \"Shorts\"</string>
     <string name="revanced_show_fullscreen_title_summary">Известная проблема: заголовок исчезает при нажатии</string>
     <string name="revanced_show_fullscreen_title_title">Полноэкранный заголовок</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_title">Enable alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_summary_on">Youtube thumbnails replaced with alternative ones</string>
+    <string name="revanced_alt_thumbnail_summary_off">Original YouTube thumbnails shown</string>
+    <string name="revanced_alt_thumbnail_type_title">Video time to take the still from</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Beginning of video</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Middle of video</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">End of video</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Use fast alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Using medium quality stills. Thumbnails will load faster, but live streams, unreleased, or very old videos may show blank thumbnails</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Using high quality stills but will have more delay</string>
+    <string name="revanced_alt_thumbnail_about_title">About</string>
+    <string name="revanced_alt_thumbnail_about_summary">Alternative thumbnails are still images from the beginning/middle/end of each video. No external API is used, as these images are built into YouTube</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Video thumbnail settings</string>
     <string name="revanced_sponsorblock_settings_summary">Настройки блокировки спонсорской рекламы (SponsorBlock)</string>
     <string name="revanced_spoof_app_version_summary">"Подменяет версию клиента на старую
 
@@ -602,14 +643,30 @@
     <string name="revanced_spoof_app_version_target_entry_title">Целевая версия приложения при подмене</string>
     <string name="revanced_spoof_app_version_target_summary">Введите целевую версию приложения для подмены</string>
     <string name="revanced_spoof_app_version_target_title">Подмена версии приложения</string>
-    <string name="revanced_spoof_player_parameter_summary">"Подмена параметров плеера для предотвращения проблем с воспроизведением
+    <string name="revanced_spoof_player_parameter_type_summary_off">"Параметры плеера в \"Shorts\"
+
+Известные проблемы:
+- Видео может иметь проблемы с воспроизведением на 1:10
+- Логотип канала всегда скрыт
+- Загрузка видео не может работать
+- Конечные заставки всегда скрыты"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"Параметры плеера в режиме инкогнито
+
+Известные проблемы:
+- Фоновая подсветка может не работать
+- Клипы нормально не воспроизводятся
+- Загрузка видео может не работать
+- Покадровая лента всегда скрыта
+- Миниатюры прогресса скрыты"</string>
+    <string name="revanced_spoof_player_parameter_type_title">Тип подмены параметров плеера</string>
+    <string name="revanced_spoof_player_parameter_summary">Подмена параметров плеера для предотвращения проблем с воспроизведением
 
 Известные проблемы:
 • Режим фоновой подсветки может не работать
 • Клипы нормально не воспроизводятся
 • Загрузка видео может не работать
 • Покадровая лента в стиле \"старой кинопленки\" всегда скрыта
-• Миниатюры прогресса воспроизведения скрыты"</string>
+• Миниатюры прогресса воспроизведения скрыты</string>
     <string name="revanced_spoof_player_parameter_title">Подмена параметров плеера</string>
     <string name="revanced_swipe_controls">Жесты</string>
     <string name="revanced_swipe_magnitude_threshold_summary">Минимальная амплитуда распознаваемого как жест движения</string>
@@ -625,8 +682,6 @@
     <string name="revanced_switching_create_notification_title">Замена местами кнопок</string>
     <string name="revanced_tool_used">Использованные инструменты:</string>
     <string name="revanced_video">Видео</string>
-    <string name="pref_app_language_dialog_message">&lt;b&gt;%1$s&lt;/b&gt;&lt;br&gt;&lt;br&gt;Это изменит язык, используемый в YouTube, включая кнопки, текст и диалоги. Язык настроек ReVanced Extended не будет изменен</string>
-    <string name="pref_app_language_dialog_message_no_lang_name">Это изменит язык приложения, включая кнопки, текст и диалоги. Язык настроек ReVanced Extended не будет изменен</string>
     <string name="sb_enable_sb">SponsorBlock</string>
     <string name="sb_enable_sb_sum">SponsorBlock - коллективная система для пропуска раздражающих частей в видео YouTube</string>
     <string name="sb_appearance_category">Внешний вид</string>

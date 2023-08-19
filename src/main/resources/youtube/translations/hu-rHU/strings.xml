@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">Bekapcsolja a kisegítő lehetőségeket a videó lejátszóban?</string>
-    <string name="accessibility_settings_edu_opt_out_text">A vezérlők módosultak, mert be van kapcsolva egy kisegítő szolgáltatás.</string>
     <string name="microg_not_installed_notice">Kérjük telepítse a MicroG-t</string>
     <string name="microg_not_installed_warning">A MicroG nem található</string>
     <string name="microg_not_running_warning">A MicroG nem fut a háttérben</string>
@@ -26,14 +24,14 @@
     <string name="revanced_custom_filter_title">Egyedi szűrő engedélyezése</string>
     <string name="revanced_custom_playback_speeds_invalid">Hibás egyedi lejátszási sebesség. Állítsa vissza alapértelmezett értékekre.</string>
     <string name="revanced_custom_playback_speeds_warning" formatted="false">Az egyedi sebességeknek %sx alatt kell lennük. Állítsa vissza alapértelmezett értékekre.</string>
-    <string name="revanced_custom_playback_speeds_summary">Egyéni alapértelmezett lejátszási sebesség hozzáadása vagy a meglévők kezelése</string>
+    <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds</string>
     <string name="revanced_custom_playback_speeds_title">Az egyéni lejátszási sebességek szerkesztése</string>
-    <string name="revanced_custom_seekbar_color_value_summary">Írd be a lejátszó csúszka hex-kódját</string>
+    <string name="revanced_custom_seekbar_color_value_summary">Írd be a lejátszó csúszka hexa kódját</string>
     <string name="revanced_custom_seekbar_color_value_title">Egyéni lejátszó csúszka szín érték</string>
-    <string name="revanced_default_app_settings_summary">Az RVX külső böngészőben történő megnyitásához kapcsolja be a \'Támogatott linkek megnyitása\' opciót, és engedélyezze a támogatott webcímeket.</string>
-    <string name="revanced_default_app_settings_title">Alapértelmezett app beállítások megnyitása</string>
+    <string name="revanced_default_app_settings_summary">Az RVX külső böngészőben történő megnyitásához kapcsolja be a \'Támogatott linkek megnyitása\' opciót, és engedélyezze a támogatott webcímeket</string>
+    <string name="revanced_default_app_settings_title">Alapértelmezett beállítások megnyitása</string>
     <string name="revanced_default_playback_speed_title">Alapértelmezett lejátszási sebesség</string>
-    <string name="revanced_default_video_quality_mobile_title">Alapértelmezett videó minőség mobilhálozaton</string>
+    <string name="revanced_default_video_quality_mobile_title">Alapértelmezett videó minőség mobilhálózaton</string>
     <string name="revanced_default_video_quality_wifi_title">Alapértelmezett videó minőség Wi-Fi hálózaton</string>
     <string name="revanced_description_title">Leírás</string>
     <string name="revanced_disable_auto_captions_summary_off">A kényszerített automatikus feliratok engedélyezve vannak</string>
@@ -461,6 +459,9 @@ Csak a YouTube v18.24.37+ verzióban érhető el."</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">Feliratkozások gomb megjelenítve</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">Feliratkozások gomb elrejtve</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">Feliratkozások gomb elrejtése</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Pivot button is shown</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Pivot button is hidden</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">Pivot gomb elrejtése</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">Az eszköztár megjelenik</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">Az eszköztár el van rejtve</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Az eszköztár elrejtése</string>
@@ -486,8 +487,8 @@ Csak a YouTube v18.24.37+ verzióban érhető el."</string>
 - Vásárlás
 - Újbóli megtekintés"</string>
     <string name="revanced_hide_suggestions_shelf_title">Az ajánlatok polc elrejtése</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"A javasolt videófedvény elrejtése a következő videó lejátszásakor
-Ismert probléma: az automatikus lejátszás nem működik"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"Hides suggested video overlay to play next
+Known issue: Autoplay does not work"</string>
     <string name="revanced_hide_suggested_video_overlay_title">Javasolt videofedvény elrejtése</string>
     <string name="revanced_hide_ticket_shelf_summary_off">A jegy fülek megjelenítve</string>
     <string name="revanced_hide_ticket_shelf_summary_on">A jegy fülek elrejtve</string>
@@ -495,6 +496,9 @@ Ismert probléma: az automatikus lejátszás nem működik"</string>
     <string name="revanced_hide_timed_reactions_summary_off">Időzített reakciók megjelenítve</string>
     <string name="revanced_hide_timed_reactions_summary_on">Időzített reakciók elrejtve</string>
     <string name="revanced_hide_timed_reactions_title">Időzített reakciók elrejtése</string>
+    <string name="revanced_hide_reminder_button_summary_off">Notify me buttons are shown</string>
+    <string name="revanced_hide_reminder_button_summary_on">Notify me buttons are hidden</string>
+    <string name="revanced_hide_reminder_button_title">Hide notify me button</string>
     <string name="revanced_hide_time_stamp_summary_off">Az időtartam meg van jelenítve</string>
     <string name="revanced_hide_time_stamp_summary_on">Az időtartam el van rejtve</string>
     <string name="revanced_hide_time_stamp_title">Az időtartam elrejtése</string>
@@ -507,6 +511,26 @@ Ismert probléma: az automatikus lejátszás nem működik"</string>
     <string name="revanced_hide_video_ads_summary_off">A videóhirdetések megjelennek</string>
     <string name="revanced_hide_video_ads_summary_on">A videó hirdetések el vannak rejtve</string>
     <string name="revanced_hide_video_ads_title">A videó hirdetések elrejtése</string>
+    <string name="revanced_whitelisting_added" formatted="false">%s csatorna hozzá lett adva az %s engedélyezettekhez</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">Nem sikerült a %s csatornát hozzáadni a %s engedélyezettekhez</string>
+    <string name="revanced_whitelisting_channel_name">Csatorna neve</string>
+    <string name="revanced_whitelisting_empty">Nincsenek engedélyezett csatornák</string>
+    <string name="revanced_whitelisting_excluded">Nem lett hozzáadva az engedélyezettekhez</string>
+    <string name="revanced_whitelisting_fetch_failed">Nem sikerült lekérni a csatorna részleteit, hibaüzenet %d</string>
+    <string name="revanced_whitelisting_missing_api_key">HTTP 403-as hiba a csatorna azonosító betöltésekor. Ellenőrizze az API kulcsot az engedélyezett listánál</string>
+    <string name="revanced_whitelisting_included">Hozzáadva az engedélyezettekhez</string>
+    <string name="revanced_whitelisting_reboot">Indítsa újra az engedélyezett csatornák beállításához</string>
+    <string name="revanced_whitelisting_removed" formatted="false">%s csatorna el lett távolítva a %s engedélyezettekből</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">Nem sikerült a %s csatornát eltávolítani a %s engedélyezettekből</string>
+    <string name="revanced_whitelisting_settings_summary">Check or remove the list of channels added to the whitelist</string>
+    <string name="revanced_whitelisting_settings_title">Engedélyezett listák beállításai</string>
+    <string name="revanced_whitelisting_speed">Videó sebessége</string>
+    <string name="revanced_whitelisting_speed_button">Sebesség</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">Engedélyezett csatorna</string>
+    <string name="revanced_whitelist_api_key_title">YouTube API kulcs</string>
+    <string name="revanced_whitelist_api_key_summary">Youtube API Key v3 used by whitelist feature</string>
     <string name="revanced_hide_view_products_summary_off">Termékek megtekintése banner megjelenítve</string>
     <string name="revanced_hide_view_products_summary_on">Termékek megtekintése banner elrejtve</string>
     <string name="revanced_hide_view_products_title">A termékmegtekintési banner elrejtése</string>
@@ -537,6 +561,9 @@ Tartsa nyomva a videó időbélyegének másolásához"</string>
     <string name="revanced_overlay_button_copy_video_url_timestamp_title">A videó URL másolása időbélyeggel gomb megjelenítése</string>
     <string name="revanced_overlay_button_external_downloader_summary">Érintse meg a külső videóletöltő indításához</string>
     <string name="revanced_overlay_button_external_downloader_title">A külső letöltés gomb megjelenítése</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">Engedélyezett csatornák gomb rejtve van</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">Engedélyezett csatornák gomb megjelenítve</string>
+    <string name="revanced_overlay_button_whitelist_title">Engedélyezettek mutatása</string>
     <string name="revanced_overlay_button_speed_dialog_reset">A lejátszási sebesség visszaállítva (1.0x)</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Érintse meg a sebesség ablak megnyitásához
 Tartsa nyomva a sebesség alaphelyzetbe állításához"</string>
@@ -589,6 +616,20 @@ Mivel ezek a beállítások eléggé elavultak, lehet, hogy nem érvényesek"</s
     <string name="revanced_shorts_player_title">Shorts lejátszó</string>
     <string name="revanced_show_fullscreen_title_summary">Ismert probléma: A cím eltűnik, ha rákattintanak</string>
     <string name="revanced_show_fullscreen_title_title">Teljes képernyős cím megjelenítése</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_title">Enable alternative thumbnails</string>
+    <string name="revanced_alt_thumbnail_summary_on">Youtube thumbnails replaced with alternative ones</string>
+    <string name="revanced_alt_thumbnail_summary_off">Original YouTube thumbnails shown</string>
+    <string name="revanced_alt_thumbnail_type_title">Video time to take the still from</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Videó kezdete</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Videó közepe</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">Videó vége</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Gyors alternatív bélyegképek használata</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Közepes minőségű állóképek használata. Az indexképek gyorsabban töltődnek be, de az élő közvetítések, a kiadatlan vagy nagyon régi videók üres indexképeket jeleníthetnek meg</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Kiváló minőségű állóképek használata, de több késéssel</string>
+    <string name="revanced_alt_thumbnail_about_title">About</string>
+    <string name="revanced_alt_thumbnail_about_summary">Alternative thumbnails are still images from the beginning/middle/end of each video. No external API is used, as these images are built into YouTube</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Bélyegkép beállítások</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock-hoz kapcsolódó beállítások</string>
     <string name="revanced_spoof_app_version_summary">"A kliens verziójának hamisítása a régi verzióra
 
@@ -603,14 +644,30 @@ Ha később kikapcsolja, a régi felhasználói felület megmaradhat az alkalmaz
     <string name="revanced_spoof_app_version_target_entry_title">Hamis alkalmazásverzió-cél</string>
     <string name="revanced_spoof_app_version_target_summary">Írja be a hamis alkalmazásverzió célját</string>
     <string name="revanced_spoof_app_version_target_title">Szerkessze a hamis alkalmazás verzióját</string>
-    <string name="revanced_spoof_player_parameter_summary">"Meghamisítja a lejátszó paramétereit, hogy megakadályozza a lejátszási problémákat
+    <string name="revanced_spoof_player_parameter_type_summary_off">"Shorts lejátszó paraméterei
+
+Ismert hibák
+- Videó lejátszási problémák 1:10-nél
+- Csatorna vízjel mindig rejtve van
+- Vidó letöltés nem működhet
+- Záróképrnyő kártyák mindeg rejtve vannak"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"Inkognító módban
+
+Ismert hibák
+- Lehetséges, hogy a Mozifilmes világítás nem működik
+- A klipet nem lehet normálisan lejátszani
+- Lehetséges, hogy a videók letöltése nem működik
+- A filmszalag fedőrétege mindig rejtett
+- A keresősáv bélyegképei rejtettek"</string>
+    <string name="revanced_spoof_player_parameter_type_title">Lejátszó paraméter hamisítása</string>
+    <string name="revanced_spoof_player_parameter_summary">Meghamisítja a lejátszó paramétereit, hogy megakadályozza a lejátszási problémákat
 
 Ismert problémák
 • Előfordulhat, hogy a Mozifilmes világítás nem működik
 • A klipet nem lehet normálisan lejátszani
 • Előfordulhat, hogy a videók letöltése nem működik
 • A filmszalag fedőrétegei mindig rejtettek
-• A bélyegképek haladási sávja el van rejtve"</string>
+• A bélyegképek haladási sávja el van rejtve</string>
     <string name="revanced_spoof_player_parameter_title">Lejátszó paraméter hamisítása</string>
     <string name="revanced_swipe_controls">Csúsztatásos vezérlők</string>
     <string name="revanced_swipe_magnitude_threshold_summary">A csúsztatás küszöbértékének mértéke</string>
@@ -626,8 +683,6 @@ Ismert problémák
     <string name="revanced_switching_create_notification_title">A létrehozás gomb felcserélése az értesítések gombbal</string>
     <string name="revanced_tool_used">Használt eszköz</string>
     <string name="revanced_video">Videó</string>
-    <string name="pref_app_language_dialog_message">&lt;b&gt;%1$s&lt;/b&gt;&lt;br&gt;&lt;br&gt;Ez megváltoztatja a YouTube-on használt nyelvet, beleértve a gombokat, a szövegeket és a párbeszédpaneleket, de nem módosítja a ReVanced Extended beállításainak nyelvét.</string>
-    <string name="pref_app_language_dialog_message_no_lang_name">Ez megváltoztatja az alkalmazás nyelvét, beleértve a gombokat, a szövegeket és a párbeszédpaneleket, de nem módosítja a ReVanced Extended beállításainak nyelvét.</string>
     <string name="sb_enable_sb">SponsorBlock engedélyezése</string>
     <string name="sb_enable_sb_sum">A SponsorBlock egy közönségi rendszer a zavaró részek átugrására a YouTube videókon</string>
     <string name="sb_appearance_category">Megjelenés</string>
