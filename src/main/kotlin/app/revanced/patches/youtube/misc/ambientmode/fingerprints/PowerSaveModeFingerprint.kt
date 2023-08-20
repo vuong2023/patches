@@ -10,16 +10,16 @@ object PowerSaveModeFingerprint : MethodFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L"),
     opcodes = listOf(
-        Opcode.IGET_OBJECT,
+        Opcode.INVOKE_STATIC,
+        Opcode.RETURN_VOID,
         Opcode.CHECK_CAST,
-        Opcode.CHECK_CAST,
-        Opcode.IGET_OBJECT,
         Opcode.INVOKE_VIRTUAL,
         Opcode.MOVE_RESULT,
         Opcode.INVOKE_STATIC,
         Opcode.MOVE_RESULT_OBJECT,
-        Opcode.INVOKE_VIRTUAL,
-        Opcode.RETURN_VOID
+        Opcode.IGET_OBJECT,
+        Opcode.CHECK_CAST,
+        Opcode.IGET_OBJECT
     ),
     customFingerprint = { methodDef, _ -> methodDef.name == "accept" }
 )

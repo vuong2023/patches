@@ -28,7 +28,6 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
 import com.android.tools.smali.dexlib2.iface.reference.Reference
 
 @DependsOn([SharedResourceIdPatch::class])
@@ -45,16 +44,8 @@ class PlayerControlsPatch : BytecodePatch(
 
         fun MutableMethod.findReference(targetString: String): Reference {
             val targetIndex = getStringIndex(targetString) + 2
-            val targetRegister = getInstruction<Instruction35c>(targetIndex).registerD
 
-            val instructions = implementation!!.instructions
-            for ((index, instruction) in instructions.withIndex()) {
-                if (instruction.opcode != Opcode.IGET_BOOLEAN) continue
-
-                if (getInstruction<TwoRegisterInstruction>(index).registerA == targetRegister)
-                    return getInstruction<ReferenceInstruction>(index).reference
-            }
-            throw PatchResultError("Reference not found: $targetString")
+            return getInstruction<ReferenceInstruction>(targetIndex).reference
         }
 
         PlayerControlsVisibilityModelFingerprint.result?.classDef?.let { classDef ->

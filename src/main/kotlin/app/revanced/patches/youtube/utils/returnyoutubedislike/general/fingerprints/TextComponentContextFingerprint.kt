@@ -13,6 +13,7 @@ object TextComponentContextFingerprint : MethodFingerprint(
         Opcode.IGET_OBJECT, // conversion context
         Opcode.IGET_OBJECT,
         Opcode.IGET_OBJECT,
+        Opcode.IGET_OBJECT,
         Opcode.IGET_BOOLEAN
     )
 )

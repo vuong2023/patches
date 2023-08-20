@@ -37,7 +37,7 @@ class PiPNotificationPatch : BytecodePatch(
             fingerprint.result?.let {
                 it.mutableMethod.apply {
                     addInstruction(
-                        it.scanResult.patternScanResult!!.endIndex - 4,
+                        it.scanResult.patternScanResult!!.endIndex - 5,
                         "return-void"
                     )
                 }

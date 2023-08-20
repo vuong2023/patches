@@ -10,12 +10,15 @@ object PrimaryPiPFingerprint : MethodFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L"),
     opcodes = listOf(
-        Opcode.IGET_OBJECT,
+        null,
         Opcode.CHECK_CAST,
         Opcode.INVOKE_VIRTUAL,
+        Opcode.IGET_OBJECT,  // injection point
         Opcode.CHECK_CAST,
         Opcode.INVOKE_VIRTUAL,
-        Opcode.IPUT_BOOLEAN
+        null,  // I used these null property to change the
+        null,  // injection point. It is not recommended
+        null,  // but I am too lazy to update PiPNotificationPatch .-.
     ),
     strings = listOf("honeycomb.Shell\$HomeActivity")
 )

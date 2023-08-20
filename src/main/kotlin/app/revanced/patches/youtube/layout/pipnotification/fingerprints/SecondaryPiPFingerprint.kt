@@ -10,11 +10,12 @@ object SecondaryPiPFingerprint : MethodFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L"),
     opcodes = listOf(
-        null,
+        null,  // injection point
         Opcode.CHECK_CAST,
         Opcode.IGET_OBJECT,
         Opcode.IF_EQZ,
-        Opcode.INVOKE_VIRTUAL
+        Opcode.INVOKE_VIRTUAL,
+        Opcode.MOVE_RESULT_OBJECT
     ),
     strings = listOf("honeycomb.Shell\$HomeActivity")
 )

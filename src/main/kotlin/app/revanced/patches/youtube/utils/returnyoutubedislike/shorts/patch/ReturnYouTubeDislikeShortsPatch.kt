@@ -22,7 +22,7 @@ class ReturnYouTubeDislikeShortsPatch : BytecodePatch(
 
                 // If the field is true, the TextView is for a dislike button.
                 val isDisLikesBooleanReference =
-                    getInstruction<ReferenceInstruction>(patternResult.endIndex).reference
+                    getInstruction<ReferenceInstruction>(patternResult.endIndex - 1).reference
 
                 val textViewFieldReference = // Like/Dislike button TextView field
                     getInstruction<ReferenceInstruction>(patternResult.endIndex - 2).reference
