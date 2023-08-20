@@ -12,7 +12,7 @@ import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
 import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 
-@Patch
+@Patch(false)
 @Name("Optimize resource")
 @Description("Removes duplicate resources from YouTube.")
 @DependsOn(
