@@ -1,3 +1,15 @@
+# [2.189.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.188.1...v2.189.0) (2023-08-23)
+
+
+### Bug Fixes
+
+* **youtube/alternative-video-thumbnails:** Only can be included for Youtube ([7aaba99](https://github.com/YT-Advanced/ReX-patches/commit/7aaba99578a0d99233ee9fc8181663d519cb1c5a))
+
+
+### Features
+
+* **youtube:** Add support `v18.32.36`, `v18.32.39` ([e028129](https://github.com/YT-Advanced/ReX-patches/commit/e0281295854b10a69370b8e51d30c837cb80f802))
+
 ## [2.188.2](https://github.com/YT-Advanced/ReX-patches/compare/v2.188.1...v2.188.2) (2023-08-19)
 
 
