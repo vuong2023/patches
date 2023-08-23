@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">已知問題：可能無法在橫向模式或高 dpi 設備上運作</string>
     <string name="revanced_hide_account_menu_title">隱藏帳戶選單</string>
     <string name="revanced_hide_account_menu_filter_strings_title">編輯帳號選單篩選</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filter component names by line-seperated</string>
     <string name="revanced_hide_album_card_summary_off">專輯卡已顯示</string>
     <string name="revanced_hide_album_card_summary_on">專輯卡已隱藏</string>
     <string name="revanced_hide_album_card_title">隱藏專輯卡</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">瀏覽商店按鈕已顯示</string>
     <string name="revanced_hide_browse_store_button_summary_on">瀏覽商店按鈕已隱藏</string>
     <string name="revanced_hide_browse_store_button_title">隱藏瀏覽商店按鈕</string>
+    <string name="revanced_hide_action_buttons_summary_off">Action button is shown</string>
+    <string name="revanced_hide_action_buttons_summary_on">Action button is hidden</string>
+    <string name="revanced_hide_action_buttons_title">Hide Action button</string>
     <string name="revanced_hide_button_create_clip_summary_off">剪輯片段按鈕已顯示</string>
     <string name="revanced_hide_button_create_clip_summary_on">剪輯片段按鈕已隱藏</string>
     <string name="revanced_hide_button_create_clip_title">隱藏剪輯片段按鈕</string>
@@ -465,8 +469,8 @@
     <string name="revanced_hide_shorts_player_toolbar_summary_off">顯示工具列</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">隱藏工具列</string>
     <string name="revanced_hide_shorts_player_toolbar_title">隱藏工具列</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Shorts 功能列已顯示</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Shorts 功能列已隱藏</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelves are shown</string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelves are hidden</string>
     <string name="revanced_hide_shorts_shelf_title">Shorts 功能列</string>
     <string name="revanced_hide_snack_bar_summary_off">簡短回饋 (snackbar) 已顯示</string>
     <string name="revanced_hide_snack_bar_summary_on">簡短回饋 (snackbar) 已隱藏</string>
@@ -628,7 +632,7 @@
     <string name="revanced_alt_thumbnail_fast_quality_title">使用快速的方式產生影片縮圖</string>
     <string name="revanced_alt_thumbnail_fast_quality_summary_on">製作中等畫質縮圖. 縮圖會快速地被製作出來, 但直播, 未發布影片(直播) 或非常舊的影片可能會顯示空白的縮圖.</string>
     <string name="revanced_alt_thumbnail_fast_quality_summary_off">製作高畫質的縮圖, 但縮圖會延遲顯示</string>
-    <string name="revanced_alt_thumbnail_about_title">關於 --唐懂翻譯</string>
+    <string name="revanced_alt_thumbnail_about_title">關於</string>
     <string name="revanced_alt_thumbnail_about_summary">替代縮圖是從每個影片的開頭/中間/結尾所擷取的圖片. 所以並未使用到外部的API.</string>
     <string name="revanced_alt_thumbnails_preference_screen_summary">影片縮圖設定</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock 相關設定</string>

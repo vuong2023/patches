@@ -24,7 +24,7 @@
     <string name="revanced_custom_filter_title">Özel filtreyi etkinleştir</string>
     <string name="revanced_custom_playback_speeds_invalid">Geçersiz özel oynatma hızları. Varsayılan değerlere sıfırlayın.</string>
     <string name="revanced_custom_playback_speeds_warning" formatted="false">Özel hızlar %sx\'den kısa olmalı. Varsayılan değerlere sıfırlayın.</string>
-    <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds</string>
+    <string name="revanced_custom_playback_speeds_summary">Mevcut oynatma hızlarını ekleyin veya değiştirin</string>
     <string name="revanced_custom_playback_speeds_title">Özel oynatma hızlarını düzenle</string>
     <string name="revanced_custom_seekbar_color_value_summary">Karalık modda kullanılacak zaman çubuğunun rengi</string>
     <string name="revanced_custom_seekbar_color_value_title">Özel zaman çubuğu renk değeri</string>
@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Bilinen sorun: Yatay modda veya yüksek dpi\'lı cihazlarda çalışmayabilir</string>
     <string name="revanced_hide_account_menu_title">Hesap menüsünü gizle</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Hesap menüsü filtresini düzenle</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Bileşenleri satırla ayrılmış isimlere göre filtreleyin</string>
     <string name="revanced_hide_album_card_summary_off">Gizlenmiyor</string>
     <string name="revanced_hide_album_card_summary_on">Gizleniyor</string>
     <string name="revanced_hide_album_card_title">Albüm kartlarını gizle</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Gizlenmiyor</string>
     <string name="revanced_hide_browse_store_button_summary_on">Gizleniyor</string>
     <string name="revanced_hide_browse_store_button_title">Mağazaya gözat düğmesini gizle</string>
+    <string name="revanced_hide_action_buttons_summary_off">Gizlenmiyor</string>
+    <string name="revanced_hide_action_buttons_summary_on">Gizleniyor</string>
+    <string name="revanced_hide_action_buttons_title">Aksiyon düğmesini gizle</string>
     <string name="revanced_hide_button_create_clip_summary_off">Gizlenmiyor</string>
     <string name="revanced_hide_button_create_clip_summary_on">Gizleniyor</string>
     <string name="revanced_hide_button_create_clip_title">Klip butonunu gizle</string>
@@ -486,8 +490,8 @@
 -Alışveriş
 -Tekrar izleyin"</string>
     <string name="revanced_hide_suggestions_shelf_title">Öneriler rafını gizle</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"Hides suggested video overlay to play next
-Known issue: Autoplay does not work"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"Sonraki oynatmak için önerilen video yerleşimini gizler
+Bilinen sorun: otomatik oynatma çalışmıyor"</string>
     <string name="revanced_hide_suggested_video_overlay_title">Önerilen video yerleşimini gizle</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Gizlenmiyor</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Gizleniyor</string>
@@ -614,20 +618,20 @@ Bu ayar oldukça eski olduğu için geçerli olmayabilir"</string>
     <string name="revanced_shorts_player_title">Shorts oynatıcı</string>
     <string name="revanced_show_fullscreen_title_summary">Bilinen sorun: Tıklandığında başlık kayboluyor</string>
     <string name="revanced_show_fullscreen_title_title">Tam ekran başlığını göster</string>
-    <string name="revanced_alt_thumbnails_preference_screen_title">Alternative thumbnails</string>
-    <string name="revanced_alt_thumbnail_title">Enable alternative thumbnails</string>
-    <string name="revanced_alt_thumbnail_summary_on">Youtube thumbnails replaced with alternative ones</string>
-    <string name="revanced_alt_thumbnail_summary_off">Original YouTube thumbnails shown</string>
-    <string name="revanced_alt_thumbnail_type_title">Video time to take the still from</string>
-    <string name="revanced_alt_thumbnail_type_entry_1">Beginning of video</string>
-    <string name="revanced_alt_thumbnail_type_entry_2">Middle of video</string>
-    <string name="revanced_alt_thumbnail_type_entry_3">End of video</string>
-    <string name="revanced_alt_thumbnail_fast_quality_title">Use fast alternative thumbnails</string>
-    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Using medium quality stills. Thumbnails will load faster, but live streams, unreleased, or very old videos may show blank thumbnails</string>
-    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Using high quality stills but will have more delay</string>
-    <string name="revanced_alt_thumbnail_about_title">About</string>
-    <string name="revanced_alt_thumbnail_about_summary">Alternative thumbnails are still images from the beginning/middle/end of each video. No external API is used, as these images are built into YouTube</string>
-    <string name="revanced_alt_thumbnails_preference_screen_summary">Video thumbnail settings</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Alternatif kapak fotoğrafları</string>
+    <string name="revanced_alt_thumbnail_title">Alternatif kapak fotoğraflarını devre dışı bırak</string>
+    <string name="revanced_alt_thumbnail_summary_on">Youtube küçük resimleri alternatifleriyle değiştirildi</string>
+    <string name="revanced_alt_thumbnail_summary_off">Orijinal YouTube küçük resimleri gösteriliyor</string>
+    <string name="revanced_alt_thumbnail_type_title">Fotoğrafın çekileceği video süresi</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Videonun başlangıcı</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Videonun ortası</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">Videonun bitişi</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Hızlı alternatif kapak fotoğraflarını kullan</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Orta kalitede fotoğraflar kullanmak. Küçük resimler daha hızlı yüklenir ancak canlı yayınlar, yayınlanmamış veya çok eski videolar boş küçük resimler gösterebilir</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Yüksek kaliteli fotoğraflar kullanılıyor ancak daha fazla gecikme olacak</string>
+    <string name="revanced_alt_thumbnail_about_title">Hakkında</string>
+    <string name="revanced_alt_thumbnail_about_summary">Alternatif küçük resimler, her videonun başında/ortasında/sonunda yer alan durağan görüntülerdir. Bu görüntüler YouTube\'da yerleşik olduğundan harici API ile kullanılmaz</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Video kapak fotoğrafı ayarları</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock ilgili ayarları</string>
     <string name="revanced_spoof_app_version_summary">"İstemci sürümünü eski sürüme uydurma
 
@@ -773,7 +777,7 @@ Bir örnek görmek için buraya dokunun</string>
     <string name="sb_skip_automatically_once">Bir kez otomatik atla</string>
     <string name="sb_skip_showbutton">Atlamak için buton göster</string>
     <string name="sb_skip_seekbaronly">Zaman çubuğunda Göster</string>
-    <string name="sb_skip_ignore">Kapalı</string>
+    <string name="sb_skip_ignore">Kapat</string>
     <string name="sb_submit_failed_invalid" formatted="false">Kısım gönderilemiyor: %s</string>
     <string name="sb_submit_failed_timeout">Kısımlar gönderilemedi (API zamqn aşımına uğradı)</string>
     <string name="sb_submit_failed_unknown_error" formatted="false">Kısımlar gönderilemedi (durum: %d %s)</string>
@@ -833,7 +837,7 @@ Bir örnek görmek için buraya dokunun</string>
     <string name="sb_about_made_by">Entegrasyonu yapan: JakubWeg</string>
     <string name="seconds">saniye</string>
     <string name="settings_export_failed">Ayarlar dışarı aktarılamadı</string>
-    <string name="settings_export_successful">Ayarların içe aktarılması tamamlandı</string>
+    <string name="settings_export_successful">Ayarların dışa aktarılması tamamlandı</string>
     <string name="settings_ie">Ayarları içe - dışa aktar</string>
     <string name="settings_import_failed">Ayarlar içeri aktarılamadı</string>
     <string name="settings_import_successful">Ayarların içe aktarılması tamamlandı</string>

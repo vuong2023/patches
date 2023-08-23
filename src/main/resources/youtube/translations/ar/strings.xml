@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">المشكلة المعروفة: قد لا تعمل في الوضع الأفقي أو على أجهزة dpi عالية</string>
     <string name="revanced_hide_account_menu_title">إخفاء قائمة الحساب</string>
     <string name="revanced_hide_account_menu_filter_strings_title">تعديل فلتر قائمة الحساب</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">تصفية أسماء المكونات عن طريق مفصولة بأسطر</string>
     <string name="revanced_hide_album_card_summary_off">يتم عرض بطاقات الألبوم</string>
     <string name="revanced_hide_album_card_summary_on">تم إخفاء بطاقات الألبوم</string>
     <string name="revanced_hide_album_card_title">إخفاء بطاقات الألبوم</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">يتم عرض زر تصفح المتجر</string>
     <string name="revanced_hide_browse_store_button_summary_on">تم إخفاء زر تصفح المتجر</string>
     <string name="revanced_hide_browse_store_button_title">إخفاء زر تصفح المتجر</string>
+    <string name="revanced_hide_action_buttons_summary_off">يتم عرض زر الإجراء</string>
+    <string name="revanced_hide_action_buttons_summary_on">تم إخفاء زر الإجراء</string>
+    <string name="revanced_hide_action_buttons_title">إخفاء زر الإجراء</string>
     <string name="revanced_hide_button_create_clip_summary_off">يتم عرض زر إنشاء مقطع</string>
     <string name="revanced_hide_button_create_clip_summary_on">تم إخفاء زر إنشاء مقطع</string>
     <string name="revanced_hide_button_create_clip_title">إخفاء زر إنشاء مقطع</string>
@@ -459,9 +463,9 @@
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">يتم عرض زر الاشتراكات</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">تم إخفاء زر الاشتراكات</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">إخفاء زر الاشتراكات</string>
-    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Pivot button is shown</string>
-    <string name="revanced_hide_shorts_player_pivot_button_summary_on">Pivot button is hidden</string>
-    <string name="revanced_hide_shorts_player_pivot_button_title">Hide pivot button</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">يتم عرض زر المحور</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">تم إخفاء زر المحور</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">إخفاء زر المحور</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">يتم عرض شريط الأدوات</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">تم إخفاء شريط الأدوات</string>
     <string name="revanced_hide_shorts_player_toolbar_title">إخفاء شريط الأدوات</string>

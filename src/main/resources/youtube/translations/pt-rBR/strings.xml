@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Problema conhecido: Pode não funcionar no modo paisagem ou em dispositivos com DPI elevado</string>
     <string name="revanced_hide_account_menu_title">Ocultar menu de contas</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Editar filtro do menu da conta</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filtrar nomes de componentes separado por linha</string>
     <string name="revanced_hide_album_card_summary_off">Cartões de álbum serão mostrados</string>
     <string name="revanced_hide_album_card_summary_on">Cartões de álbum estão ocultos</string>
     <string name="revanced_hide_album_card_title">Ocultar cartões de álbum</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Botão da navegação da loja é exibido</string>
     <string name="revanced_hide_browse_store_button_summary_on">O botão navegar na loja está oculto</string>
     <string name="revanced_hide_browse_store_button_title">Ocultar botão de navegar na loja</string>
+    <string name="revanced_hide_action_buttons_summary_off">Botão de ação é mostrado</string>
+    <string name="revanced_hide_action_buttons_summary_on">Botão de ação está oculto</string>
+    <string name="revanced_hide_action_buttons_title">Ocultar botão de ação</string>
     <string name="revanced_hide_button_create_clip_summary_off">Botão clipe será mostrado</string>
     <string name="revanced_hide_button_create_clip_summary_on">Botão clipe está oculto</string>
     <string name="revanced_hide_button_create_clip_title">Ocultar botão clipe</string>
@@ -465,8 +469,8 @@ Disponível apenas no YouTube v18.24.37+"</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">A barra de ferramentas será exibida</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">A barra de ferramentas está oculta</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Ocultar barra de ferramentas</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Os painéis do Shorts serão mostrados</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Os painéis do Shorts estão ocultos</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Prateleiras de Shorts são mostradas</string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Prateleiras de Shorts estão ocultas</string>
     <string name="revanced_hide_shorts_shelf_title">Ocultar painel do Shorts</string>
     <string name="revanced_hide_snack_bar_summary_off">Snack-bar é mostrado</string>
     <string name="revanced_hide_snack_bar_summary_on">Snack-bar está oculta</string>

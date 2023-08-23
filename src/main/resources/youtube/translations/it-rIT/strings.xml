@@ -17,7 +17,7 @@
     <string name="revanced_change_homepage_title">Cambia la pagina iniziale</string>
     <string name="revanced_comments_title">Commenti</string>
     <string name="revanced_copy_video_timestamp_success">Marca temporale copiato negli appunti</string>
-    <string name="revanced_custom_filter_strings_summary">Filtra i componenti per nomi separati da righe</string>
+    <string name="revanced_custom_filter_strings_summary">Filtra i componenti per nomi separati da virgole</string>
     <string name="revanced_custom_filter_strings_title">Modifica il filtro personalizzato</string>
     <string name="revanced_custom_filter_summary_off">Il filtro personalizzato è disattivato</string>
     <string name="revanced_custom_filter_summary_on">Il filtro personalizzato è attivato</string>
@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Problema noto: in modalità orizzontale o su dispositivi ad alta risoluzione potrebbe non funzionare</string>
     <string name="revanced_hide_account_menu_title">Nascondi i menù dell\'account</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Modifica il filtro dei menù dell\'account</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filtra i componenti per nomi separati da righe</string>
     <string name="revanced_hide_album_card_summary_off">Le schede degli album sono visibili</string>
     <string name="revanced_hide_album_card_summary_on">Le schede degli album sono nascoste</string>
     <string name="revanced_hide_album_card_title">Nascondi le schede degli album</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Il pulsante Esplora Negozio è visibile</string>
     <string name="revanced_hide_browse_store_button_summary_on">Il pulsante Esplora Negozio è nascosto</string>
     <string name="revanced_hide_browse_store_button_title">Nascondi il pulsante Esplora Negozio</string>
+    <string name="revanced_hide_action_buttons_summary_off">Il pulsante Azione è visibile</string>
+    <string name="revanced_hide_action_buttons_summary_on">Il pulsante Azione è nascosto</string>
+    <string name="revanced_hide_action_buttons_title">Nascondi il pulsante Azione</string>
     <string name="revanced_hide_button_create_clip_summary_off">Il pulsante Clip è visibile</string>
     <string name="revanced_hide_button_create_clip_summary_on">Il pulsante Clip è nascosto</string>
     <string name="revanced_hide_button_create_clip_title">Nascondi il pulsante Clip</string>
@@ -622,9 +626,9 @@ Dal momento che questa opzione è abbastanza obsoleta, potrebbe risultare non pi
     <string name="revanced_alt_thumbnail_summary_on">I thumbnails di YouTube sono sostituiti con quelli alternativi</string>
     <string name="revanced_alt_thumbnail_summary_off">I thumbnails originali di YouTube sono visibili</string>
     <string name="revanced_alt_thumbnail_type_title">Il tempo del video da cui prendere il fotogramma</string>
-    <string name="revanced_alt_thumbnail_type_entry_1">L\'inizio del video</string>
-    <string name="revanced_alt_thumbnail_type_entry_2">La metà del video.</string>
-    <string name="revanced_alt_thumbnail_type_entry_3">La fine del video</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Inizio video</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Metà video</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">Fine video</string>
     <string name="revanced_alt_thumbnail_fast_quality_title">Utilizza thumbnails alternativi rapide</string>
     <string name="revanced_alt_thumbnail_fast_quality_summary_on">Uso di fotogrammi di media qualità. I thumbnails verranno caricati più velocemente, ma i video dal vivo, non rilasciati o molto vecchi potrebbero mostrare thumbnails vuoti</string>
     <string name="revanced_alt_thumbnail_fast_quality_summary_off">Uso di fotogrammi di alta qualità, ma avrà più ritardo</string>

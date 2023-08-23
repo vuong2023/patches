@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_settings_edu_opt_in_text">¿Activar los controles de accesibilidad para el reproductor de vídeo?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Sus controles se modifican porque un servicio de accesibilidad está activado.</string>
     <string name="microg_not_installed_notice">Por favor, instale MicroG</string>
     <string name="microg_not_installed_warning">MicroG no se encuentra</string>
     <string name="microg_not_running_warning">MicroG no se ejecuta en segundo plano</string>
@@ -51,9 +49,9 @@
     <string name="revanced_disable_haptic_feedback_seek_summary_off">La vibración al desplazarse está activada</string>
     <string name="revanced_disable_haptic_feedback_seek_summary_on">La vibración al desplazarse está desactivada</string>
     <string name="revanced_disable_haptic_feedback_seek_title">Desactivar vibración al desplazarse</string>
-    <string name="revanced_disable_haptic_feedback_zoom_summary_off">La vibración al hacer zoom está activada</string>
-    <string name="revanced_disable_haptic_feedback_zoom_summary_on">La vibración al hacer zoom está desactivada</string>
-    <string name="revanced_disable_haptic_feedback_zoom_title">Desactivar vibración al hacer zoom</string>
+    <string name="revanced_disable_haptic_feedback_zoom_summary_off">La vibración al hacer Zoom está activada</string>
+    <string name="revanced_disable_haptic_feedback_zoom_summary_on">La vibración al hacer Zoom está desactivada</string>
+    <string name="revanced_disable_haptic_feedback_zoom_title">Desactivar vibración al hacer Zoom</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">El brillo HDR automático está activado</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">El brillo HDR automático está desactivado</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Desactivar brillo HDR automático</string>
@@ -165,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Problema conocido: Puede que no funcione en modo horizontal o en dispositivos con dpi altos</string>
     <string name="revanced_hide_account_menu_title">Ocultar menú de cuenta</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Editar filtro de menú de cuenta</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filtrar nombres de componentes separados por líneas</string>
     <string name="revanced_hide_album_card_summary_off">Las tarjetas del álbum están visibles</string>
     <string name="revanced_hide_album_card_summary_on">Las tarjetas del álbum están ocultas</string>
     <string name="revanced_hide_album_card_title">Ocultar tarjetas del álbum</string>
@@ -183,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">El botón Ver Tienda está visible</string>
     <string name="revanced_hide_browse_store_button_summary_on">El botón Ver Tienda está oculto</string>
     <string name="revanced_hide_browse_store_button_title">Ocultar botón Ver Tienda</string>
+    <string name="revanced_hide_action_buttons_summary_off">Se muestra el botón de acción</string>
+    <string name="revanced_hide_action_buttons_summary_on">El botón de acción está oculto</string>
+    <string name="revanced_hide_action_buttons_title">Ocultar botón de acción</string>
     <string name="revanced_hide_button_create_clip_summary_off">El botón Clip está visible</string>
     <string name="revanced_hide_button_create_clip_summary_on">El botón Clip está oculto</string>
     <string name="revanced_hide_button_create_clip_title">Ocultar botón Clip</string>
@@ -461,11 +463,14 @@ Solo disponible en YouTube v18.24.37+"</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">El botón Suscripciones está visible</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">El botón Suscripciones está oculto</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">Ocultar botón Suscripciones</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">Se muestra el botón de pivote</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">El botón de pivote está oculto</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">Ocultar botón pivote</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">La barra de herramientas está visible</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">La barra de herramientas está oculta</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Ocultar barra de herramientas</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Los estantes de Shorts están visibles</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Los estantes de Shorts están ocultos</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Se muestran los estantes de shorts </string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Los estantes de shorts están ocultos</string>
     <string name="revanced_hide_shorts_shelf_title">Ocultar estante de Shorts</string>
     <string name="revanced_hide_snack_bar_summary_off">La barra de snack está visible</string>
     <string name="revanced_hide_snack_bar_summary_on">La barra de snack está oculta</string>
@@ -486,8 +491,8 @@ Solo disponible en YouTube v18.24.37+"</string>
 - Compras
 - Volver a ver"</string>
     <string name="revanced_hide_suggestions_shelf_title">Ocultar estantería de sugerencias</string>
-    <string name="revanced_hide_suggested_video_overlay_summary">"Oculta la superposición de vídeo sugerido para reproducir a continuación
-Problema conocido: la reproducción automática no funciona"</string>
+    <string name="revanced_hide_suggested_video_overlay_summary">"Oculta la superposición de video sugerida para reproducir a continuación
+ Problema conocido: la reproducción automática no funciona"</string>
     <string name="revanced_hide_suggested_video_overlay_title">Ocultar superposición de vídeo sugerido</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Los estantes de boletos están visibles</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Los estantes de boletos están ocultos</string>
@@ -495,6 +500,9 @@ Problema conocido: la reproducción automática no funciona"</string>
     <string name="revanced_hide_timed_reactions_summary_off">Las reacciones cronometradas están visibles</string>
     <string name="revanced_hide_timed_reactions_summary_on">Las reacciones cronometradas están ocultas</string>
     <string name="revanced_hide_timed_reactions_title">Ocultar reacciones cronometradas</string>
+    <string name="revanced_hide_reminder_button_summary_off">Se muestran los botones Notificarme</string>
+    <string name="revanced_hide_reminder_button_summary_on">Los botones Notificarme están ocultos</string>
+    <string name="revanced_hide_reminder_button_title">Ocultar botón de notificación</string>
     <string name="revanced_hide_time_stamp_summary_off">La marca de tiempo está visible</string>
     <string name="revanced_hide_time_stamp_summary_on">La marca de tiempo está oculta</string>
     <string name="revanced_hide_time_stamp_title">Ocultar marca de tiempo</string>
@@ -507,6 +515,26 @@ Problema conocido: la reproducción automática no funciona"</string>
     <string name="revanced_hide_video_ads_summary_off">Los anuncios de vídeo están visibles</string>
     <string name="revanced_hide_video_ads_summary_on">Los anuncios de vídeo están ocultos</string>
     <string name="revanced_hide_video_ads_title">Ocultar anuncios de vídeo</string>
+    <string name="revanced_whitelisting_added" formatted="false">El canal %s se agregó a la lista blanca de %s</string>
+    <string name="revanced_whitelisting_add_failed" formatted="false">Error al agregar el canal %s a la lista blanca de %s</string>
+    <string name="revanced_whitelisting_channel_name">Nombre del Canal</string>
+    <string name="revanced_whitelisting_empty">No hay canales en la lista blanca</string>
+    <string name="revanced_whitelisting_excluded">No añadido a la lista blanca</string>
+    <string name="revanced_whitelisting_fetch_failed">Error al recuperar los detalles del canal, mensaje recibido %d</string>
+    <string name="revanced_whitelisting_missing_api_key">Se recibió un error HTTP 403 al obtener canal. Verifique su clave API en la configuración de la lista blanca</string>
+    <string name="revanced_whitelisting_included">Añadido a la lista blanca</string>
+    <string name="revanced_whitelisting_reboot">Reiniciar para aplicar la configuración de la lista blanca de canales</string>
+    <string name="revanced_whitelisting_removed" formatted="false">El canal %s fue eliminado de la lista blanca de %s</string>
+    <string name="revanced_whitelisting_remove_failed" formatted="false">No se pudo eliminar el canal %s de la lista blanca de %s</string>
+    <string name="revanced_whitelisting_settings_summary">Verifique o elimine la lista de canales agregados a la lista blanca</string>
+    <string name="revanced_whitelisting_settings_title">Configuración de la lista blanca</string>
+    <string name="revanced_whitelisting_speed">Velocidad de vídeo</string>
+    <string name="revanced_whitelisting_speed_button">Velocidad</string>
+    <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
+    <string name="revanced_whitelisting_sponsorblock_button">SB</string>
+    <string name="revanced_whitelisting_title">Lista blanca de canales</string>
+    <string name="revanced_whitelist_api_key_title">Clave API de YouTube</string>
+    <string name="revanced_whitelist_api_key_summary">YouTube API Key v3 utilizada por la función de lista blanca</string>
     <string name="revanced_hide_view_products_summary_off">El banner de ver productos está visible</string>
     <string name="revanced_hide_view_products_summary_on">El banner de ver productos está oculto</string>
     <string name="revanced_hide_view_products_title">Ocultar banner de ver productos</string>
@@ -537,6 +565,9 @@ Mantenga pulsado para copiar la marca de tiempo del vídeo"</string>
     <string name="revanced_overlay_button_copy_video_url_timestamp_title">Mostrar botón para copiar URL con marca de tiempo</string>
     <string name="revanced_overlay_button_external_downloader_summary">Pulse para iniciar el descargador externo</string>
     <string name="revanced_overlay_button_external_downloader_title">Mostrar botón de descarga externa</string>
+    <string name="revanced_overlay_button_whitelist_summary_off">El botón de lista blanca está oculto</string>
+    <string name="revanced_overlay_button_whitelist_summary_on">Se muestra el botón de lista blanca</string>
+    <string name="revanced_overlay_button_whitelist_title">Mostrar botón de lista blanca</string>
     <string name="revanced_overlay_button_speed_dialog_reset">Velocidad de reproducción restablecida (1.0x)</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Pulse para abrir el cuadro de diálogo de velocidad
 Mantenga pulsado para ajustar la velocidad de reproducción a 1.0x"</string>
@@ -591,6 +622,20 @@ Toque aquí para obtener más información.</string>
     <string name="revanced_shorts_player_title">Reproductor de Shorts</string>
     <string name="revanced_show_fullscreen_title_summary">Problema conocido: El título desaparece al pulsarlo</string>
     <string name="revanced_show_fullscreen_title_title">Mostrar título en pantalla completa</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Miniaturas alternativas</string>
+    <string name="revanced_alt_thumbnail_title">Habilitar miniaturas alternativas</string>
+    <string name="revanced_alt_thumbnail_summary_on">Miniaturas de YouTube reemplazadas por otras alternativas</string>
+    <string name="revanced_alt_thumbnail_summary_off">Se muestran las miniaturas originales de YouTube</string>
+    <string name="revanced_alt_thumbnail_type_title">Tiempo de video para tomar la imagen fija de</string>
+    <string name="revanced_alt_thumbnail_type_entry_1">Comienzo del vídeo</string>
+    <string name="revanced_alt_thumbnail_type_entry_2">Mitad del video</string>
+    <string name="revanced_alt_thumbnail_type_entry_3">Final del vídeo</string>
+    <string name="revanced_alt_thumbnail_fast_quality_title">Usa miniaturas alternativas rápidas</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_on">Uso de alambiques de calidad media. Las miniaturas se cargarán más rápido, pero las transmisiones en vivo, los videos inéditos o muy antiguos pueden mostrar miniaturas en blanco</string>
+    <string name="revanced_alt_thumbnail_fast_quality_summary_off">Usando imágenes fijas de alta calidad, pero tendrá más retraso</string>
+    <string name="revanced_alt_thumbnail_about_title">Acerca de</string>
+    <string name="revanced_alt_thumbnail_about_summary">Las miniaturas alternativas son imágenes fijas del principio/medio/final de cada video. No se utiliza ninguna API externa, ya que estas imágenes están integradas en YouTube</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">Configuración de miniaturas de video</string>
     <string name="revanced_sponsorblock_settings_summary">Ajustes relacionados con SponsorBlock</string>
     <string name="revanced_spoof_app_version_summary">"Modificación de la versión del cliente a la versión antigua
 
@@ -605,14 +650,30 @@ Si más tarde se desactiva, la antigua interfaz de usuario puede permanecer hast
     <string name="revanced_spoof_app_version_target_entry_title">Versión a usar de la aplicación</string>
     <string name="revanced_spoof_app_version_target_summary">Escriba la versión a modificar de la app</string>
     <string name="revanced_spoof_app_version_target_title">Modificar versión de aplicación</string>
-    <string name="revanced_spoof_player_parameter_summary">"Los parámetros del reproductor se modifican para evitar problemas de reproducción
+    <string name="revanced_spoof_player_parameter_type_summary_off">"Parámetros del jugador de Shorts
+
+ Problemas conocidos
+ - El video puede tener problemas de reproducción en 1:10
+ - La marca de agua del canal siempre está oculta
+ - Es posible que la descarga de videos no funcione
+ - Las tarjetas de pantalla final siempre están ocultas"</string>
+    <string name="revanced_spoof_player_parameter_type_summary_on">"Parámetros del jugador del modo incógnito
+
+ Problemas conocidos
+ - Es posible que el modo ambiente no funcione
+ - El clip no se puede reproducir normalmente
+ - Es posible que la descarga de videos no funcione
+ - La superposición de la tira de película siempre está oculta
+ - Las miniaturas de la barra de búsqueda están ocultas"</string>
+    <string name="revanced_spoof_player_parameter_type_title">Tipo de parámetro de jugador falso</string>
+    <string name="revanced_spoof_player_parameter_summary">Los parámetros del reproductor se modifican para evitar problemas de reproducción
 
 Problemas conocidos
 - Es posible que el Modo Ambiente no funcione
 - El Clip no puede reproducirse normalmente
 - La descarga de vídeos puede no funcionar
 - La superposición de la tira de película siempre está oculta
-- Las miniaturas de la barra de progreso están ocultas"</string>
+- Las miniaturas de la barra de progreso están ocultas</string>
     <string name="revanced_spoof_player_parameter_title">Modificar parámetro del reproductor</string>
     <string name="revanced_swipe_controls">Controles deslizantes</string>
     <string name="revanced_swipe_magnitude_threshold_summary">La cantidad de umbral para que ocurra el deslizamiento</string>
@@ -628,8 +689,6 @@ Problemas conocidos
     <string name="revanced_switching_create_notification_title">Cambiar Crear con botón de notificaciones</string>
     <string name="revanced_tool_used">Herramienta utilizada</string>
     <string name="revanced_video">Vídeo</string>
-    <string name="pref_app_language_dialog_message">&lt;b&gt;%1$s&lt;/b&gt;&lt;br&gt;&lt;br&gt;Esto cambiará el idioma utilizado en YouTube, incluidos los botones, el texto y los cuadros de diálogo, pero no cambiará el idioma de los ajustes de ReVanced Extended.</string>
-    <string name="pref_app_language_dialog_message_no_lang_name">Esto cambiará el idioma utilizado en la aplicación, incluidos los botones, el texto y los cuadros de diálogo, pero no cambiará el idioma de los ajustes de ReVanced Extended.</string>
     <string name="sb_enable_sb">Activar SponsorBlock</string>
     <string name="sb_enable_sb_sum">SponsorBlock es un sistema colaborativo para omitir partes molestas en vídeos de YouTube</string>
     <string name="sb_appearance_category">Apariencia</string>

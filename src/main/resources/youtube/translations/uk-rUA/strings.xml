@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Відома проблема: Може не працювати в ландшафтному режимі або на пристроях з великим dpi</string>
     <string name="revanced_hide_account_menu_title">Приховати меню акаунту</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Редагувати фільтр меню облікового запису</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Фільтр компонентів за назвами розділеними рядками</string>
     <string name="revanced_hide_album_card_summary_off">Картки альбому показуються</string>
     <string name="revanced_hide_album_card_summary_on">Картки альбомів приховано</string>
     <string name="revanced_hide_album_card_title">Приховати картки альбому</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Кнопка огляду магазину показується</string>
     <string name="revanced_hide_browse_store_button_summary_on">Кнопка огляду магазину прихована</string>
     <string name="revanced_hide_browse_store_button_title">Приховати кнопку огляду магазину</string>
+    <string name="revanced_hide_action_buttons_summary_off">Кнопка дії показується</string>
+    <string name="revanced_hide_action_buttons_summary_on">Кнопку дії приховано</string>
+    <string name="revanced_hide_action_buttons_title">Приховати кнопку дії</string>
     <string name="revanced_hide_button_create_clip_summary_off">Кнопку Створити кліп показується</string>
     <string name="revanced_hide_button_create_clip_summary_on">Кнопку Створити кліп приховано</string>
     <string name="revanced_hide_button_create_clip_title">Приховати кнопку Кліп</string>

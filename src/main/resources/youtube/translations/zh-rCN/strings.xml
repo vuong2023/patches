@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">已知问题：可能无法在横屏模式或高 DPI 设备上工作</string>
     <string name="revanced_hide_account_menu_title">账号菜单</string>
     <string name="revanced_hide_account_menu_filter_strings_title">编辑账号菜单过滤</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filter component names by line-seperated</string>
     <string name="revanced_hide_album_card_summary_off">专辑卡片已显示</string>
     <string name="revanced_hide_album_card_summary_on">专辑卡片已隐藏</string>
     <string name="revanced_hide_album_card_title">专辑卡片</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">浏览商店按钮已显示</string>
     <string name="revanced_hide_browse_store_button_summary_on">浏览商店按钮已隐藏</string>
     <string name="revanced_hide_browse_store_button_title">浏览商店按钮</string>
+    <string name="revanced_hide_action_buttons_summary_off">Action button is shown</string>
+    <string name="revanced_hide_action_buttons_summary_on">Action button is hidden</string>
+    <string name="revanced_hide_action_buttons_title">Hide Action button</string>
     <string name="revanced_hide_button_create_clip_summary_off">剪辑按钮已显示</string>
     <string name="revanced_hide_button_create_clip_summary_on">剪辑按钮已隐藏</string>
     <string name="revanced_hide_button_create_clip_title">剪辑按钮</string>
@@ -465,8 +469,8 @@
     <string name="revanced_hide_shorts_player_toolbar_summary_off">工具栏已显示</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">工具栏已隐藏</string>
     <string name="revanced_hide_shorts_player_toolbar_title">工具栏</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Shorts 功能架已显示</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Shorts 功能架已隐藏</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelves are shown</string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelves are hidden</string>
     <string name="revanced_hide_shorts_shelf_title">Shorts 功能架</string>
     <string name="revanced_hide_snack_bar_summary_off">弹出消息已显示</string>
     <string name="revanced_hide_snack_bar_summary_on">弹出消息已隐藏</string>

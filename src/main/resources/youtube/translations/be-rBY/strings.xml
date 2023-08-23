@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Known issue: May not work in landscape mode or on high dpi devices</string>
     <string name="revanced_hide_account_menu_title">Hide account menu</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Edit account menu filter</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filter component names by line-seperated</string>
     <string name="revanced_hide_album_card_summary_off">Album cards are shown</string>
     <string name="revanced_hide_album_card_summary_on">Album cards are hidden</string>
     <string name="revanced_hide_album_card_title">Hide album cards</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Browse store button is shown</string>
     <string name="revanced_hide_browse_store_button_summary_on">Browse store button is hidden</string>
     <string name="revanced_hide_browse_store_button_title">Hide browse store button</string>
+    <string name="revanced_hide_action_buttons_summary_off">Action button is shown</string>
+    <string name="revanced_hide_action_buttons_summary_on">Action button is hidden</string>
+    <string name="revanced_hide_action_buttons_title">Hide Action button</string>
     <string name="revanced_hide_button_create_clip_summary_off">Clip button is shown</string>
     <string name="revanced_hide_button_create_clip_summary_on">Clip button is hidden</string>
     <string name="revanced_hide_button_create_clip_title">Hide clip button</string>
@@ -465,8 +469,8 @@ Only available on YouTube v18.24.37+"</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">Toolbar is shown</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">Toolbar is hidden</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Hide toolbar</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelf is shown</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelf is hidden</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelves are shown</string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelves are hidden</string>
     <string name="revanced_hide_shorts_shelf_title">Hide shorts shelf</string>
     <string name="revanced_hide_snack_bar_summary_off">Snack bar is shown</string>
     <string name="revanced_hide_snack_bar_summary_on">Snack bar is hidden</string>

@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Znany problem: Może nie działać w trybie poziomym lub na urządzeniach z dużym dpi</string>
     <string name="revanced_hide_account_menu_title">Menu konta</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Edytuj menu konta</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filtruj nazwy komponentów, oddzielając je liniami</string>
     <string name="revanced_hide_album_card_summary_off">Widoczne</string>
     <string name="revanced_hide_album_card_summary_on">Ukryte</string>
     <string name="revanced_hide_album_card_title">Karty albumów</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Widoczny</string>
     <string name="revanced_hide_browse_store_button_summary_on">Ukryty</string>
     <string name="revanced_hide_browse_store_button_title">Przycisk do sklepu</string>
+    <string name="revanced_hide_action_buttons_summary_off">Widoczne</string>
+    <string name="revanced_hide_action_buttons_summary_on">Ukryte</string>
+    <string name="revanced_hide_action_buttons_title">Przyciski akcji</string>
     <string name="revanced_hide_button_create_clip_summary_off">Widoczny</string>
     <string name="revanced_hide_button_create_clip_summary_on">Ukryty</string>
     <string name="revanced_hide_button_create_clip_title">Przycisk do tworzenia klipów</string>

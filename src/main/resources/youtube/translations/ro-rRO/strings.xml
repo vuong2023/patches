@@ -163,6 +163,7 @@
     <string name="revanced_hide_account_menu_summary">Problemă cunoscută: poate să nu funcționeze în modul peisaj sau pe dispozitive dpi mari</string>
     <string name="revanced_hide_account_menu_title">Ascundeți meniul contului</string>
     <string name="revanced_hide_account_menu_filter_strings_title">Editează filtrul de meniu al contului</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">Filter component names by line-seperated</string>
     <string name="revanced_hide_album_card_summary_off">Cardurile de album sunt afișate</string>
     <string name="revanced_hide_album_card_summary_on">Cardurile de album sunt ascunse</string>
     <string name="revanced_hide_album_card_title">Ascundeți cardurile de album</string>
@@ -181,6 +182,9 @@
     <string name="revanced_hide_browse_store_button_summary_off">Butonul Navigare magazin este afișat</string>
     <string name="revanced_hide_browse_store_button_summary_on">Butonul Navigare magazin este ascuns</string>
     <string name="revanced_hide_browse_store_button_title">Ascunde butonul de răsfoire magazin</string>
+    <string name="revanced_hide_action_buttons_summary_off">Action button is shown</string>
+    <string name="revanced_hide_action_buttons_summary_on">Action button is hidden</string>
+    <string name="revanced_hide_action_buttons_title">Hide Action button</string>
     <string name="revanced_hide_button_create_clip_summary_off">Butonul clipului este afișat</string>
     <string name="revanced_hide_button_create_clip_summary_on">Butonul clip este ascuns</string>
     <string name="revanced_hide_button_create_clip_title">Ascunde butoanele de acțiune</string>
@@ -465,8 +469,8 @@ Only available on YouTube v18.24.37+"</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">Toolbar is shown</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">Toolbar is hidden</string>
     <string name="revanced_hide_shorts_player_toolbar_title">Hide toolbar</string>
-    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelf is shown</string>
-    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelf is hidden</string>
+    <string name="revanced_hide_shorts_shelf_summary_off">Shorts shelves are shown</string>
+    <string name="revanced_hide_shorts_shelf_summary_on">Shorts shelves are hidden</string>
     <string name="revanced_hide_shorts_shelf_title">Hide shorts shelf</string>
     <string name="revanced_hide_snack_bar_summary_off">Snack bar is shown</string>
     <string name="revanced_hide_snack_bar_summary_on">Snack bar is hidden</string>
