@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.layout.materialyou.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -28,7 +28,7 @@ import app.revanced.util.resources.ResourceUtils.copyXmlNode
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class MaterialYouPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.overlaybutton.general.patch
 import app.revanced.extensions.doRecursively
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -43,7 +43,7 @@ import org.w3c.dom.Element
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class OverlayButtonsPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

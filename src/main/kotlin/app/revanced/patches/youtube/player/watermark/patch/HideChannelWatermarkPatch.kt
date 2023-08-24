@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.player.watermark.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -26,7 +26,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 @Description("Hides creator's watermarks on videos.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class HideChannelWatermarkBytecodePatch : BytecodePatch(
     listOf(HideWatermarkParentFingerprint)
 ) {

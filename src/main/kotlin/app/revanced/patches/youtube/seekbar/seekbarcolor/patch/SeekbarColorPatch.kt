@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.seekbar.seekbarcolor.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
@@ -43,7 +43,7 @@ import org.w3c.dom.Element
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class SeekbarColorPatch : BytecodePatch(
     listOf(
         ControlsOverlayStyleFingerprint,

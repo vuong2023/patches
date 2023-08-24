@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.layout.tooltip.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.patch.BytecodePatch
@@ -26,7 +26,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class TooltipContentViewPatch : BytecodePatch(
     listOf(TooltipContentViewFingerprint)
 ) {

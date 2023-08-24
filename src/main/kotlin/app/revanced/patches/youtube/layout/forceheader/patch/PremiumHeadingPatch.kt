@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.layout.forceheader.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultError
@@ -21,7 +21,7 @@ import kotlin.io.path.exists
 @Description("Forces premium heading on the homepage.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class PremiumHeadingPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
         val resDirectory = context["res"]

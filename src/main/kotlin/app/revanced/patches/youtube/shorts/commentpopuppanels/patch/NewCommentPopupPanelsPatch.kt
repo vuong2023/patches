@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.shorts.commentpopuppanels.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -24,7 +24,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 @Description("Enables a new type of comment popup panel in the shorts player.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class NewCommentPopupPanelsPatch : BytecodePatch(
     listOf(ReelWatchFragmentBuilderFingerprint)
 ) {

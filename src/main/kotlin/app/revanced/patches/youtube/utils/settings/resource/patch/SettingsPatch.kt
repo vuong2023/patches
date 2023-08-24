@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.utils.settings.resource.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class SettingsPatch : AbstractSettingsResourcePatch(
     "youtube/settings",
     "youtube/settings/host",

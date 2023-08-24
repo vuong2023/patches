@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.general.headerswitch.patch
 import app.revanced.extensions.findMutableMethodOf
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -31,7 +31,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 @Suppress("LABEL_NAME_CLASH")
 class HeaderSwitchPatch : BytecodePatch() {
     override fun execute(context: BytecodeContext): PatchResult {

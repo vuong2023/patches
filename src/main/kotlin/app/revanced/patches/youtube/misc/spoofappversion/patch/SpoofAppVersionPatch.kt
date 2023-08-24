@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.misc.spoofappversion.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -20,7 +20,7 @@ import app.revanced.util.resources.ResourceUtils.copyXmlNode
 @Description("Tricks YouTube into thinking, you are running an older version of the app. One of the side effects also includes restoring the old UI.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class SpoofAppVersionPatch : AbstractVersionSpoofPatch(
     "$MISC_PATH/VersionOverridePatch;->getVersionOverride(Ljava/lang/String;)Ljava/lang/String;"
 ) {

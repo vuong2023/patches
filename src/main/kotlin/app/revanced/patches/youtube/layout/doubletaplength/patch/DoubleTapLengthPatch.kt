@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.layout.doubletaplength.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.OptionsContainer
 import app.revanced.patcher.patch.PatchOption
@@ -23,7 +23,7 @@ import app.revanced.util.resources.ResourceUtils.copyResources
 @Description("Add 'double-tap to seek' value.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class DoubleTapLengthPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
         val arrayPath = "res/values-v21/arrays.xml"

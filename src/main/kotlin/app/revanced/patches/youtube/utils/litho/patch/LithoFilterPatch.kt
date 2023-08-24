@@ -1,7 +1,7 @@
 package app.revanced.patches.youtube.utils.litho.patch
 
 import app.revanced.extensions.toErrorResult
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
@@ -32,7 +32,7 @@ import java.io.Closeable
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class LithoFilterPatch : BytecodePatch(
     listOf(
         GeneralByteBufferFingerprint,

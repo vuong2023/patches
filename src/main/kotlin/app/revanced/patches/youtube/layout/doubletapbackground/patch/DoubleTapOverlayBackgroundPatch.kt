@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.layout.doubletapbackground.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -17,7 +17,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 @Description("Hides the double tap dark filter layer.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class DoubleTapOverlayBackgroundPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
         context.xmlEditor[RESOURCE_FILE_PATH].use {

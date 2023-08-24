@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.layout.theme.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.OptionsContainer
 import app.revanced.patcher.patch.PatchOption
@@ -28,7 +28,7 @@ import org.w3c.dom.Element
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class ThemePatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

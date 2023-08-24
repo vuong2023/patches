@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.general.descriptions.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.PatchResult
@@ -25,7 +25,7 @@ import app.revanced.util.integrations.Constants.PATCHES_PATH
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class DescriptionComponentsPatch : BytecodePatch() {
     override fun execute(context: BytecodeContext): PatchResult {
         LithoFilterPatch.addFilter("$PATCHES_PATH/ads/DescriptionsFilter;")

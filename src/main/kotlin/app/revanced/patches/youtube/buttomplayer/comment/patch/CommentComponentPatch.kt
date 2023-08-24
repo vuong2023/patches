@@ -2,7 +2,7 @@ package app.revanced.patches.youtube.buttomplayer.comment.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -26,7 +26,7 @@ import app.revanced.util.integrations.Constants.PATCHES_PATH
     ]
 )
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class CommentComponentPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
         LithoFilterPatch.addFilter("$PATCHES_PATH/ads/CommentsFilter;")

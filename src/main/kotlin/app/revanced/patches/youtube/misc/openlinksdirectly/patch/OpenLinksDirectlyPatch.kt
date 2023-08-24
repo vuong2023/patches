@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.misc.openlinksdirectly.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
@@ -24,7 +24,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
 @Description("Skips over redirection URLs to external links.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class OpenLinksDirectlyPatch : BytecodePatch(
     listOf(
         OpenLinksDirectlyFingerprintPrimary,

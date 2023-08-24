@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.misc.layoutswitch.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
@@ -31,7 +31,7 @@ import com.android.tools.smali.dexlib2.Opcode
 @Description("Tricks the dpi to use some tablet/phone layouts.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class LayoutSwitchPatch : BytecodePatch(
     listOf(
         ClientFormFactorParentFingerprint,

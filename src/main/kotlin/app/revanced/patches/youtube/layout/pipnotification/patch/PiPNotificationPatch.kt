@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.layout.pipnotification.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.patch.BytecodePatch
@@ -21,7 +21,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 @Description("Disable pip notification when you first launch pip mode.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class PiPNotificationPatch : BytecodePatch(
     listOf(
         PrimaryPiPFingerprint,

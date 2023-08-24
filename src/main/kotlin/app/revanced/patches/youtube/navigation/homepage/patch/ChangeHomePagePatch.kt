@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.navigation.homepage.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
@@ -25,7 +25,7 @@ import app.revanced.util.integrations.Constants.NAVIGATION
 @Description("Change home page to subscription feed.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class ChangeHomePagePatch : BytecodePatch(
     listOf(
         IntentExceptionFingerprint,

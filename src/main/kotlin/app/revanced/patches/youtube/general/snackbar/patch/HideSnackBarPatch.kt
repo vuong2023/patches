@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.general.snackbar.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -23,7 +23,7 @@ import app.revanced.util.integrations.Constants.GENERAL
 @Description("Hides the snack bar action popup.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class HideSnackBarPatch : BytecodePatch(
     listOf(HideSnackBarFingerprint)
 ) {

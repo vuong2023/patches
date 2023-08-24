@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.layout.alternativethumbnails.bytecode.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
@@ -29,7 +29,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch.
 @Name("Alternative thumbnails")
 @Description("Adds an option to replace video thumbnails with still image captures of the video.")
 @YouTubeCompatibility
-@Version("0.0.1")
+
 @DependsOn(
     [
         IntegrationsPatch::class,

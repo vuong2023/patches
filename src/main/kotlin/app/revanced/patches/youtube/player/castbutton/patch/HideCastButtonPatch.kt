@@ -3,7 +3,7 @@ package app.revanced.patches.youtube.player.castbutton.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
@@ -21,7 +21,7 @@ import app.revanced.util.integrations.Constants.PLAYER
 @Description("Hides the cast button in the video player.")
 @DependsOn([SettingsPatch::class])
 @YouTubeCompatibility
-@Version("0.0.1")
+
 class HideCastButtonPatch : BytecodePatch(
     listOf(CastButtonFingerprint)
 ) {
