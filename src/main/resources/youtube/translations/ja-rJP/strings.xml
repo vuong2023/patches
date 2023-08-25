@@ -6,7 +6,7 @@
     <string name="microg_settings_summary">通知を受信するために Cloud Messaging の設定を有効にします</string>
     <string name="microg_settings_title">MicroG を開く</string>
     <string name="revanced_ads">広告</string>
-    <string name="revanced_backup_summary">ReVancedの設定をファイルからインポートするか、ファイルにエクスポートします。</string>
+    <string name="revanced_backup_summary">ReVanced の設定をファイルからインポートするか、ファイルにエクスポートします。</string>
     <string name="revanced_bottom_player">プレーヤー下部</string>
     <string name="revanced_button_container_title">プレーヤー下部のボタン</string>
     <string name="revanced_bypass_ambient_mode_restrictions_summary_off">バッテリーセーバーモードではアンビエントモードが無効になります</string>
@@ -28,7 +28,7 @@
     <string name="revanced_custom_playback_speeds_title">カスタム再生速度の編集</string>
     <string name="revanced_custom_seekbar_color_value_summary">シークバーの色を16進数カラーコードで入力してください</string>
     <string name="revanced_custom_seekbar_color_value_title">シークバーの色</string>
-    <string name="revanced_default_app_settings_summary">外部ブラウザからReVanced Extendedを開くには、「対応リンクを開く」でリンクを選択してください</string>
+    <string name="revanced_default_app_settings_summary">外部ブラウザから ReVanced Extended を開くには、「対応リンクを開く」でリンクを選択してください</string>
     <string name="revanced_default_app_settings_title">「デフォルトで開く」の設定を開く</string>
     <string name="revanced_default_playback_speed_title">デフォルトの再生速度</string>
     <string name="revanced_default_video_quality_mobile_title">モバイルデータ通信でのデフォルト画質</string>
@@ -62,7 +62,7 @@
     <string name="revanced_disable_landscape_mode_summary_on">全画面表示時の動画の縦向きの固定は有効です</string>
     <string name="revanced_disable_landscape_mode_title">横画面モードを無効化</string>
     <string name="revanced_disable_startup_shorts_player_summary_off">アプリ起動時のYouTube ショートプレーヤーは有効です</string>
-    <string name="revanced_disable_startup_shorts_player_summary_on">アプリ起動時のYouTube ショートプレーヤーは無効です</string>
+    <string name="revanced_disable_startup_shorts_player_summary_on">アプリ起動時の YouTube ショートプレーヤーは無効です</string>
     <string name="revanced_disable_startup_shorts_player_title">起動時のショートプレーヤーを無効化</string>
     <string name="revanced_disable_quic_protocol_summary">"CronetEngine の QUIC プロトコルを無効にする"</string>
     <string name="revanced_disable_quic_protocol_title">QUIC プロトコルを無効化</string>
@@ -141,7 +141,7 @@
     <string name="revanced_enable_time_stamp_speed_summary_on">タイムスタンプの右の再生速度の表示は有効です</string>
     <string name="revanced_enable_time_stamp_speed_title">再生速度の表示</string>
     <string name="revanced_enable_vp9_codec_summary">デバイス情報を偽装して VP9 コーデックを有効にします</string>
-    <string name="revanced_enable_vp9_codec_title">VP9コーデックを有効化</string>
+    <string name="revanced_enable_vp9_codec_title">VP9 コーデックを有効化</string>
     <string name="revanced_enable_wide_search_bar_summary_off">幅の広い検索バーは無効です</string>
     <string name="revanced_enable_wide_search_bar_summary_on">幅の広い検索バーは有効です</string>
     <string name="revanced_enable_wide_search_bar_title">幅の広い検索バー</string>
@@ -176,33 +176,33 @@
     <string name="revanced_hide_autoplay_preview_summary_off">次に再生される動画のプレビューは表示されます</string>
     <string name="revanced_hide_autoplay_preview_summary_on">次に再生される動画のプレビューは非表示です</string>
     <string name="revanced_hide_autoplay_preview_title">自動再生プレビューを非表示</string>
-    <string name="revanced_hide_auto_player_popup_panels_summary_off">プレイリストパネル、ライブチャットパネルは自動で表示されます</string>
-    <string name="revanced_hide_auto_player_popup_panels_summary_on">プレイリストパネル、ライブチャットパネルは自動で表示されません</string>
+    <string name="revanced_hide_auto_player_popup_panels_summary_off">ミックスリストパネル、ライブチャットパネルは自動で表示されます</string>
+    <string name="revanced_hide_auto_player_popup_panels_summary_on">ミックスリストパネル、ライブチャットパネルは自動で表示されません</string>
     <string name="revanced_hide_auto_player_popup_panels_title">プレーヤーの自動ポップアップパネルを非表示</string>
     <string name="revanced_hide_browse_store_button_summary_off">「商品を見る」ボタンは表示されます</string>
     <string name="revanced_hide_browse_store_button_summary_on">「商品を見る」ボタンは非表示です</string>
     <string name="revanced_hide_browse_store_button_title">「商品を見る」ボタンを非表示</string>
     <string name="revanced_hide_action_buttons_summary_off">「文字起こし」ボタンは表示されます</string>
     <string name="revanced_hide_action_buttons_summary_on">「文字起こし」ボタンは非表示です</string>
-    <string name="revanced_hide_action_buttons_title">「文字起こし」ボタンを非表示</string>
+    <string name="revanced_hide_action_buttons_title">文字起こしボタンを非表示</string>
     <string name="revanced_hide_button_create_clip_summary_off">「クリップ」ボタンは表示されます</string>
     <string name="revanced_hide_button_create_clip_summary_on">「クリップ」ボタンは非表示です</string>
-    <string name="revanced_hide_button_create_clip_title">「クリップ」ボタンを非表示</string>
+    <string name="revanced_hide_button_create_clip_title">クリップボタンを非表示</string>
     <string name="revanced_hide_button_dislike_summary_off">「低評価」ボタンは表示されます</string>
     <string name="revanced_hide_button_dislike_summary_on">「低評価」ボタンは非表示です</string>
     <string name="revanced_hide_button_dislike_title">低評価ボタンを非表示</string>
     <string name="revanced_hide_button_download_summary_off">「オフライン」ボタンは表示されます</string>
     <string name="revanced_hide_button_download_summary_on">「オフライン」ボタンは非表示です</string>
-    <string name="revanced_hide_button_download_title">「オフライン」ボタンを非表示</string>
+    <string name="revanced_hide_button_download_title">オフラインボタンを非表示</string>
     <string name="revanced_hide_button_like_summary_off">「高評価」ボタンは表示されます</string>
     <string name="revanced_hide_button_like_summary_on">「高評価」ボタンは非表示です</string>
     <string name="revanced_hide_button_like_title">高評価ボタンを非表示</string>
     <string name="revanced_hide_button_live_chat_summary_off">ライブの「チャット」ボタンは表示されます</string>
     <string name="revanced_hide_button_live_chat_summary_on">ライブの「チャット」ボタンは非表示です</string>
-    <string name="revanced_hide_button_live_chat_title">ライブの「チャット」ボタンを非表示</string>
-    <string name="revanced_hide_button_playlist_summary_off">プレイリストの「保存」ボタンは表示されます</string>
-    <string name="revanced_hide_button_playlist_summary_on">プレイリストの「保存」ボタンは非表示です</string>
-    <string name="revanced_hide_button_playlist_title">「保存」ボタンを非表示</string>
+    <string name="revanced_hide_button_live_chat_title">ライブのチャットボタンを非表示</string>
+    <string name="revanced_hide_button_playlist_summary_off">再生リストの「保存」ボタンは表示されます</string>
+    <string name="revanced_hide_button_playlist_summary_on">再生リストの「保存」ボタンは非表示です</string>
+    <string name="revanced_hide_button_playlist_title">保存ボタンを非表示</string>
     <string name="revanced_hide_button_remix_summary_off">「リミックス」ボタンは表示されます</string>
     <string name="revanced_hide_button_remix_summary_on">「リミックス」ボタンは非表示です</string>
     <string name="revanced_hide_button_remix_title">リミックスボタンを非表示</string>
@@ -217,10 +217,10 @@
     <string name="revanced_hide_button_share_title">共有ボタンを非表示</string>
     <string name="revanced_hide_button_shop_summary_off">「ショップ」ボタンは表示されます</string>
     <string name="revanced_hide_button_shop_summary_on">「ショップ」ボタンは非表示です</string>
-    <string name="revanced_hide_button_shop_title">「ショップ」ボタンを非表示</string>
+    <string name="revanced_hide_button_shop_title">ショップボタンを非表示</string>
     <string name="revanced_hide_button_thanks_summary_off">「Thanks」ボタンは表示されます</string>
     <string name="revanced_hide_button_thanks_summary_on">「Thanks」ボタンは非表示です</string>
-    <string name="revanced_hide_button_thanks_title">Thanksボタンを非表示</string>
+    <string name="revanced_hide_button_thanks_title">Thanks ボタンを非表示</string>
     <string name="revanced_hide_captions_button_summary_off">「字幕」ボタンは表示されます</string>
     <string name="revanced_hide_captions_button_summary_on">「字幕」ボタンは非表示です</string>
     <string name="revanced_hide_captions_button_title">字幕ボタンを非表示</string>
@@ -244,8 +244,8 @@
     <string name="revanced_hide_channel_watermark_summary_off">チャンネルのウォーターマークは表示されます</string>
     <string name="revanced_hide_channel_watermark_summary_on">チャンネルのウォーターマークは非表示です</string>
     <string name="revanced_hide_channel_watermark_title">チャンネルのウォーターマークを非表示</string>
-    <string name="revanced_hide_chapters_summary_off">概要欄のチャプター欄は表示されます</string>
-    <string name="revanced_hide_chapters_summary_on">概要欄のチャプター欄は非表示です</string>
+    <string name="revanced_hide_chapters_summary_off">概要欄にあるチャプター欄は表示されます</string>
+    <string name="revanced_hide_chapters_summary_on">概要欄にあるチャプター欄は非表示です</string>
     <string name="revanced_hide_chapters_title">チャプター欄を非表示</string>
     <string name="revanced_hide_chips_shelf_off">フィードの似ている動画のチップ欄は表示されます</string>
     <string name="revanced_hide_chips_shelf_on">フィードの似ている動画のチップ欄は非表示です</string>
@@ -286,7 +286,7 @@
     <string name="revanced_hide_feed_flyout_panel_filter_strings_title">フライアウトのフィルターを編集</string>
     <string name="revanced_hide_feed_flyout_panel_summary_off">フィードのフライアウトメニューは表示されます</string>
     <string name="revanced_hide_feed_flyout_panel_summary_on">フィードのフライアウトメニューは非表示です</string>
-    <string name="revanced_hide_feed_flyout_panel_title">フィードのフライアウトメニューを非表示</string>
+    <string name="revanced_hide_feed_flyout_panel_title">フライアウトメニューを非表示</string>
     <string name="revanced_hide_feed_survey_summary_off">フィードのアンケートは表示されます</string>
     <string name="revanced_hide_feed_survey_summary_on">フィードのアンケートは非表示です</string>
     <string name="revanced_hide_feed_survey_title">フィードのアンケートを非表示</string>
@@ -310,7 +310,7 @@
     <string name="revanced_hide_get_premium_title">YouTube Premium プロモーションを非表示</string>
     <string name="revanced_hide_gray_description_summary_off">ホームフィードで表示される「〜の視聴者はこのチャンネルも見ています」などの説明は表示されます</string>
     <string name="revanced_hide_gray_description_summary_on">ホームフィードで表示される「〜の視聴者はこのチャンネルも見ています」などの説明は非表示です</string>
-    <string name="revanced_hide_gray_description_title">フォームフィードのグレーの説明を非表示</string>
+    <string name="revanced_hide_gray_description_title">ホームフィードのグレーの説明を非表示</string>
     <string name="revanced_hide_gray_separator_summary_off">ホームフィードの動画の間に表示されるグレーののセパレーターは表示されます</string>
     <string name="revanced_hide_gray_separator_summary_on">ホームフィードの動画の間に表示されるグレーののセパレーターは非表示です</string>
     <string name="revanced_hide_gray_separator_title">グレーのセパレーターを非表示</string>
@@ -320,11 +320,11 @@
     <string name="revanced_hide_image_shelf_summary_off">画像欄は表示されます</string>
     <string name="revanced_hide_image_shelf_summary_on">画像欄は非表示です</string>
     <string name="revanced_hide_image_shelf_title">画像欄を非表示</string>
-    <string name="revanced_hide_info_cards_section_summary_off">「(チャンネル名) の他の動画」は表示されます</string>
-    <string name="revanced_hide_info_cards_section_summary_on">「(チャンネル名) の他の動画」は非表示です</string>
-    <string name="revanced_hide_info_cards_section_title">情報カード欄を非表示</string>
-    <string name="revanced_hide_info_cards_summary_off">プレーヤーの右上に表示される情報カード(ｉ⃝)は表示されます</string>
-    <string name="revanced_hide_info_cards_summary_on">プレーヤーの右上に表示される情報カード(ｉ⃝)は非表示です</string>
+    <string name="revanced_hide_info_cards_section_summary_off">概要欄にあるチャンネル情報カードは表示されます</string>
+    <string name="revanced_hide_info_cards_section_summary_on">概要欄にあるチャンネル情報カードは非表示です</string>
+    <string name="revanced_hide_info_cards_section_title">チャンネル情報カードを非表示</string>
+    <string name="revanced_hide_info_cards_summary_off">プレーヤーの右上に表示される情報カードは表示されます</string>
+    <string name="revanced_hide_info_cards_summary_on">プレーヤーの右上に表示される情報カードは非表示です</string>
     <string name="revanced_hide_info_cards_title">情報カードを非表示</string>
     <string name="revanced_hide_info_panel_summary_off">情報パネルは表示されます</string>
     <string name="revanced_hide_info_panel_summary_on">情報パネルは非表示です</string>
@@ -332,13 +332,13 @@
     <string name="revanced_hide_join_button_summary_off">「メンバーになる」ボタンは表示されます</string>
     <string name="revanced_hide_join_button_summary_on">「メンバーになる」ボタンは非表示です</string>
     <string name="revanced_hide_join_button_title">「メンバーになる」ボタンを非表示</string>
-    <string name="revanced_hide_latest_posts_summary_off">最新の投稿を非表示にします</string>
-    <string name="revanced_hide_latest_posts_summary_on">最新の投稿を非表示にします</string>
+    <string name="revanced_hide_latest_posts_summary_off">「最新の投稿」は表示されます</string>
+    <string name="revanced_hide_latest_posts_summary_on">「最新の投稿」は非表示です</string>
     <string name="revanced_hide_latest_posts_title">最新の投稿を非表示</string>
     <string name="revanced_hide_library_button_summary_off">「ライブラリ」ボタンは表示されます</string>
     <string name="revanced_hide_library_button_summary_on">「ライブラリ」ボタンは非表示です</string>
     <string name="revanced_hide_library_button_title">「ライブラリ」ボタンを非表示</string>
-    <string name="revanced_hide_latest_videos_button_summary_off">「最新の動画」ボタンを表示します</string>
+    <string name="revanced_hide_latest_videos_button_summary_off">「最新の動画」ボタンは表示されます</string>
     <string name="revanced_hide_latest_videos_button_summary_on">「最新の動画」ボタンは非表示です</string>
     <string name="revanced_hide_latest_videos_button_title">「最新の動画」ボタンを非表示</string>
     <string name="revanced_hide_load_more_button_summary_off">検索した際に、検索結果の動画の下に表示される「もっと表示」のボタンは表示されます</string>
@@ -353,8 +353,8 @@
     <string name="revanced_hide_mix_playlists_summary_off">ミックスリストは表示されます</string>
     <string name="revanced_hide_mix_playlists_summary_on">ミックスリストは非表示です</string>
     <string name="revanced_hide_mix_playlists_title">ミックスリストを非表示</string>
-    <string name="revanced_hide_movie_shelf_summary_off">映画欄は表示されます</string>
-    <string name="revanced_hide_movie_shelf_summary_on">映画欄は非表示です</string>
+    <string name="revanced_hide_movie_shelf_summary_off">「YouTube の映画とテレビ番組」の欄は表示されます</string>
+    <string name="revanced_hide_movie_shelf_summary_on">「YouTube の映画とテレビ番組」の欄は非表示です</string>
     <string name="revanced_hide_movie_shelf_title">映画欄を非表示</string>
     <string name="revanced_hide_music_section_summary_off">概要欄にある音楽の説明は表示されます</string>
     <string name="revanced_hide_music_section_summary_on">概要欄にある音楽の説明は非表示です</string>
@@ -362,8 +362,8 @@
     <string name="revanced_hide_navigation_label_summary_off">ナビゲーションバーのラベルは表示されます</string>
     <string name="revanced_hide_navigation_label_summary_on">ナビゲーションバーのラベルは非表示です</string>
     <string name="revanced_hide_navigation_label_title">ナビゲーションバーのラベルを非表示</string>
-    <string name="revanced_hide_official_header_summary_off">映画の予告編など、検索バーのすぐ下に表示される茶色のボックスは表示されます</string>
-    <string name="revanced_hide_official_header_summary_on">映画の予告編など、検索バーのすぐ下に表示される茶色のボックスは非表示です</string>
+    <string name="revanced_hide_official_header_summary_off">映画の予告編など、検索バーのすぐ下に表示されるボックスは表示されます</string>
+    <string name="revanced_hide_official_header_summary_on">映画の予告編など、検索バーのすぐ下に表示されるボックスは非表示です</string>
     <string name="revanced_hide_official_header_title">公式ヘッダーを非表示</string>
     <string name="revanced_hide_paid_promotion_banner_summary_off">有料プロモーションバナーは表示されます</string>
     <string name="revanced_hide_paid_promotion_banner_summary_on">有料プロモーションバナーは非表示です</string>
@@ -379,7 +379,7 @@
     <string name="revanced_hide_player_flyout_panel_ambient_mode_title">アンビエント モードを非表示</string>
     <string name="revanced_hide_player_flyout_panel_audio_track_summary_off">「音声トラック」メニューは表示されます</string>
     <string name="revanced_hide_player_flyout_panel_audio_track_summary_on">「音声トラック」メニューは非表示です</string>
-    <string name="revanced_hide_player_flyout_panel_audio_track_title">「音声トラック」を非表示</string>
+    <string name="revanced_hide_player_flyout_panel_audio_track_title">音声トラックを非表示</string>
     <string name="revanced_hide_player_flyout_panel_captions_summary_off">「字幕」メニューは表示されます</string>
     <string name="revanced_hide_player_flyout_panel_captions_summary_on">「字幕」メニューは非表示です</string>
     <string name="revanced_hide_player_flyout_panel_captions_title">字幕を非表示</string>
@@ -398,8 +398,8 @@
     <string name="revanced_hide_player_flyout_panel_loop_video_summary_off">「動画のループ再生」メニューは表示されます</string>
     <string name="revanced_hide_player_flyout_panel_loop_video_summary_on">「動画のループ再生」メニューは非表示です</string>
     <string name="revanced_hide_player_flyout_panel_loop_video_title">「動画のループ再生」を非表示</string>
-    <string name="revanced_hide_player_flyout_panel_more_info_summary_off">詳細メニュー(ｉ⃝)は表示されます</string>
-    <string name="revanced_hide_player_flyout_panel_more_info_summary_on">詳細メニュー(ｉ⃝)は非表示です</string>
+    <string name="revanced_hide_player_flyout_panel_more_info_summary_off">「詳細(ｉ⃝)」メニューは表示されます</string>
+    <string name="revanced_hide_player_flyout_panel_more_info_summary_on">「詳細(ｉ⃝)」メニューは非表示です</string>
     <string name="revanced_hide_player_flyout_panel_more_info_title">詳細を非表示</string>
     <string name="revanced_hide_player_flyout_panel_report_summary_off">「報告」メニューは表示されます</string>
     <string name="revanced_hide_player_flyout_panel_report_summary_on">「報告」メニューは非表示です</string>
@@ -506,8 +506,8 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="revanced_hide_time_stamp_summary_off">タイムスタンプは表示されます</string>
     <string name="revanced_hide_time_stamp_summary_on">タイムスタンプは非表示です</string>
     <string name="revanced_hide_time_stamp_title">タイムスタンプを非表示</string>
-    <string name="revanced_hide_transcript_section_summary_off">概要欄の文字起こし欄は表示されます</string>
-    <string name="revanced_hide_transcript_section_summary_on">概要欄の文字起こし欄は非表示です</string>
+    <string name="revanced_hide_transcript_section_summary_off">概要欄にある文字起こし欄は表示されます</string>
+    <string name="revanced_hide_transcript_section_summary_on">概要欄にある文字起こし欄は非表示です</string>
     <string name="revanced_hide_transcript_section_title">文字起こし欄を非表示</string>
     <string name="revanced_hide_trending_searches_summary_off">検索のトレンドは表示されます</string>
     <string name="revanced_hide_trending_searches_summary_on">検索のトレンドは非表示です</string>
@@ -523,7 +523,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="revanced_whitelisting_fetch_failed">チャンネル詳細の取得に失敗しました。受信したメッセージ: %d</string>
     <string name="revanced_whitelisting_missing_api_key">チャンネルIDの取得中にHTTP403エラーが発生しました。ホワイトリスト設定でAPIキーを確認してください</string>
     <string name="revanced_whitelisting_included">ホワイトリストに登録済みです</string>
-    <string name="revanced_whitelisting_reboot">チャンネルホワイトリスト設定を適用するために再起動します</string>
+    <string name="revanced_whitelisting_reboot">再起動してチャンネルのホワイトリスト設定を適用する</string>
     <string name="revanced_whitelisting_removed" formatted="false">チャンネル %s を %s ホワイトリストから削除しました</string>
     <string name="revanced_whitelisting_remove_failed" formatted="false">チャンネル %s を %s ホワイトリストから削除できませんでした</string>
     <string name="revanced_whitelisting_settings_summary">ホワイトリストに登録したチャンネルのリストを確認/削除する</string>
@@ -544,7 +544,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="revanced_hide_youtube_music_button_summary_off">「YouTube Music」ボタンは表示されます</string>
     <string name="revanced_hide_youtube_music_button_summary_on">「YouTube Music」ボタンは非表示です</string>
     <string name="revanced_hide_youtube_music_button_title">「YouTube Music」ボタンを非表示</string>
-    <string name="revanced_import_settings_summary">ReVancedの設定ファイルを内部ストレージから読み込みます</string>
+    <string name="revanced_import_settings_summary">ReVanced の設定ファイルを内部ストレージから読み込みます</string>
     <string name="revanced_import_settings_title">設定をインポート</string>
     <string name="revanced_layout_title">レイアウト</string>
     <string name="revanced_misc">その他</string>
@@ -558,7 +558,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
 長押ししてリピート後に一時停止"</string>
     <string name="revanced_overlay_button_always_repeat_title">自動リピートボタン</string>
     <string name="revanced_overlay_button_copy_video_url_summary">"タップして動画 URL をコピー
-長押ししてタイムスタンプ付き URLをコピー"</string>
+長押ししてタイムスタンプ付き URL をコピー"</string>
     <string name="revanced_overlay_button_copy_video_url_title">動画 URL のコピーボタン</string>
     <string name="revanced_overlay_button_copy_video_url_timestamp_summary">"タップしてタイムスタンプ付き URL をコピー
 長押ししてタイムスタンプをコピー"</string>
@@ -623,7 +623,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="revanced_alt_thumbnails_preference_screen_title">代替サムネイル</string>
     <string name="revanced_alt_thumbnail_title">代替サムネイルを有効化</string>
     <string name="revanced_alt_thumbnail_summary_on">YouTube のサムネイルを代替サムネイルに置き換える</string>
-    <string name="revanced_alt_thumbnail_summary_off">オリジナルの YouTube サムネイルを表示</string>
+    <string name="revanced_alt_thumbnail_summary_off">オリジナルの YouTube サムネイルが表示されます</string>
     <string name="revanced_alt_thumbnail_type_title">代替サムネイルの時間</string>
     <string name="revanced_alt_thumbnail_type_entry_1">動画の最初</string>
     <string name="revanced_alt_thumbnail_type_entry_2">動画の中間</string>
@@ -643,7 +643,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="revanced_spoof_app_version_title">アプリのバージョンを偽装</string>
     <string name="revanced_spoof_app_version_target_entry_0">18.20.39 - 旧バージョンのプレイヤーフライアウトパネルを復元</string>
     <string name="revanced_spoof_app_version_target_entry_1">18.09.39 - 旧バージョンのライブラリタブを復元</string>
-    <string name="revanced_spoof_app_version_target_entry_2">17.41.37 - ライブラリタブで旧バージョンのプレイリスト欄を復元</string>
+    <string name="revanced_spoof_app_version_target_entry_2">17.41.37 - ライブラリタブで旧バージョンの再生リスト欄を復元</string>
     <string name="revanced_spoof_app_version_target_entry_3">17.08.35 - 旧バージョンの UI を復元</string>
     <string name="revanced_spoof_app_version_target_entry_4">16.08.35 - 探索タブを復元</string>
     <string name="revanced_spoof_app_version_target_entry_title">偽装するバージョン</string>
@@ -694,8 +694,8 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="sb_enable_auto_hide_skip_segment_button_sum_on">スキップボタンは数秒後に非表示になります</string>
     <string name="sb_enable_auto_hide_skip_segment_button_sum_off">スキップボタンはセグメント全体で表示されます</string>
     <string name="sb_general_skiptoast">スキップ時のトーストの表示</string>
-    <string name="sb_general_skiptoast_sum_on">セグメントが自動的にスキップされたときにトーストを表示します。ここをタップしてサンプルトーストを見る。</string>
-    <string name="sb_general_skiptoast_sum_off">トーストは表示されません。ここをタップしてサンプルトーストを見る。</string>
+    <string name="sb_general_skiptoast_sum_on">セグメントが自動的にスキップされたときにトーストを表示します。ここをタップしてサンプルのトーストを見る。</string>
+    <string name="sb_general_skiptoast_sum_off">トーストは表示されません。ここをタップしてサンプルのトーストを見る。</string>
     <string name="sb_general_time_without">セグメントを除いた時間を表示</string>
     <string name="sb_general_time_without_sum_on">動画からセグメントを除いた時間が、動画の長さの横の括弧内に表示されます</string>
     <string name="sb_general_time_without_sum_off">動画の長さはそのまま表示されます</string>
@@ -740,7 +740,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="sb_segments_intro">休憩 / イントロアニメーション</string>
     <string name="sb_segments_intro_sum">本編ではない部分。一時停止、静止画面、アニメーション繰り返しが含まれます。情報を含んだ転換画面は含まれません。</string>
     <string name="sb_segments_outro">エンドカード / クレジット</string>
-    <string name="sb_segments_outro_sum">クレジットやYouTube エンドカードが表記されている場面を含みます。動画の結論は含まれません。</string>
+    <string name="sb_segments_outro_sum">クレジットや動画のエンドカードが表示されている場面を含みます。動画の結論は含まれません。</string>
     <string name="sb_segments_preview">プレビュー / あらすじ</string>
     <string name="sb_segments_preview_sum">今後起きる内容などをまとめたクリップのコレクション、この動画や他の動画・シリーズで起きること、他の場面で繰り返されるすべての情報が含まれます。 </string>
     <string name="sb_segments_filler">繋ぎの話 / 冗談</string>
@@ -831,7 +831,7 @@ YouTube v18.24.37 以降でのみ利用可能です"</string>
     <string name="sb_reset_color">色をリセット</string>
     <string name="sb_reset">リセット</string>
     <string name="sb_about_api_sum">データは SponsorBlock API によって提供されます。ここをタップして詳細と他のプラットフォームのダウンロードをご覧ください。</string>
-    <string name="sb_about_made_by">JakubWeg により実装されました</string>
+    <string name="sb_about_made_by">JakubWeg により実装</string>
     <string name="seconds">秒</string>
     <string name="settings_export_failed">設定のエクスポートに失敗しました</string>
     <string name="settings_export_successful">設定は正常にエクスポートされました</string>

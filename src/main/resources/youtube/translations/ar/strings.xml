@@ -528,13 +528,13 @@
     <string name="revanced_whitelisting_remove_failed" formatted="false">فشل إزالة القناة %s من القائمة البيضاء %s</string>
     <string name="revanced_whitelisting_settings_summary">التحقق أو إزالة قائمة القنوات المضافة إلى القائمة البيضاء</string>
     <string name="revanced_whitelisting_settings_title">إعدادات القائمة البيضاء</string>
-    <string name="revanced_whitelisting_speed">سرعة الفيديو</string>
+    <string name="revanced_whitelisting_speed">سرعة التشغيل</string>
     <string name="revanced_whitelisting_speed_button">السرعة</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>
     <string name="revanced_whitelisting_title">قائمة القنوات البيضاء</string>
-    <string name="revanced_whitelist_api_key_title">مفتاح API الخاص بـ Youtube</string>
-    <string name="revanced_whitelist_api_key_summary">مفتاح Youtube API Key v3 المستخدم بواسطة مِيزة القائمة البيضاء</string>
+    <string name="revanced_whitelist_api_key_title">مفتاح API الخاص بـ YouTube</string>
+    <string name="revanced_whitelist_api_key_summary">مفتاح YouTube API Key v3 المستخدم بواسطة مِيزة القائمة البيضاء</string>
     <string name="revanced_hide_view_products_summary_off">يتم عرض لافتة عرض المنتجات</string>
     <string name="revanced_hide_view_products_summary_on">تم إخفاء لافتة عرض المنتجات</string>
     <string name="revanced_hide_view_products_title">إخفاء لافتة عرض المنتجات</string>

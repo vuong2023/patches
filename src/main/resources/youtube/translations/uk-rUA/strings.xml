@@ -528,7 +528,7 @@
     <string name="revanced_whitelisting_remove_failed" formatted="false">Не вдалося вилучити канал %s з білого списку %s</string>
     <string name="revanced_whitelisting_settings_summary">Перевірити чи вилучити список каналів, доданих до білого списку</string>
     <string name="revanced_whitelisting_settings_title">Налаштування білого списку</string>
-    <string name="revanced_whitelisting_speed">Швидкість відео</string>
+    <string name="revanced_whitelisting_speed">Швидкість відтворення</string>
     <string name="revanced_whitelisting_speed_button">Швидкість</string>
     <string name="revanced_whitelisting_sponsorblock">Спонсор Блок</string>
     <string name="revanced_whitelisting_sponsorblock_button">СБ</string>

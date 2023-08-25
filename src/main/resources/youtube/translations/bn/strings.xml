@@ -528,13 +528,13 @@
     <string name="revanced_whitelisting_remove_failed" formatted="false">%s চ্যানেলটি %s হোয়াইটলিস্ট থেকে বাদ দিতে ব্যর্থ হয়েছে</string>
     <string name="revanced_whitelisting_settings_summary">হোয়াইটলিস্টে যুক্ত হোয়া চ্যানেল তালিকা চেক করুন বা বাদ দিন</string>
     <string name="revanced_whitelisting_settings_title">হোয়াইটলিস্ট সেটিং</string>
-    <string name="revanced_whitelisting_speed">Video Speed</string>
+    <string name="revanced_whitelisting_speed">Playback Speed</string>
     <string name="revanced_whitelisting_speed_button">গতি</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>
     <string name="revanced_whitelisting_title">চ্যানেল হোয়াইটলিস্ট</string>
-    <string name="revanced_whitelist_api_key_title">Youtube API Key</string>
-    <string name="revanced_whitelist_api_key_summary">Youtube API Key v3 used by whitelist feature</string>
+    <string name="revanced_whitelist_api_key_title">YouTube API Key</string>
+    <string name="revanced_whitelist_api_key_summary">YouTube API Key v3 used by whitelist feature</string>
     <string name="revanced_hide_view_products_summary_off">পণ্য দেখার ব্যানার প্রদর্শিত হয়েছে</string>
     <string name="revanced_hide_view_products_summary_on">পণ্য দেখার ব্যানার লুকিয়ে রয়েছে</string>
     <string name="revanced_hide_view_products_title">প্রোডাক্ট দেখুন ব্যানার লুকান</string>
@@ -623,7 +623,7 @@
     <string name="revanced_show_fullscreen_title_title">ফুলস্ক্রিণ টাইটেল দেখান</string>
     <string name="revanced_alt_thumbnails_preference_screen_title">বিকল্প থাম্বনেইল</string>
     <string name="revanced_alt_thumbnail_title">বিকল্প থাম্বনেইল সক্রিয় করুন</string>
-    <string name="revanced_alt_thumbnail_summary_on">Youtube thumbnails replaced with alternative ones</string>
+    <string name="revanced_alt_thumbnail_summary_on">YouTube thumbnails replaced with alternative ones</string>
     <string name="revanced_alt_thumbnail_summary_off">মূল YouTube থাম্বনেইল প্রদর্শিত হচ্ছে</string>
     <string name="revanced_alt_thumbnail_type_title">ভিডিওর যে সময় থেকে স্থিরচিত্র নেয়া হবে</string>
     <string name="revanced_alt_thumbnail_type_entry_1">ভিডিওর শুরুর অংশ</string>

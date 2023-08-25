@@ -528,13 +528,13 @@
     <string name="revanced_whitelisting_remove_failed" formatted="false">Не удалось удалить канал %s из белого списка %s</string>
     <string name="revanced_whitelisting_settings_summary">Проверить или удалить список каналов, добавленных в белый список</string>
     <string name="revanced_whitelisting_settings_title">Настройки белого списка</string>
-    <string name="revanced_whitelisting_speed">Скорость видео</string>
+    <string name="revanced_whitelisting_speed">Скорость воспроизведения</string>
     <string name="revanced_whitelisting_speed_button">Скорость</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>
     <string name="revanced_whitelisting_title">Белый список каналов</string>
-    <string name="revanced_whitelist_api_key_title">Ключ API YouTube</string>
-    <string name="revanced_whitelist_api_key_summary">Ключ API Youtube v3 используется в белом списке</string>
+    <string name="revanced_whitelist_api_key_title">Ключ YouTube API</string>
+    <string name="revanced_whitelist_api_key_summary">Функция белого списка использует ключ YouTube API v3</string>
     <string name="revanced_hide_view_products_summary_off">Баннер товаров отображен</string>
     <string name="revanced_hide_view_products_summary_on">Баннер товаров скрыт</string>
     <string name="revanced_hide_view_products_title">Баннер товаров</string>

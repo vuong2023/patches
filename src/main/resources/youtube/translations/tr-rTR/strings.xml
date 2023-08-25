@@ -171,7 +171,7 @@
     <string name="revanced_hide_audio_track_button_summary_on">Gizleniyor</string>
     <string name="revanced_hide_audio_track_button_title">\"Ses parçası\" düğmesini gizle</string>
     <string name="revanced_hide_autoplay_button_summary_off">Gizlenmiyor</string>
-    <string name="revanced_hide_autoplay_button_summary_on">Gizlendi</string>
+    <string name="revanced_hide_autoplay_button_summary_on">Gizleniyor</string>
     <string name="revanced_hide_autoplay_button_title">\"Otomatik oynat\" butonunu gizle</string>
     <string name="revanced_hide_autoplay_preview_summary_off">Gizlenmiyor</string>
     <string name="revanced_hide_autoplay_preview_summary_on">Gizleniyor</string>
@@ -527,7 +527,7 @@ Bilinen sorun: otomatik oynatma çalışmıyor"</string>
     <string name="revanced_whitelisting_remove_failed" formatted="false">%s kanalı %s beyaz listesinden kaldırılamadı</string>
     <string name="revanced_whitelisting_settings_summary">Beyaz listeye eklenen kanalların listesini kontrol edin veya kaldırın</string>
     <string name="revanced_whitelisting_settings_title">Beyaz liste ayarları</string>
-    <string name="revanced_whitelisting_speed">Video hızı</string>
+    <string name="revanced_whitelisting_speed">Oynatma hızı</string>
     <string name="revanced_whitelisting_speed_button">Hız</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>

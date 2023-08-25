@@ -529,7 +529,7 @@ Problema noto: la riproduzione automatica non funziona"</string>
     <string name="revanced_whitelisting_remove_failed" formatted="false">Impossibile rimuovere il canale %s dalla whitelist %s</string>
     <string name="revanced_whitelisting_settings_summary">Controlla o rimuovi l\'elenco dei canali aggiunti alla whitelist</string>
     <string name="revanced_whitelisting_settings_title">Impostazioni della whitelist</string>
-    <string name="revanced_whitelisting_speed">Velocità del video</string>
+    <string name="revanced_whitelisting_speed">Velocità di riproduzione</string>
     <string name="revanced_whitelisting_speed_button">Velocità</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>

@@ -528,13 +528,13 @@ Znany problem: Automatyczne odtwarzanie nie działa"</string>
     <string name="revanced_whitelisting_remove_failed" formatted="false">Nie udało się usunąć kanału %s z białej listy %s</string>
     <string name="revanced_whitelisting_settings_summary">Sprawdź lub usuń listę kanałów dodanych do białej listy</string>
     <string name="revanced_whitelisting_settings_title">Ustawienia białej listy</string>
-    <string name="revanced_whitelisting_speed">Prędkość wideo</string>
+    <string name="revanced_whitelisting_speed">Prędkość odtwarzania</string>
     <string name="revanced_whitelisting_speed_button">Prędkość</string>
     <string name="revanced_whitelisting_sponsorblock">SponsorBlock</string>
     <string name="revanced_whitelisting_sponsorblock_button">SB</string>
     <string name="revanced_whitelisting_title">Biała lista kanałów</string>
-    <string name="revanced_whitelist_api_key_title">Klucz YouTube API</string>
-    <string name="revanced_whitelist_api_key_summary">Klucz YouTube API v3 używany przez funkcję białej listy</string>
+    <string name="revanced_whitelist_api_key_title">Klucz API YouTube</string>
+    <string name="revanced_whitelist_api_key_summary">Klucz API v3 YouTube używany przez funkcję białej listy</string>
     <string name="revanced_hide_view_products_summary_off">Widoczne</string>
     <string name="revanced_hide_view_products_summary_on">Ukryte</string>
     <string name="revanced_hide_view_products_title">Banery produktów</string>
