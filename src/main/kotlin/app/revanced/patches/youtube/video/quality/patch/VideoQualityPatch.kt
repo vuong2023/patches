@@ -122,7 +122,7 @@ class VideoQualityPatch : BytecodePatch(
             )
         } ?: return VideoQualitySettingsParentFingerprint.toErrorResult()
 
-        VideoCpnPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Z)V")
+        // VideoCpnPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Z)V")
         VideoIdWithoutShortsPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;)V")
 
         /**
