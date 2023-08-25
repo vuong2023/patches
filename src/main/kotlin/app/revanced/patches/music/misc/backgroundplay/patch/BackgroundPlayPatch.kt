@@ -3,7 +3,7 @@ package app.revanced.patches.music.misc.backgroundplay.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
@@ -22,7 +22,7 @@ import app.revanced.patches.music.utils.fix.decoding.patch.DecodingPatch
 @Description("Enables playing music in the background.")
 @DependsOn([DecodingPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class BackgroundPlayPatch : BytecodePatch(
     listOf(BackgroundPlaybackParentFingerprint)
 ) {

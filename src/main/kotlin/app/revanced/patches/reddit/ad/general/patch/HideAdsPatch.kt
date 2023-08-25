@@ -3,7 +3,7 @@ package app.revanced.patches.reddit.ad.general.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
@@ -40,7 +40,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 )
 @RedditCompatibility
 @RequiresIntegrations
-@Version("0.0.2")
+
 class HideAdsPatch : BytecodePatch(
     listOf(
         AdPostFingerprint,

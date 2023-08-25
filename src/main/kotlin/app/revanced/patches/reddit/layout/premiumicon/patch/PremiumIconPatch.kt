@@ -3,7 +3,7 @@ package app.revanced.patches.reddit.layout.premiumicon.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
@@ -17,7 +17,7 @@ import app.revanced.patches.reddit.utils.annotations.RedditCompatibility
 @Name("Premium icon")
 @Description("Unlocks premium icons.")
 @RedditCompatibility
-@Version("0.0.1")
+
 class PremiumIconPatch : BytecodePatch(
     listOf(PremiumIconFingerprint)
 ) {

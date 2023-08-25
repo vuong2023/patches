@@ -3,7 +3,7 @@ package app.revanced.patches.music.utils.fix.androidauto.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
@@ -20,7 +20,7 @@ import app.revanced.patches.music.utils.fix.decoding.patch.DecodingPatch
 @Description("Spoofs the YouTube Music certificate for Android Auto.")
 @DependsOn([DecodingPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class AndroidAutoCertificatePatch : BytecodePatch(
     listOf(CertificateCheckFingerprint)
 ) {

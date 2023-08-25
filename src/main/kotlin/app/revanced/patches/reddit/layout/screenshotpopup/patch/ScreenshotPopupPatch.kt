@@ -3,7 +3,7 @@ package app.revanced.patches.reddit.layout.screenshotpopup.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -29,7 +29,7 @@ import app.revanced.patches.reddit.utils.settings.resource.patch.SettingsPatch
     ]
 )
 @RedditCompatibility
-@Version("0.0.1")
+
 class ScreenshotPopupPatch : BytecodePatch(
     listOf(ScreenshotTakenBannerFingerprint)
 ) {

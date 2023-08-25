@@ -2,7 +2,7 @@ package app.revanced.patches.music.layout.branding.name.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.OptionsContainer
 import app.revanced.patcher.patch.PatchOption
@@ -25,7 +25,7 @@ import app.revanced.patches.music.utils.fix.decoding.patch.DecodingPatch
     ]
 )
 @MusicCompatibility
-@Version("0.0.1")
+
 class CustomBrandingNamePatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

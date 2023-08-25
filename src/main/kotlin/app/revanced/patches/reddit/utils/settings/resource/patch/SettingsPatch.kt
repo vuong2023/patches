@@ -2,7 +2,7 @@ package app.revanced.patches.reddit.utils.settings.resource.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultError
@@ -27,7 +27,7 @@ import kotlin.io.path.exists
     ]
 )
 @RedditCompatibility
-@Version("0.0.1")
+
 class SettingsPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

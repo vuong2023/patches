@@ -2,7 +2,7 @@ package app.revanced.patches.music.utils.microg.bytecode.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.PatchResult
@@ -37,7 +37,7 @@ import app.revanced.util.microg.MicroGBytecodeHelper
 @Name("MicroG support")
 @Description("Allows ReVanced Music to run without root and under a different package name with MicroG.")
 @MusicCompatibility
-@Version("0.0.2")
+
 class MicroGPatch : BytecodePatch(
     listOf(
         ServiceCheckFingerprint,

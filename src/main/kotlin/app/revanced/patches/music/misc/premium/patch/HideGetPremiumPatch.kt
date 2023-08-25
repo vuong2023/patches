@@ -3,7 +3,7 @@ package app.revanced.patches.music.misc.premium.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
@@ -37,7 +37,7 @@ import com.android.tools.smali.dexlib2.iface.reference.Reference
     ]
 )
 @MusicCompatibility
-@Version("0.0.1")
+
 class HideGetPremiumPatch : BytecodePatch(
     listOf(
         AccountMenuFooterFingerprint,

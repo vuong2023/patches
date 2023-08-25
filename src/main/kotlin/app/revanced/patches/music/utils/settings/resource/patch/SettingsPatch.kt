@@ -2,7 +2,7 @@ package app.revanced.patches.music.utils.settings.resource.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -37,7 +37,7 @@ import java.nio.file.Paths
     ]
 )
 @MusicCompatibility
-@Version("0.0.1")
+
 class SettingsPatch : AbstractSettingsResourcePatch(
     "music/settings",
     "music/settings/host",

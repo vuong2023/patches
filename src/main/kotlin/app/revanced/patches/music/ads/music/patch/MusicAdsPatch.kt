@@ -2,7 +2,7 @@ package app.revanced.patches.music.ads.music.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -25,7 +25,7 @@ import app.revanced.util.integrations.Constants.MUSIC_ADS_PATH
     ]
 )
 @MusicCompatibility
-@Version("0.0.1")
+
 class MusicAdsPatch : AbstractAdsPatch(
     "$MUSIC_ADS_PATH/HideMusicAdsPatch;->hideMusicAds()Z"
 ) {

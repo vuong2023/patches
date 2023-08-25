@@ -1,7 +1,7 @@
 package app.revanced.patches.music.utils.litho.patch
 
 import app.revanced.extensions.toErrorResult
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.removeInstructions
@@ -19,7 +19,7 @@ import java.io.Closeable
 
 @DependsOn([ComponentParserPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class LithoFilterPatch : BytecodePatch(
     listOf(LithoFilterFingerprint)
 ), Closeable {

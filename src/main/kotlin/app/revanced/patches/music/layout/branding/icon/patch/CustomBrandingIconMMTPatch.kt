@@ -2,7 +2,7 @@ package app.revanced.patches.music.layout.branding.icon.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -19,7 +19,7 @@ import app.revanced.util.resources.IconHelper.customIconMusicAdditional
 @Description("Changes the YouTube Music launcher icon to MMT.")
 @DependsOn([DecodingPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class CustomBrandingIconMMTPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

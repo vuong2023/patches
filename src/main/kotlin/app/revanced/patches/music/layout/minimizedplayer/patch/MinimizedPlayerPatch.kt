@@ -3,7 +3,7 @@ package app.revanced.patches.music.layout.minimizedplayer.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
@@ -23,7 +23,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 @Description("Permanently keep player minimized even if another track is played.")
 @DependsOn([SettingsPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class MinimizedPlayerPatch : BytecodePatch(
     listOf(MinimizedPlayerFingerprint)
 ) {

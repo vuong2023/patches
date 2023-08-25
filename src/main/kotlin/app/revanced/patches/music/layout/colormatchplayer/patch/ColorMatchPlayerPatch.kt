@@ -3,7 +3,7 @@ package app.revanced.patches.music.layout.colormatchplayer.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -30,7 +30,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 @Description("Matches the color of the mini player and the fullscreen player.")
 @DependsOn([SettingsPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class ColorMatchPlayerPatch : BytecodePatch(
     listOf(ColorMatchPlayerParentFingerprint)
 ) {

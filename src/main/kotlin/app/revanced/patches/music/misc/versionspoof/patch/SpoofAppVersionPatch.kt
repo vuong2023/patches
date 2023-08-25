@@ -2,7 +2,7 @@ package app.revanced.patches.music.misc.versionspoof.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -19,7 +19,7 @@ import app.revanced.util.integrations.Constants.MUSIC_MISC_PATH
 @Description("Spoof the YouTube Music client version.")
 @DependsOn([SettingsPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class SpoofAppVersionPatch : AbstractVersionSpoofPatch(
     "$MUSIC_MISC_PATH/SpoofAppVersionPatch;->getVersionOverride(Ljava/lang/String;)Ljava/lang/String;"
 ) {

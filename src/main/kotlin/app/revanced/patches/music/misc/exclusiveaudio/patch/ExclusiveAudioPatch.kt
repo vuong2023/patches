@@ -3,7 +3,7 @@ package app.revanced.patches.music.misc.exclusiveaudio.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.data.toMethodWalker
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
@@ -26,7 +26,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 @Description("Enables the option to play music without video.")
 @DependsOn([DecodingPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class ExclusiveAudioPatch : BytecodePatch(
     listOf(MusicBrowserServiceFingerprint)
 ) {

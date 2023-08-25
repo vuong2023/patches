@@ -2,7 +2,7 @@ package app.revanced.patches.music.layout.amoled.patch
 
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultSuccess
@@ -18,7 +18,7 @@ import org.w3c.dom.Element
 @Description("Applies pure black theme in flyout panels.")
 @DependsOn([DecodingPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class AmoledPatch : ResourcePatch {
     override fun execute(context: ResourceContext): PatchResult {
 

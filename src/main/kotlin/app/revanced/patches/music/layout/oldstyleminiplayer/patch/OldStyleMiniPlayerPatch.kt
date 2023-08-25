@@ -3,7 +3,7 @@ package app.revanced.patches.music.layout.oldstyleminiplayer.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -27,7 +27,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 @Description("Return the miniplayers to old style. (for YT Music v5.55.53+)")
 @DependsOn([SettingsPatch::class])
 @MusicCompatibility
-@Version("0.0.1")
+
 class OldStyleMiniPlayerPatch : BytecodePatch(
     listOf(
         ColorMatchPlayerParentFingerprint,

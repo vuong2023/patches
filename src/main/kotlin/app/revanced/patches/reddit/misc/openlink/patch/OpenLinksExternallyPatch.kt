@@ -3,7 +3,7 @@ package app.revanced.patches.reddit.misc.openlink.patch
 import app.revanced.extensions.toErrorResult
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
-import app.revanced.patcher.annotation.Version
+
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -24,7 +24,7 @@ import app.revanced.util.bytecode.getStringIndex
 @Description("Open links outside of the app directly in your browser.")
 @DependsOn([SettingsPatch::class])
 @RedditCompatibility
-@Version("0.0.1")
+
 class OpenLinksExternallyPatch : BytecodePatch(
     listOf(ScreenNavigatorFingerprint)
 ) {
