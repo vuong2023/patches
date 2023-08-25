@@ -1,3 +1,10 @@
+## [2.189.1](https://github.com/YT-Advanced/ReX-patches/compare/v2.189.0...v2.189.1) (2023-08-25)
+
+
+### Bug Fixes
+
+* **youtube/hide-quick-action:** Not worked correctly ([99efefb](https://github.com/YT-Advanced/ReX-patches/commit/99efefb1620d90b9497bd194438ea85fc34ff4e1))
+
 # [2.189.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.188.1...v2.189.0) (2023-08-23)
 
 
