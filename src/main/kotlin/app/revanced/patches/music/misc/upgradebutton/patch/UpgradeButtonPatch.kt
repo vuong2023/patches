@@ -20,6 +20,7 @@ import app.revanced.patches.music.utils.annotations.MusicCompatibility
 import app.revanced.patches.music.utils.fix.decoding.patch.DecodingPatch
 import app.revanced.patches.music.utils.integrations.patch.IntegrationsPatch
 import app.revanced.patches.music.utils.resourceid.patch.SharedResourceIdPatch
+import app.revanced.util.integrations.Constants.MUSIC_LAYOUT
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -46,25 +47,11 @@ class UpgradeButtonPatch : BytecodePatch(
         PivotBarConstructorFingerprint.result?.let {
             it.mutableMethod.apply {
                 val targetIndex = it.scanResult.patternScanResult!!.startIndex
-                val targetRegisterA = getInstruction<TwoRegisterInstruction>(targetIndex).registerA
-                val targetRegisterB = getInstruction<TwoRegisterInstruction>(targetIndex).registerB
+                val targetRegister = getInstruction<TwoRegisterInstruction>(targetIndex).registerA
 
-                val replaceReference =
-                    getInstruction<ReferenceInstruction>(targetIndex).reference.toString()
-
-                replaceInstruction(
+                addInstruction(
                     targetIndex,
-                    "invoke-interface {v$targetRegisterA}, Ljava/util/List;->size()I"
-                )
-                addInstructionsWithLabels(
-                    targetIndex + 1, """
-                        move-result v1
-                        const/4 v2, 0x4
-                        if-le v1, v2, :dismiss
-                        invoke-interface {v$targetRegisterA, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
-                        :dismiss
-                        iput-object v$targetRegisterA, v$targetRegisterB, $replaceReference
-                        """
+                    "invoke-static {v$targetRegister}, $MUSIC_LAYOUT->hideUpgradeButton(Ljava/util/List;)V"
                 )
             }
         } ?: return PivotBarConstructorFingerprint.toErrorResult()
