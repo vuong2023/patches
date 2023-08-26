@@ -11,6 +11,7 @@ import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
 import app.revanced.patches.youtube.utils.litho.patch.LithoFilterPatch
+import app.revanced.patches.youtube.utils.quickactions.patch.QuickActionsHookPatch
 import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 import app.revanced.util.integrations.Constants.PATCHES_PATH
 
@@ -20,6 +21,7 @@ import app.revanced.util.integrations.Constants.PATCHES_PATH
 @DependsOn(
     [
         LithoFilterPatch::class,
+        QuickActionsHookPatch::class,
         SettingsPatch::class
     ]
 )
