@@ -1,8 +1,7 @@
 package app.revanced.patches.shared.patch.mapping
 
 import app.revanced.patcher.data.ResourceContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.ResourcePatch
 import org.w3c.dom.Element
 import java.util.Collections
@@ -18,7 +17,7 @@ class ResourceMappingPatch : ResourcePatch {
         private val threadPoolExecutor = Executors.newFixedThreadPool(THREAD_COUNT)
     }
 
-    override fun execute(context: ResourceContext): PatchResult {
+    override fun execute(context: ResourceContext) {
         // save the file in memory to concurrently read from
         val resourceXmlFile = context["res/values/public.xml"].readBytes()
 
@@ -58,8 +57,6 @@ class ResourceMappingPatch : ResourcePatch {
             .awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS)
 
         resourceMappings = mappings
-
-        return PatchResultSuccess()
     }
 }
 

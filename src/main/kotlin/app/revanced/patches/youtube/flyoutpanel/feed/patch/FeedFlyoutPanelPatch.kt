@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.flyoutpanel.feed.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -8,9 +8,8 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultError
-import app.revanced.patcher.patch.PatchResultSuccess
+import app.revanced.patcher.patch.PatchException
+
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.flyoutpanel.feed.fingerprints.BottomSheetMenuItemBuilderFingerprint
@@ -29,7 +28,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 class FeedFlyoutPanelPatch : BytecodePatch(
     listOf(BottomSheetMenuItemBuilderFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         BottomSheetMenuItemBuilderFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -39,7 +38,7 @@ class FeedFlyoutPanelPatch : BytecodePatch(
                 val targetParameter =
                     getInstruction<ReferenceInstruction>(targetIndex - 1).reference
                 if (!targetParameter.toString().endsWith("Ljava/lang/CharSequence;"))
-                    return PatchResultError("Method signature parameter did not match: $targetParameter")
+                    throw PatchException("Method signature parameter did not match: $targetParameter")
 
                 addInstructions(
                     targetIndex + 1, """
@@ -48,7 +47,7 @@ class FeedFlyoutPanelPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return BottomSheetMenuItemBuilderFingerprint.toErrorResult()
+        } ?: throw BottomSheetMenuItemBuilderFingerprint.exception
 
         /**
          * Add settings
@@ -61,7 +60,5 @@ class FeedFlyoutPanelPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-feed-flyout-panel")
-
-        return PatchResultSuccess()
     }
 }

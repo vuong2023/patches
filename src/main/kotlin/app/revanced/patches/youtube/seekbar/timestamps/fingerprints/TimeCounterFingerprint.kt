@@ -7,7 +7,7 @@ import com.android.tools.smali.dexlib2.Opcode
 
 object TimeCounterFingerprint : MethodFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = listOf(),
+    parameters = emptyList(),
     returnType = "V",
     opcodes = listOf(
         Opcode.INVOKE_VIRTUAL,

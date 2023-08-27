@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.general.trendingsearches.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -8,8 +8,6 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.general.trendingsearches.fingerprints.SearchBarEntryFingerprint
@@ -38,7 +36,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 class TrendingSearchesPatch : BytecodePatch(
     listOf(SearchBarEntryFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         SearchBarEntryFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -59,7 +57,7 @@ class TrendingSearchesPatch : BytecodePatch(
                         )
                     }
             }
-        } ?: return SearchBarEntryFingerprint.toErrorResult()
+        } ?: throw SearchBarEntryFingerprint.exception
 
         /**
          * Add settings
@@ -72,8 +70,6 @@ class TrendingSearchesPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-trending-searches")
-
-        return PatchResultSuccess()
     }
 
     private enum class SearchTerm(val resourceId: Long, val value: Int) {

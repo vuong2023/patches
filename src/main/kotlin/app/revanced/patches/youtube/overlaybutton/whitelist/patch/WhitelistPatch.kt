@@ -1,14 +1,12 @@
 package app.revanced.patches.youtube.overlaybutton.whitelist.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.or
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.revanced.patcher.util.smali.toInstructions
@@ -30,7 +28,7 @@ class WhitelistPatch : BytecodePatch(
         PlayerResponseModelFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         ChannelNameFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -38,7 +36,7 @@ class WhitelistPatch : BytecodePatch(
 
                 channelNameReference = getReference(targetIndex)
             }
-        } ?: return ChannelNameFingerprint.toErrorResult()
+        } ?: throw ChannelNameFingerprint.exception
 
         PlayerResponseModelFingerprint.result?.let { parentResult ->
             parentResult.mutableMethod.apply {
@@ -94,11 +92,9 @@ class WhitelistPatch : BytecodePatch(
                             "invoke-direct {p0}, ${parentResult.classDef.type}->setChannelName()V"
                         )
                     }
-                } ?: return fingerprint.toErrorResult()
+                } ?: throw fingerprint.exception
             }
-        } ?: return PlayerResponseModelFingerprint.toErrorResult()
-
-        return PatchResultSuccess()
+        } ?: throw PlayerResponseModelFingerprint.exception
     }
 
     companion object {

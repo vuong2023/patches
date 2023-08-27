@@ -1,7 +1,7 @@
 package app.revanced.patches.music.misc.quality.patch
 
 import app.revanced.extensions.findMutableMethodOf
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -11,8 +11,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.music.misc.quality.fingerprints.MusicVideoQualitySettingsFingerprint
@@ -49,7 +47,7 @@ class VideoQualityPatch : BytecodePatch(
         UserQualityChangeFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         UserQualityChangeFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -94,7 +92,7 @@ class VideoQualityPatch : BytecodePatch(
                     }
                 }
             }
-        } ?: return UserQualityChangeFingerprint.toErrorResult()
+        } ?: throw UserQualityChangeFingerprint.exception
 
         MusicVideoQualitySettingsParentFingerprint.result?.let { parentResult ->
             MusicVideoQualitySettingsFingerprint.also {
@@ -110,8 +108,8 @@ class VideoQualityPatch : BytecodePatch(
                     invoke-static {p1, p2, v0}, $INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->setVideoQuality([Ljava/lang/Object;ILjava/lang/Object;)I
                     move-result p2
                     """
-            ) ?: return MusicVideoQualitySettingsFingerprint.toErrorResult()
-        } ?: return MusicVideoQualitySettingsParentFingerprint.toErrorResult()
+            ) ?: throw MusicVideoQualitySettingsFingerprint.exception
+        } ?: throw MusicVideoQualitySettingsParentFingerprint.exception
 
         VideoIdPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;)V")
         SettingsPatch.addMusicPreference(
@@ -119,8 +117,6 @@ class VideoQualityPatch : BytecodePatch(
             "revanced_enable_save_video_quality",
             "true"
         )
-
-        return PatchResultSuccess()
     }
 
     private companion object {

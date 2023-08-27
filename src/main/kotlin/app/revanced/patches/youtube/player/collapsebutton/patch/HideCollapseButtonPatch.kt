@@ -4,8 +4,7 @@ import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.ResourceContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.ResourcePatch
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
@@ -25,7 +24,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 @YouTubeCompatibility
 
 class HideCollapseButtonPatch : ResourcePatch {
-    override fun execute(context: ResourceContext): PatchResult {
+    override fun execute(context: ResourceContext) {
 
         /**
          * Add settings
@@ -38,7 +37,5 @@ class HideCollapseButtonPatch : ResourcePatch {
         )
 
         SettingsPatch.updatePatchStatus("hide-collapse-button")
-
-        return PatchResultSuccess()
     }
 }

@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.navigation.navigationbuttons.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -9,8 +9,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.navigation.navigationbuttons.fingerprints.AutoMotiveFingerprint
@@ -43,7 +41,7 @@ class NavigationButtonsPatch : BytecodePatch(
         PivotBarCreateButtonViewFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         PivotBarCreateButtonViewFingerprint.result?.let { parentResult ->
 
@@ -61,7 +59,7 @@ class NavigationButtonsPatch : BytecodePatch(
                         parentResult.mutableClass
                     )
                 }.map {
-                    it.result?.scanResult?.patternScanResult ?: return it.toErrorResult()
+                    it.result?.scanResult?.patternScanResult ?: throw it.exception
                 }
             ) {
                 val enumScanResult = this[0]
@@ -92,7 +90,7 @@ class NavigationButtonsPatch : BytecodePatch(
                 injectHook(createButtonHook, insertIndex)
             }
 
-        } ?: return PivotBarCreateButtonViewFingerprint.toErrorResult()
+        } ?: throw PivotBarCreateButtonViewFingerprint.exception
 
         /**
          * Switch create button with notifications button
@@ -109,7 +107,7 @@ class NavigationButtonsPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return AutoMotiveFingerprint.toErrorResult()
+        } ?: throw AutoMotiveFingerprint.exception
 
         /**
          * Add settings
@@ -122,8 +120,6 @@ class NavigationButtonsPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-navigation-buttons")
-
-        return PatchResultSuccess()
     }
 
     private companion object {

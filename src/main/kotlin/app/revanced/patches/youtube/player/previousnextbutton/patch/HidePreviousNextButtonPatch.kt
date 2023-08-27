@@ -5,8 +5,6 @@ import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
@@ -25,7 +23,7 @@ import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
 @YouTubeCompatibility
 
 class HidePreviousNextButtonPatch : BytecodePatch() {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         /**
          * Add settings
@@ -38,7 +36,5 @@ class HidePreviousNextButtonPatch : BytecodePatch() {
         )
 
         SettingsPatch.updatePatchStatus("hide-previous-next-button")
-
-        return PatchResultSuccess()
     }
 }

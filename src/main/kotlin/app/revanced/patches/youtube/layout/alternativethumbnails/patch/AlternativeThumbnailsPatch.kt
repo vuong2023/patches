@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.layout.alternativethumbnails.bytecode.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -9,8 +9,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
@@ -42,19 +40,19 @@ class AlternativeThumbnailsPatch : BytecodePatch(
         CronetURLRequestCallbackOnResponseStartedFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         MessageDigestImageUrlParentFingerprint.result
-            ?: return MessageDigestImageUrlParentFingerprint.toErrorResult()
+            ?: throw MessageDigestImageUrlParentFingerprint.exception
 
         MessageDigestImageUrlFingerprint.resolve(context, MessageDigestImageUrlParentFingerprint.result!!.classDef)
 
         MessageDigestImageUrlFingerprint.result?.apply {
             loadImageUrlMethod = mutableMethod
-        } ?: return MessageDigestImageUrlFingerprint.toErrorResult()
+        } ?: throw MessageDigestImageUrlFingerprint.exception
         addImageUrlHook(INTEGRATIONS_CLASS_DESCRIPTOR, true)
 
         CronetURLRequestCallbackOnResponseStartedFingerprint.result
-            ?: return CronetURLRequestCallbackOnResponseStartedFingerprint.toErrorResult()
+            ?: throw CronetURLRequestCallbackOnResponseStartedFingerprint.exception
 
         CronetURLRequestCallbackOnSucceededFingerprint.resolve(
             context,
@@ -63,7 +61,7 @@ class AlternativeThumbnailsPatch : BytecodePatch(
 
         CronetURLRequestCallbackOnSucceededFingerprint.result?.apply {
             loadImageSuccessCallbackMethod = mutableMethod
-        } ?: return CronetURLRequestCallbackOnSucceededFingerprint.toErrorResult()
+        } ?: throw CronetURLRequestCallbackOnSucceededFingerprint.exception
         addImageUrlSuccessCallbackHook(INTEGRATIONS_CLASS_DESCRIPTOR)
 
 
@@ -74,7 +72,7 @@ class AlternativeThumbnailsPatch : BytecodePatch(
 
         CronetURLRequestCallbackOnFailureFingerprint.result?.apply {
             loadImageErrorCallbackMethod = mutableMethod
-        } ?: return CronetURLRequestCallbackOnFailureFingerprint.toErrorResult()
+        } ?: throw CronetURLRequestCallbackOnFailureFingerprint.exception
 
         /**
          * Copy arrays
@@ -92,8 +90,6 @@ class AlternativeThumbnailsPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("alternative-video-thumbnails")
-
-        return PatchResultSuccess()
     }
 
     internal companion object {
@@ -141,7 +137,5 @@ class AlternativeThumbnailsPatch : BytecodePatch(
                 loadImageErrorCallbackIndex++,
                 "invoke-static { p2, p3 }, $targetMethodClass->handleCronetFailure(Lorg/chromium/net/UrlResponseInfo;Ljava/io/IOException;)V"
             )
-        }
-
-    }
+        }    }
 }

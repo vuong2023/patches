@@ -1,16 +1,14 @@
 package app.revanced.patches.youtube.utils.litho.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.data.toMethodWalker
+
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.removeInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patches.shared.patch.litho.ComponentParserPatch
@@ -40,13 +38,13 @@ class LithoFilterPatch : BytecodePatch(
         LowLevelByteBufferFingerprint
     )
 ), Closeable {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
 
         LowLevelByteBufferFingerprint.result?.mutableMethod?.addInstruction(
             0,
             "invoke-static { p0 }, $ADS_PATH/LowLevelFilter;->setProtoBuffer(Ljava/nio/ByteBuffer;)V"
-        ) ?: return LowLevelByteBufferFingerprint.toErrorResult()
+        ) ?: throw LowLevelByteBufferFingerprint.exception
 
         GeneralByteBufferFingerprint.result?.let {
             (context
@@ -59,7 +57,7 @@ class LithoFilterPatch : BytecodePatch(
                         "invoke-static { p2 }, $ADS_PATH/LithoFilterPatch;->setProtoBuffer(Ljava/nio/ByteBuffer;)V"
                     )
                 }
-        } ?: return GeneralByteBufferFingerprint.toErrorResult()
+        } ?: throw GeneralByteBufferFingerprint.exception
 
         generalHook("$ADS_PATH/LithoFilterPatch;->filters")
 
@@ -76,9 +74,7 @@ class LithoFilterPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return LithoFilterFingerprint.toErrorResult()
-
-        return PatchResultSuccess()
+        } ?: throw LithoFilterFingerprint.exception
     }
 
     override fun close() = LithoFilterFingerprint.result!!

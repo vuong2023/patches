@@ -4,8 +4,7 @@ import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.music.utils.annotations.MusicCompatibility
@@ -23,7 +22,7 @@ import app.revanced.util.integrations.Constants.MUSIC_MISC_PATH
 class CodecsUnlockPatch : AbstractOpusCodecsPatch(
     "$MUSIC_MISC_PATH/OpusCodecPatch;->enableOpusCodec()Z"
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         super.execute(context)
 
         SettingsPatch.addMusicPreference(
@@ -31,7 +30,5 @@ class CodecsUnlockPatch : AbstractOpusCodecsPatch(
             "revanced_enable_opus_codec",
             "true"
         )
-
-        return PatchResultSuccess()
     }
 }

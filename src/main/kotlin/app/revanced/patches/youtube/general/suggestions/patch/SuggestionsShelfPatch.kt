@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.general.suggestions.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -8,8 +8,6 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.general.suggestions.fingerprints.BreakingNewsFingerprint
@@ -33,7 +31,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 class SuggestionsShelfPatch : BytecodePatch(
     listOf(BreakingNewsFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         BreakingNewsFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -45,7 +43,7 @@ class SuggestionsShelfPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, $GENERAL->hideBreakingNewsShelf(Landroid/view/View;)V"
                 )
             }
-        } ?: return BreakingNewsFingerprint.toErrorResult()
+        } ?: throw BreakingNewsFingerprint.exception
 
         /*
         SuggestionContentsBuilderFingerprint.result?.let {
@@ -58,7 +56,7 @@ class SuggestionsShelfPatch : BytecodePatch(
                         """ + emptyComponentLabel, ExternalLabel("not_an_ad", getInstruction(2))
                 )
             }
-        } ?: return SuggestionContentsBuilderFingerprint.toErrorResult()
+        } ?: throw SuggestionContentsBuilderFingerprint.exception
          */
 
 
@@ -73,7 +71,5 @@ class SuggestionsShelfPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-suggestions-shelf")
-
-        return PatchResultSuccess()
     }
 }

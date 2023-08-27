@@ -1,8 +1,7 @@
 package app.revanced.patches.youtube.layout.optimize.patch
 
 import app.revanced.patcher.data.ResourceContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.ResourcePatch
 import app.revanced.util.resources.ResourceUtils
 import app.revanced.util.resources.ResourceUtils.copyResources
@@ -12,7 +11,7 @@ import java.nio.file.Path
 import java.nio.file.StandardCopyOption
 
 class RedundantResourcePatch : ResourcePatch {
-    override fun execute(context: ResourceContext): PatchResult {
+    override fun execute(context: ResourceContext) {
 
         // Convert universal APK to anti-split APK
         arrayOf(
@@ -54,8 +53,6 @@ class RedundantResourcePatch : ResourcePatch {
                 "third_party_licenses"
             )
         )
-
-        return PatchResultSuccess()
     }
 
     private companion object {

@@ -1,6 +1,6 @@
 package app.revanced.patches.music.layout.colormatchplayer.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -10,8 +10,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.removeInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -34,7 +32,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 class ColorMatchPlayerPatch : BytecodePatch(
     listOf(ColorMatchPlayerParentFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         ColorMatchPlayerParentFingerprint.result?.let { parentResult ->
             ColorMatchPlayerFingerprint.also {
@@ -74,16 +72,14 @@ class ColorMatchPlayerPatch : BytecodePatch(
                     )
                     removeInstruction(insertIndex - 1)
                 }
-            } ?: return ColorMatchPlayerFingerprint.toErrorResult()
-        } ?: return ColorMatchPlayerParentFingerprint.toErrorResult()
+            } ?: throw ColorMatchPlayerFingerprint.exception
+        } ?: throw ColorMatchPlayerParentFingerprint.exception
 
         SettingsPatch.addMusicPreference(
             CategoryType.LAYOUT,
             "revanced_enable_color_match_player",
             "true"
         )
-
-        return PatchResultSuccess()
     }
 
     private companion object {

@@ -1,8 +1,7 @@
 package app.revanced.patches.youtube.layout.theme.patch
 
 import app.revanced.patcher.data.ResourceContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.ResourcePatch
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patches.youtube.utils.litho.patch.LithoThemePatch
@@ -11,7 +10,7 @@ import org.w3c.dom.Element
 
 @DependsOn([LithoThemePatch::class])
 class GeneralThemePatch : ResourcePatch {
-    override fun execute(context: ResourceContext): PatchResult {
+    override fun execute(context: ResourceContext) {
 
         LithoThemePatch.injectCall("$UTILS_PATH/LithoThemePatch;->applyLithoTheme(I)I")
 
@@ -87,8 +86,6 @@ class GeneralThemePatch : ResourcePatch {
                     resourcesNode.setAttribute("android:drawable", "?attr/splashScreenColor")
             }
         }
-
-        return PatchResultSuccess()
     }
 
     internal companion object {

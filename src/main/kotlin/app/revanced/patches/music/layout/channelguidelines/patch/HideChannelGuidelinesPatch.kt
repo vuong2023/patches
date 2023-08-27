@@ -5,8 +5,6 @@ import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.music.utils.annotations.MusicCompatibility
@@ -27,7 +25,7 @@ import app.revanced.util.integrations.Constants.MUSIC_ADS_PATH
 @MusicCompatibility
 
 class HideChannelGuidelinesPatch : BytecodePatch() {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         SettingsPatch.addMusicPreference(
             CategoryType.LAYOUT,
@@ -36,8 +34,6 @@ class HideChannelGuidelinesPatch : BytecodePatch() {
         )
 
         LithoFilterPatch.addFilter(FILTER_CLASS_DESCRIPTOR)
-
-        return PatchResultSuccess()
     }
 
     private companion object {

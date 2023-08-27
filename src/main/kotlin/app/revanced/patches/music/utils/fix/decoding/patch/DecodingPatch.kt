@@ -1,12 +1,11 @@
 package app.revanced.patches.music.utils.fix.decoding.patch
 
 import app.revanced.patcher.data.ResourceContext
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
+
 import app.revanced.patcher.patch.ResourcePatch
 
 class DecodingPatch : ResourcePatch {
-    override fun execute(context: ResourceContext): PatchResult {
+    override fun execute(context: ResourceContext) {
 
         /**
          * For some reason, Androlib is incorrectly decoding some resources of YT Music
@@ -28,7 +27,5 @@ class DecodingPatch : ResourcePatch {
                 )
             }
         }
-
-        return PatchResultSuccess()
     }
 }

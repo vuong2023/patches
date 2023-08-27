@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.flyoutpanel.oldqualitylayout.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -8,8 +8,6 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.flyoutpanel.oldqualitylayout.fingerprints.QualityMenuViewInflateFingerprint
@@ -40,7 +38,7 @@ class OldQualityLayoutPatch : BytecodePatch(
         QualityMenuViewInflateFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         /**
          * Old method
@@ -55,7 +53,7 @@ class OldQualityLayoutPatch : BytecodePatch(
                     "invoke-static { v$insertRegister }, $FLYOUT_PANEL->enableOldQualityMenu(Landroid/widget/ListView;)V"
                 )
             }
-        } ?: return QualityMenuViewInflateFingerprint.toErrorResult()
+        } ?: throw QualityMenuViewInflateFingerprint.exception
 
         /**
          * New method
@@ -70,7 +68,7 @@ class OldQualityLayoutPatch : BytecodePatch(
                     "invoke-static { v$insertRegister }, $FLYOUT_PANEL->onFlyoutMenuCreate(Landroid/widget/LinearLayout;)V"
                 )
             }
-        } ?: return NewFlyoutPanelBuilderFingerprint.toErrorResult()
+        } ?: throw NewFlyoutPanelBuilderFingerprint.exception
 
         LithoFilterPatch.addFilter("$PATCHES_PATH/ads/VideoQualityMenuFilter;")
 
@@ -86,7 +84,5 @@ class OldQualityLayoutPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("enable-old-quality-layout")
-
-        return PatchResultSuccess()
     }
 }

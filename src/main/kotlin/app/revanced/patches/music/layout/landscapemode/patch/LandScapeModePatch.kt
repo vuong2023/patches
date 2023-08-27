@@ -1,14 +1,12 @@
 package app.revanced.patches.music.layout.landscapemode.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.music.layout.landscapemode.fingerprints.TabletIdentifierFingerprint
@@ -32,7 +30,7 @@ import app.revanced.util.integrations.Constants.MUSIC_LAYOUT
 class LandScapeModePatch : BytecodePatch(
     listOf(TabletIdentifierFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         TabletIdentifierFingerprint.result?.let {
             it.mutableMethod.addInstructions(
                 it.scanResult.patternScanResult!!.endIndex + 1, """
@@ -40,14 +38,12 @@ class LandScapeModePatch : BytecodePatch(
                     move-result p0
                     """
             )
-        } ?: return TabletIdentifierFingerprint.toErrorResult()
+        } ?: throw TabletIdentifierFingerprint.exception
 
         SettingsPatch.addMusicPreference(
             CategoryType.LAYOUT,
             "revanced_enable_landscape_mode",
             "true"
         )
-
-        return PatchResultSuccess()
     }
 }

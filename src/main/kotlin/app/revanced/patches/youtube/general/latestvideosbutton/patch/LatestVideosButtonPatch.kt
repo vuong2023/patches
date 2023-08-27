@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.general.latestvideosbutton.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -8,8 +8,6 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.general.latestvideosbutton.fingerprints.LatestVideosButtonFingerprint
@@ -33,7 +31,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 class LatestVideosButtonPatch : BytecodePatch(
     listOf(LatestVideosButtonFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         LatestVideosButtonFingerprint.result?.let {
             it.mutableMethod.apply {
                 val targetIndex = it.scanResult.patternScanResult!!.endIndex
@@ -44,7 +42,7 @@ class LatestVideosButtonPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, $GENERAL->hideLatestVideosButton(Landroid/view/View;)V"
                 )
             }
-        } ?: return LatestVideosButtonFingerprint.toErrorResult()
+        } ?: throw LatestVideosButtonFingerprint.exception
 
         /**
          * Add settings
@@ -57,7 +55,5 @@ class LatestVideosButtonPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-latest-videos-button")
-
-        return PatchResultSuccess()
     }
 }

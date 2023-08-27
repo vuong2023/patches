@@ -1,15 +1,13 @@
 package app.revanced.patches.music.misc.backgroundplay.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.data.toMethodWalker
+
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -26,7 +24,7 @@ import app.revanced.patches.music.utils.fix.decoding.patch.DecodingPatch
 class BackgroundPlayPatch : BytecodePatch(
     listOf(BackgroundPlaybackParentFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         BackgroundPlaybackParentFingerprint.result?.let {
             with(
@@ -42,8 +40,6 @@ class BackgroundPlayPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return BackgroundPlaybackParentFingerprint.toErrorResult()
-
-        return PatchResultSuccess()
+        } ?: throw BackgroundPlaybackParentFingerprint.exception
     }
 }

@@ -1,19 +1,17 @@
 package app.revanced.patches.youtube.utils.fix.parameter.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.data.toMethodWalker
+
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.removeInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -51,7 +49,7 @@ class SpoofPlayerParameterPatch : BytecodePatch(
         SubtitleWindowFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         // hook parameter
         ProtobufParameterBuilderFingerprint.result?.let {
@@ -70,7 +68,7 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                     """
                     )
                 }
-        } ?: return ProtobufParameterBuilderFingerprint.toErrorResult()
+        } ?: throw ProtobufParameterBuilderFingerprint.exception
 
         // When the player parameter is spoofed in incognito mode, this value will always be false
         // If this value is true, the timestamp and chapter are shown when tapping the seekbar.
@@ -97,8 +95,8 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                     )
                     removeInstruction(targetIndex)
                 }
-            } ?: return StoryboardThumbnailFingerprint.toErrorResult()
-        } ?: return StoryboardThumbnailParentFingerprint.toErrorResult()
+            } ?: throw StoryboardThumbnailFingerprint.exception
+        } ?: throw StoryboardThumbnailParentFingerprint.exception
 
         // Seekbar thumbnail now show up but are always a blank image.
         // Additional changes are needed to force the client to generate the thumbnails (assuming it's possible),
@@ -116,7 +114,7 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return ScrubbedPreviewLayoutFingerprint.toErrorResult()
+        } ?: throw ScrubbedPreviewLayoutFingerprint.exception
 
         // fix protobuf spoof side issue
         SubtitleWindowFingerprint.result?.mutableMethod?.addInstructions(
@@ -131,7 +129,7 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                 const/4 v1, 0x2
                 aget p3, v0, v1     # av, vertical anchor
             """
-        ) ?: return SubtitleWindowFingerprint.toErrorResult()
+        ) ?: throw SubtitleWindowFingerprint.exception
 
         // Hook video id, required for subtitle fix.
         VideoIdPatch.injectCall("$MISC_PATH/SpoofPlayerParameterPatch;->setCurrentVideoId(Ljava/lang/String;)V")
@@ -144,8 +142,6 @@ class SpoofPlayerParameterPatch : BytecodePatch(
                 "SETTINGS: SPOOF_PLAYER_PARAMETER"
             )
         )
-
-        return PatchResultSuccess()
     }
 
     private companion object {

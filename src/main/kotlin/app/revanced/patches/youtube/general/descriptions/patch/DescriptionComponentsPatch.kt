@@ -5,8 +5,6 @@ import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
@@ -27,7 +25,7 @@ import app.revanced.util.integrations.Constants.PATCHES_PATH
 @YouTubeCompatibility
 
 class DescriptionComponentsPatch : BytecodePatch() {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         LithoFilterPatch.addFilter("$PATCHES_PATH/ads/DescriptionsFilter;")
 
         /**
@@ -43,7 +41,5 @@ class DescriptionComponentsPatch : BytecodePatch() {
         SettingsPatch.updatePatchStatus("hide-description-components")
 
         context.updatePatchStatus("DescriptionComponent")
-
-        return PatchResultSuccess()
     }
 }

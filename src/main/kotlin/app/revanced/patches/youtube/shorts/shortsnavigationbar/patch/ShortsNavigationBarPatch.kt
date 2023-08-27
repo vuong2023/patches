@@ -1,15 +1,13 @@
 package app.revanced.patches.youtube.shorts.shortsnavigationbar.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.data.toMethodWalker
+
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patches.youtube.shorts.shortsnavigationbar.fingerprints.BottomNavigationBarFingerprint
 import app.revanced.patches.youtube.shorts.shortsnavigationbar.fingerprints.RenderBottomNavigationBarFingerprint
@@ -25,7 +23,7 @@ class ShortsNavigationBarPatch : BytecodePatch(
         RenderBottomNavigationBarFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         PivotBarCreateButtonViewFingerprint.result?.let { parentResult ->
             SetPivotBarFingerprint.also { it.resolve(context, parentResult.classDef) }.result?.let {
@@ -38,8 +36,8 @@ class ShortsNavigationBarPatch : BytecodePatch(
                         "sput-object v$register, $SHORTS->pivotBar:Ljava/lang/Object;"
                     )
                 }
-            } ?: return SetPivotBarFingerprint.toErrorResult()
-        } ?: return PivotBarCreateButtonViewFingerprint.toErrorResult()
+            } ?: throw SetPivotBarFingerprint.exception
+        } ?: throw PivotBarCreateButtonViewFingerprint.exception
 
         RenderBottomNavigationBarFingerprint.result?.let {
             (context
@@ -52,7 +50,7 @@ class ShortsNavigationBarPatch : BytecodePatch(
                         "invoke-static {}, $SHORTS->hideShortsPlayerNavigationBar()V"
                     )
                 }
-        } ?: return RenderBottomNavigationBarFingerprint.toErrorResult()
+        } ?: throw RenderBottomNavigationBarFingerprint.exception
 
         BottomNavigationBarFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -66,8 +64,6 @@ class ShortsNavigationBarPatch : BytecodePatch(
                         """
                 )
             }
-        } ?: return BottomNavigationBarFingerprint.toErrorResult()
-
-        return PatchResultSuccess()
+        } ?: throw BottomNavigationBarFingerprint.exception
     }
 }

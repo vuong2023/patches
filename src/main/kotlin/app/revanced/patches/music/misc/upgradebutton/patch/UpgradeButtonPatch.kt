@@ -1,6 +1,6 @@
 package app.revanced.patches.music.misc.upgradebutton.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -10,8 +10,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWith
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.music.misc.upgradebutton.fingerprints.NotifierShelfFingerprint
@@ -43,7 +41,7 @@ class UpgradeButtonPatch : BytecodePatch(
         NotifierShelfFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         PivotBarConstructorFingerprint.result?.let {
             it.mutableMethod.apply {
                 val targetIndex = it.scanResult.patternScanResult!!.startIndex
@@ -54,7 +52,7 @@ class UpgradeButtonPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, $MUSIC_LAYOUT->hideUpgradeButton(Ljava/util/List;)V"
                 )
             }
-        } ?: return PivotBarConstructorFingerprint.toErrorResult()
+        } ?: throw PivotBarConstructorFingerprint.exception
 
         NotifierShelfFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -65,8 +63,6 @@ class UpgradeButtonPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, Lapp/revanced/music/utils/ReVancedUtils;->hideViewByLayoutParams(Landroid/view/View;)V"
                 )
             }
-        } ?: return NotifierShelfFingerprint.toErrorResult()
-
-        return PatchResultSuccess()
+        } ?: throw NotifierShelfFingerprint.exception
     }
 }

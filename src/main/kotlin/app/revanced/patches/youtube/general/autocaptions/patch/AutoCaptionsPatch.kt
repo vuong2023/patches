@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.general.autocaptions.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -10,8 +10,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWith
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.smali.ExternalLabel
@@ -43,7 +41,7 @@ class AutoCaptionsPatch : BytecodePatch(
         SubtitleTrackFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         listOf(
             StartVideoInformerFingerprint.toPatch(Status.DISABLED),
             SubtitleButtonControllerFingerprint.toPatch(Status.ENABLED)
@@ -53,7 +51,7 @@ class AutoCaptionsPatch : BytecodePatch(
                     const/4 v0, ${status.value}
                     sput-boolean v0, $GENERAL->captionsButtonStatus:Z
                     """
-            ) ?: return fingerprint.toErrorResult()
+            ) ?: throw fingerprint.exception
         }
 
         SubtitleTrackFingerprint.result?.let {
@@ -70,7 +68,7 @@ class AutoCaptionsPatch : BytecodePatch(
                         """, ExternalLabel("auto_captions_shown", getInstruction(0))
                 )
             }
-        } ?: return SubtitleTrackFingerprint.toErrorResult()
+        } ?: throw SubtitleTrackFingerprint.exception
 
         /**
          * Add settings
@@ -83,8 +81,6 @@ class AutoCaptionsPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("disable-auto-captions")
-
-        return PatchResultSuccess()
     }
 
     private fun MethodFingerprint.toPatch(visibility: Status) = SetStatus(this, visibility)

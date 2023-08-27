@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.misc.forcevp9.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -11,8 +11,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.removeInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprintResult
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -44,7 +42,7 @@ class ForceVP9CodecPatch : BytecodePatch(
         Vp9PropsParentFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         LayoutSwitchFingerprint.result?.classDef?.let { classDef ->
             arrayOf(
@@ -52,9 +50,9 @@ class ForceVP9CodecPatch : BytecodePatch(
                 Vp9SecondaryFingerprint
             ).forEach { fingerprint ->
                 fingerprint.also { it.resolve(context, classDef) }.result?.injectOverride()
-                    ?: return fingerprint.toErrorResult()
+                    ?: throw fingerprint.exception
             }
-        } ?: return LayoutSwitchFingerprint.toErrorResult()
+        } ?: throw LayoutSwitchFingerprint.exception
 
         Vp9PropsParentFingerprint.result?.let { parentResult ->
             Vp9PropsFingerprint.also {
@@ -70,8 +68,8 @@ class ForceVP9CodecPatch : BytecodePatch(
                 ).forEach { (fieldName, descriptor) ->
                     it.hookProps(fieldName, descriptor)
                 }
-            } ?: return Vp9PropsFingerprint.toErrorResult()
-        } ?: return Vp9PropsParentFingerprint.toErrorResult()
+            } ?: throw Vp9PropsFingerprint.exception
+        } ?: throw Vp9PropsParentFingerprint.exception
 
         VideoCapabilitiesParentFingerprint.result?.let { parentResult ->
             VideoCapabilitiesFingerprint.also {
@@ -96,8 +94,8 @@ class ForceVP9CodecPatch : BytecodePatch(
                             """
                     )
                 }
-            } ?: return VideoCapabilitiesFingerprint.toErrorResult()
-        } ?: return VideoCapabilitiesParentFingerprint.toErrorResult()
+            } ?: throw VideoCapabilitiesFingerprint.exception
+        } ?: throw VideoCapabilitiesParentFingerprint.exception
 
         /**
          * Add settings
@@ -109,8 +107,6 @@ class ForceVP9CodecPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("force-vp9-codec")
-
-        return PatchResultSuccess()
     }
 
     private companion object {

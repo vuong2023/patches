@@ -1,16 +1,14 @@
 package app.revanced.patches.youtube.misc.minimizedplayback.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
 import app.revanced.patcher.data.BytecodeContext
-import app.revanced.patcher.data.toMethodWalker
+
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -44,20 +42,18 @@ class MinimizedPlaybackPatch : BytecodePatch(
         MinimizedPlaybackSettingsFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         val methods = arrayOf(
             KidsMinimizedPlaybackPolicyControllerFingerprint,
             MinimizedPlaybackManagerFingerprint,
             MinimizedPlaybackSettingsFingerprint
         ).map {
-            it.result?.mutableMethod ?: return it.toErrorResult()
+            it.result?.mutableMethod ?: throw it.exception
         }
 
         methods[0].hookKidsMiniPlayer()
         methods[1].hookMinimizedPlaybackManager()
         methods[2].hookMinimizedPlaybackSettings(context)
-
-        return PatchResultSuccess()
     }
 
     private companion object {

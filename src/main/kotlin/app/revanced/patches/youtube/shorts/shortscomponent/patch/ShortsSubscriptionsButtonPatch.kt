@@ -1,14 +1,12 @@
 package app.revanced.patches.youtube.shorts.shortscomponent.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patches.youtube.shorts.shortscomponent.fingerprints.ShortsSubscriptionsFingerprint
 import app.revanced.patches.youtube.utils.resourceid.patch.SharedResourceIdPatch.Companion.ReelPlayerPausedStateButton
 import app.revanced.util.bytecode.getWideLiteralIndex
@@ -22,7 +20,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 class ShortsSubscriptionsButtonPatch : BytecodePatch(
     listOf(ShortsSubscriptionsFingerprint)
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
         ShortsSubscriptionsFingerprint.result?.let {
             it.mutableMethod.apply {
                 val insertIndex = getWideLiteralIndex(ReelPlayerPausedStateButton) + 2
@@ -33,9 +31,7 @@ class ShortsSubscriptionsButtonPatch : BytecodePatch(
                     "invoke-static {v$insertRegister}, $SHORTS->hideShortsPlayerSubscriptionsButton(Landroid/view/View;)V"
                 )
             }
-        } ?: return ShortsSubscriptionsFingerprint.toErrorResult()
-        return PatchResultSuccess()
-    }
+        } ?: throw ShortsSubscriptionsFingerprint.exception    }
 
     private companion object {
         private lateinit var subscriptionFieldReference: FieldReference

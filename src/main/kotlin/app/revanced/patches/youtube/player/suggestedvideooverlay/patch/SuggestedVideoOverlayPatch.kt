@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.player.suggestedvideooverlay.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -9,9 +9,8 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultError
-import app.revanced.patcher.patch.PatchResultSuccess
+import app.revanced.patcher.patch.PatchException
+
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.player.suggestedvideooverlay.fingerprints.CoreConatinerBuilderFingerprint
@@ -43,7 +42,7 @@ class SuggestedVideoOverlayPatch : BytecodePatch(
         VideoEndParentFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         CoreConatinerBuilderFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -52,7 +51,7 @@ class SuggestedVideoOverlayPatch : BytecodePatch(
                     getInstruction<ReferenceInstruction>(targetIndex).reference
 
                 if (!targetReference.toString().endsWith("Landroid/view/ViewGroup;"))
-                    return PatchResultError("Reference did not match: $targetReference")
+                    throw PatchException("Reference did not match: $targetReference")
 
                 val targetRegister =
                     getInstruction<TwoRegisterInstruction>(targetIndex).registerA
@@ -62,7 +61,7 @@ class SuggestedVideoOverlayPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, $PLAYER->hideSuggestedVideoOverlay(Landroid/view/ViewGroup;)V"
                 )
             }
-        } ?: return CoreConatinerBuilderFingerprint.toErrorResult()
+        } ?: throw CoreConatinerBuilderFingerprint.exception
 
         VideoEndParentFingerprint.result?.classDef?.let { classDef ->
             VideoEndFingerprint.also { it.resolve(context, classDef) }.result?.let {
@@ -72,8 +71,8 @@ class SuggestedVideoOverlayPatch : BytecodePatch(
                         "invoke-static {},$PLAYER->hideSuggestedVideoOverlay()V"
                     )
                 }
-            } ?: return VideoEndFingerprint.toErrorResult()
-        } ?: return VideoEndParentFingerprint.toErrorResult()
+            } ?: throw VideoEndFingerprint.exception
+        } ?: throw VideoEndParentFingerprint.exception
 
         /**
          * Add settings
@@ -87,8 +86,6 @@ class SuggestedVideoOverlayPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-suggested-video-overlay")
-
-        return PatchResultSuccess()
     }
 
     private companion object {

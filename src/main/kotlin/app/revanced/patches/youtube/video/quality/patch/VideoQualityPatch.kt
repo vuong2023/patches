@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.video.quality.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -10,8 +10,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.resolve
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
@@ -51,7 +49,7 @@ class VideoQualityPatch : BytecodePatch(
         VideoQualitySettingsParentFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         NewFlyoutPanelOnClickListenerFingerprint.result?.let { parentResult ->
             NewVideoQualityChangedFingerprint.also {
@@ -70,7 +68,7 @@ class VideoQualityPatch : BytecodePatch(
                     )
                 }
             }
-        } ?: return NewFlyoutPanelOnClickListenerFingerprint.toErrorResult()
+        } ?: throw NewFlyoutPanelOnClickListenerFingerprint.exception
 
         VideoQualitySetterFingerprint.result?.let { parentResult ->
             VideoQualityReferenceFingerprint.also {
@@ -87,7 +85,7 @@ class VideoQualityPatch : BytecodePatch(
                         .single { it.type == qualityFieldReference.type }.methods
                         .single { it.parameterTypes.first() == "I" }.name
                 }
-            } ?: return VideoQualityReferenceFingerprint.toErrorResult()
+            } ?: throw VideoQualityReferenceFingerprint.exception
 
             VideoUserQualityChangeFingerprint.also {
                 it.resolve(
@@ -97,8 +95,8 @@ class VideoQualityPatch : BytecodePatch(
             }.result?.mutableMethod?.addInstruction(
                 0,
                 "invoke-static {p3}, $INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQuality(I)V"
-            ) ?: return VideoUserQualityChangeFingerprint.toErrorResult()
-        } ?: return VideoQualitySetterFingerprint.toErrorResult()
+            ) ?: throw VideoUserQualityChangeFingerprint.exception
+        } ?: throw VideoQualitySetterFingerprint.exception
 
         VideoQualitySettingsParentFingerprint.result?.let { parentResult ->
             VideoQualitySettingsFingerprint.also {
@@ -109,7 +107,7 @@ class VideoQualityPatch : BytecodePatch(
             }.result?.mutableMethod?.let {
                 relayFieldReference =
                     it.getInstruction<ReferenceInstruction>(0).reference as FieldReference
-            } ?: return VideoQualitySettingsFingerprint.toErrorResult()
+            } ?: throw VideoQualitySettingsFingerprint.exception
 
             parentResult.mutableMethod.addInstructions(
                 0, """
@@ -120,7 +118,7 @@ class VideoQualityPatch : BytecodePatch(
                     move-result p2
                     """
             )
-        } ?: return VideoQualitySettingsParentFingerprint.toErrorResult()
+        } ?: throw VideoQualitySettingsParentFingerprint.exception
 
         // VideoCpnPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Z)V")
         VideoIdWithoutShortsPatch.injectCall("$INTEGRATIONS_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;)V")
@@ -142,8 +140,6 @@ class VideoQualityPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("default-video-quality")
-
-        return PatchResultSuccess()
     }
 
     private companion object {

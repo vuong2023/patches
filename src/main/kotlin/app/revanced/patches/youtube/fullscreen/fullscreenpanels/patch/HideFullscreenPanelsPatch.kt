@@ -1,6 +1,6 @@
 package app.revanced.patches.youtube.fullscreen.fullscreenpanels.patch
 
-import app.revanced.extensions.toErrorResult
+import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
 import app.revanced.patcher.annotation.Name
 
@@ -11,8 +11,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWith
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.removeInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResult
-import app.revanced.patcher.patch.PatchResultSuccess
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
 import app.revanced.patcher.util.smali.ExternalLabel
@@ -51,7 +49,7 @@ class HideFullscreenPanelsPatch : BytecodePatch(
         LayoutConstructorFingerprint
     )
 ) {
-    override fun execute(context: BytecodeContext): PatchResult {
+    override fun execute(context: BytecodeContext) {
 
         FullscreenEngagementPanelFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -63,7 +61,7 @@ class HideFullscreenPanelsPatch : BytecodePatch(
                     "invoke-static {v$targetRegister}, $FULLSCREEN->hideFullscreenPanels(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V"
                 )
             }
-        } ?: return FullscreenEngagementPanelFingerprint.toErrorResult()
+        } ?: throw FullscreenEngagementPanelFingerprint.exception
 
         FullscreenViewAdderFingerprint.result?.let {
             it.mutableMethod.apply {
@@ -100,7 +98,7 @@ class HideFullscreenPanelsPatch : BytecodePatch(
                         """, ExternalLabel("hidden", getInstruction(invokeIndex + 1))
                 )
             }
-        } ?: return LayoutConstructorFingerprint.toErrorResult()
+        } ?: throw LayoutConstructorFingerprint.exception
 
         /**
          * Add settings
@@ -113,7 +111,5 @@ class HideFullscreenPanelsPatch : BytecodePatch(
         )
 
         SettingsPatch.updatePatchStatus("hide-fullscreen-panels")
-
-        return PatchResultSuccess()
     }
 }
