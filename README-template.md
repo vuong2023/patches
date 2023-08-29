@@ -28,7 +28,8 @@ Example:
         "name": "com.google.android.youtube",
         "versions": [
           "18.33.35",
-          "18.33.37"
+          "18.33.37",
+          "18.33.40"
         ]
       }
     ]
