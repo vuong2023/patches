@@ -387,6 +387,7 @@
             <Preference android:title="enable-timestamps-speed" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
             <Preference android:title="hide-seekbar" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
             <Preference android:title="hide-time-stamp" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
+            <Preference android:title="higher-seekbar-height" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
 
             <Preference android:title=" " android:selectable="false" android:summary="@string/revanced_shorts" />
             <Preference android:title="disable-startup-shorts-player" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
