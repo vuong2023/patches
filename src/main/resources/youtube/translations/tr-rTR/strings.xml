@@ -14,7 +14,7 @@
     <string name="revanced_bypass_ambient_mode_restrictions_title">Ambiyans modu kısıtlamalarını atlayın</string>
     <string name="revanced_change_homepage_summary_off">Varsayılan ana ekran: Ana sayfa</string>
     <string name="revanced_change_homepage_summary_on">Varsayılan ana ekran: Abonelikler</string>
-    <string name="revanced_change_homepage_title">Ana sayfayı abonelik akışına değiştir</string>
+    <string name="revanced_change_homepage_title">Uygulamayı açtığınızda Abonelikler sayfasında başlayın</string>
     <string name="revanced_comments_title">Yorumlar</string>
     <string name="revanced_copy_video_timestamp_success">Zaman damgası panoya kopyalandı</string>
     <string name="revanced_custom_filter_strings_summary">Bileşenleri satırlara ayrılmış isimlere göre filtreleyin</string>

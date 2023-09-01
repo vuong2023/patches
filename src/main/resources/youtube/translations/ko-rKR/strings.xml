@@ -463,9 +463,9 @@ YouTube 18.24.37 버전 이상에서만 적용 가능합니다."</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_off">구독 버튼이 노출됩니다.</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_summary_on">구독 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_shorts_player_subscriptions_button_title">구독 버튼 숨기기</string>
-    <string name="revanced_hide_shorts_player_pivot_button_summary_off">오리지널 사운드 버튼이 노출됩니다.</string>
-    <string name="revanced_hide_shorts_player_pivot_button_summary_on">오리지널 사운드 버튼이 숨겨집니다.</string>
-    <string name="revanced_hide_shorts_player_pivot_button_title">오리지널 사운드 버튼 숨기기</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_off">사운드 버튼이 노출됩니다.</string>
+    <string name="revanced_hide_shorts_player_pivot_button_summary_on">사운드 버튼이 숨겨집니다.</string>
+    <string name="revanced_hide_shorts_player_pivot_button_title">사운드 버튼 숨기기</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_off">오른쪽 상단 도구 모음이 노출됩니다.</string>
     <string name="revanced_hide_shorts_player_toolbar_summary_on">오른쪽 상단 도구 모음이 숨겨집니다</string>
     <string name="revanced_hide_shorts_player_toolbar_title">도구 모음 숨기기</string>
@@ -624,7 +624,7 @@ YouTube 18.24.37 버전 이상에서만 적용 가능합니다."</string>
     <string name="revanced_show_fullscreen_title_title">전체화면 제목 표시하기</string>
     <string name="revanced_alt_thumbnails_preference_screen_title">대체 썸네일</string>
     <string name="revanced_alt_thumbnail_title">동영상 스크린샷 썸네일 활성화하기</string>
-    <string name="revanced_alt_thumbnail_summary_on">동영상 스크린샷 썸네일을 표시합니다.</string>
+    <string name="revanced_alt_thumbnail_summary_on">동영상 스크린샷 썸네일(대체 썸네일)을 표시합니다.</string>
     <string name="revanced_alt_thumbnail_summary_off">클릭 유도 문안 썸네일(원본 썸네일)을 표시합니다.</string>
     <string name="revanced_alt_thumbnail_type_title">동영상 스크린샷 썸네일 이미지</string>
     <string name="revanced_alt_thumbnail_type_entry_1">동영상의 첫 부분 이미지</string>
@@ -635,7 +635,7 @@ YouTube 18.24.37 버전 이상에서만 적용 가능합니다."</string>
     <string name="revanced_alt_thumbnail_fast_quality_summary_off">고화질 동영상 스크린샷 썸네일을 사용합니다. 지연시간이 길어질 수 있습니다.</string>
     <string name="revanced_alt_thumbnail_about_title">정보</string>
     <string name="revanced_alt_thumbnail_about_summary">동영상 스크린샷 썸네일은 동영상의 첫/중간/마지막 부분에서 캡쳐된 이미지를 썸네일로 사용합니다. 이 이미지는 YouTube에 내장되어 있으므로 외부 API는 사용되지 않습니다.</string>
-    <string name="revanced_alt_thumbnails_preference_screen_summary">썸네일을 클릭 유도 문안 썸네일(원본 썸네일)이 아닌 동영상 스크린샷 썸네일로 표시할 수 있습니다.</string>
+    <string name="revanced_alt_thumbnails_preference_screen_summary">썸네일을 클릭 유도 문안 썸네일(원본 썸네일)이 아닌 동영상 스크린샷 썸네일(대체 썸네일)로 표시할 수 있습니다.</string>
     <string name="revanced_sponsorblock_settings_summary">SponsorBlock 관련 설정입니다.</string>
     <string name="revanced_spoof_app_version_summary">"서버에 연결할때 사용되는 앱 버전을 지정하여 앱 레이아웃을 변경합니다.
 

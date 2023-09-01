@@ -658,11 +658,11 @@ Known issues
     <string name="revanced_spoof_player_parameter_type_summary_on">"Player parameters of incognito mode
 
 Known issues
+- Seekbar thumbnails are hidden
 - Ambient mode may not work
 - Clip cannot be played normally
 - Downloading videos may not work
-- Filmstrip overlay is always hidden
-- Seekbar thumbnails are hidden"</string>
+- Filmstrip overlay is always hidden"</string>
     <string name="revanced_spoof_player_parameter_type_title">Spoof player parameter type</string>
     <string name="revanced_spoof_player_parameter_summary">Spoofs player parameters to prevent playback issues</string>
     <string name="revanced_spoof_player_parameter_title">Spoof player parameter</string>

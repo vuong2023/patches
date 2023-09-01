@@ -503,7 +503,7 @@ Problema noto: la riproduzione automatica non funziona"</string>
     <string name="revanced_hide_timed_reactions_title">Nascondi le reazioni temporizzate</string>
     <string name="revanced_hide_reminder_button_summary_off">Il pulsante Avvisami è visibile</string>
     <string name="revanced_hide_reminder_button_summary_on">Il pulsante Avvisami è nascosto</string>
-    <string name="revanced_hide_reminder_button_title">Nascondi il pulsante Avvisami nel feed delle iscrizioni</string>
+    <string name="revanced_hide_reminder_button_title">Nascondi il pulsante Avvisami nel feed</string>
     <string name="revanced_hide_time_stamp_summary_off">La marca temporale è visibile</string>
     <string name="revanced_hide_time_stamp_summary_on">La marca temporale è nascosta</string>
     <string name="revanced_hide_time_stamp_title">Nascondi la marca temporale</string>

@@ -664,14 +664,7 @@
 - Покадрову перемотку завжди приховано
 - Мініатюри панелі прогресу приховано"</string>
     <string name="revanced_spoof_player_parameter_type_title">Підробити тип параметру плеєра</string>
-    <string name="revanced_spoof_player_parameter_summary">Підроблення параметрів плеєра для виправлення проблем відтворення
-
-Відомі проблеми
-- Фонова підсвітка може не працювати
-- Кліп не може нормально відтворюватися
-- Завантаження відео може не працювати
-- Покадрову перемотку завжди приховано
-- Мініатюри панелі прогресу приховано</string>
+    <string name="revanced_spoof_player_parameter_summary">Підроблення параметрів плеєра для виправлення проблем відтворення</string>
     <string name="revanced_spoof_player_parameter_title">Підробити параметр плеєра</string>
     <string name="revanced_swipe_controls">Керування жестами</string>
     <string name="revanced_swipe_magnitude_threshold_summary">Мінімальна амплітуда руху, що розпізнається як жест</string>

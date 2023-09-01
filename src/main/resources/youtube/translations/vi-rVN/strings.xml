@@ -519,9 +519,9 @@
     <string name="revanced_whitelisting_add_failed" formatted="false">Thêm kênh %s vào danh sách trắng %s thất bại</string>
     <string name="revanced_whitelisting_channel_name">Tên kênh</string>
     <string name="revanced_whitelisting_empty">Không có kênh nào trong danh sách trắng</string>
-    <string name="revanced_whitelisting_excluded">Chưa được thêm vào danh sách trắng</string>
+    <string name="revanced_whitelisting_excluded">Chưa thêm vào danh sách trắng</string>
     <string name="revanced_whitelisting_fetch_failed">Truy xuất chi tiết kênh thất bại. Đã nhận được mã %d.</string>
-    <string name="revanced_whitelisting_missing_api_key">Lỗi HTTP 403 khi tìm nạp channelId. Vui lòng kiểm tra khoá API của bạn trong cài đặt danh sách trắng.</string>
+    <string name="revanced_whitelisting_missing_api_key">Lỗi HTTP 403 khi tìm nạp ID kênh. Vui lòng kiểm tra khoá API của bạn trong cài đặt danh sách trắng.</string>
     <string name="revanced_whitelisting_included">Đã thêm vào danh sách trắng</string>
     <string name="revanced_whitelisting_reboot">Khởi động lại để áp dụng các thiết lập danh sách trắng</string>
     <string name="revanced_whitelisting_removed" formatted="false">Đã xóa kênh %s khỏi danh sách trắng %s</string>
@@ -620,7 +620,7 @@ Hầu hết các thiết bị bây giờ đều hỗ trợ codec VP9 nên bạn 
     <string name="revanced_shorts_player_title">Trình phát Shorts</string>
     <string name="revanced_show_fullscreen_title_summary">Hiển thị tiêu đề khi phát video ở chế độ toàn màn hình tối giản.\n\nSự cố đã biết: Tiêu đề đột ngột biến mất khi nhấn vào.</string>
     <string name="revanced_show_fullscreen_title_title">Hiển thị tiêu đề</string>
-    <string name="revanced_alt_thumbnails_preference_screen_title">Hình thu nhỏ thay thế</string>
+    <string name="revanced_alt_thumbnails_preference_screen_title">Hình thu nhỏ</string>
     <string name="revanced_alt_thumbnail_title">Hình thu nhỏ thay thế</string>
     <string name="revanced_alt_thumbnail_summary_on">Đang sử dụng hình thu nhỏ video thay thế</string>
     <string name="revanced_alt_thumbnail_summary_off">Đang sử dụng hình thu nhỏ video mặc định</string>
