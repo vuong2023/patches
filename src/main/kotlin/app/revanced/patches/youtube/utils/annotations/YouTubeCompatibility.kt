@@ -8,7 +8,8 @@ import app.revanced.patcher.annotation.Package
         "com.google.android.youtube", arrayOf(
             "18.33.35",
             "18.33.37",
-            "18.33.40"
+            "18.33.40",
+            "18.34.37"
         )
     )]
 )
