@@ -1,3 +1,19 @@
+# [2.190.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.189.0...v2.190.0) (2023-09-01)
+
+
+### Bug Fixes
+
+* **hide-filmstip-overlay:** The filmstrip preview didn't showed ([90e51b4](https://github.com/YT-Advanced/ReX-patches/commit/90e51b48b92a1ae28ba419715a6bfca43b8e3e3b))
+* **language-switch:** Not shown in `v18.33.xx` ([152a188](https://github.com/YT-Advanced/ReX-patches/commit/152a18897d0e8baa6d8203b84d5154751ba5a309))
+* **youtube/hide-quick-action:** Not worked correctly ([99efefb](https://github.com/YT-Advanced/ReX-patches/commit/99efefb1620d90b9497bd194438ea85fc34ff4e1))
+
+
+### Features
+
+* Add support for `v18.33.40` ([4bdebec](https://github.com/YT-Advanced/ReX-patches/commit/4bdebecf38c4f17c8467e4adddc4c63861943e1e))
+* **higher-seekbar-height:** This patch will increase the seekbar height, which is helpful for user who have a big screen ([3c9fe28](https://github.com/YT-Advanced/ReX-patches/commit/3c9fe28075eead38d65bb2bfbba5b4456d0d9c2c))
+* **youtube/layout:** Hide quality layout footer ([#20](https://github.com/YT-Advanced/ReX-patches/issues/20)) ([3224c7b](https://github.com/YT-Advanced/ReX-patches/commit/3224c7b337f5035e3141246106d671725659609a))
+
 # [2.190.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.189.0...v2.190.0) (2023-08-29)
 
 
