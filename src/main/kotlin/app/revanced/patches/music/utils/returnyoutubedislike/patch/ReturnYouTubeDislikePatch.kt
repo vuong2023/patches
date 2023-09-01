@@ -1,4 +1,4 @@
-package app.revanced.patches.youtube.utils.returnyoutubedislike.general.patch
+package app.revanced.patches.music.utils.returnyoutubedislike.patch
 
 import app.revanced.extensions.exception
 import app.revanced.patcher.annotation.Description
@@ -14,7 +14,7 @@ import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint.Companion.
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.annotations.DependsOn
 import app.revanced.patcher.patch.annotations.Patch
-import app.revanced.patches.youtube.utils.annotations.YouTubeCompatibility
+import app.revanced.patches.music.utils.annotations.MusicCompatibility
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.DislikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.LikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.RemoveLikeFingerprint
@@ -23,11 +23,10 @@ import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextCompone
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentConstructorFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentContextFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentTmpFingerprint
-import app.revanced.patches.youtube.utils.returnyoutubedislike.oldlayout.patch.ReturnYouTubeDislikeOldLayoutPatch
-import app.revanced.patches.youtube.utils.returnyoutubedislike.shorts.patch.ReturnYouTubeDislikeShortsPatch
+
 import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
-import app.revanced.patches.youtube.utils.videoid.general.patch.VideoIdPatch
-import app.revanced.util.integrations.Constants.UTILS_PATH
+import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
+import app.revanced.util.integrations.Constants.MUSIC_UTILS_PATH
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -38,13 +37,11 @@ import com.android.tools.smali.dexlib2.iface.reference.Reference
 @Description("Shows the dislike count of videos using the Return YouTube Dislike API.")
 @DependsOn(
     [
-        ReturnYouTubeDislikeOldLayoutPatch::class,
-        ReturnYouTubeDislikeShortsPatch::class,
         SettingsPatch::class,
         VideoIdPatch::class
     ]
 )
-@YouTubeCompatibility
+@MusicCompatibility
 
 class ReturnYouTubeDislikePatch : BytecodePatch(
     listOf(
@@ -169,7 +166,7 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
 
     private companion object {
         const val INTEGRATIONS_RYD_CLASS_DESCRIPTOR =
-            "$UTILS_PATH/ReturnYouTubeDislikePatch;"
+            "$MUSIC_UTILS_PATH/ReturnYouTubeDislikePatch;"
 
         lateinit var conversionContextFieldReference: Reference
         var tmpRegister: Int = 12

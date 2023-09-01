@@ -1,4 +1,4 @@
-package app.revanced.patches.youtube.utils.returnyoutubedislike.general.fingerprints
+package app.revanced.patches.shared.fingerprints.returnyoutubedislike
 
 import app.revanced.patcher.fingerprint.method.impl.MethodFingerprint
 
