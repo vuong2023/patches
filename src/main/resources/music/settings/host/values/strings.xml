@@ -66,4 +66,19 @@
     <string name="revanced_save_video_quality_wifi">Changing default Wi-Fi quality to:</string>
     <string name="revanced_spoof_app_version_summary">Trick the YouTube Music version to v4.27.53 for Canadian users.</string>
     <string name="revanced_spoof_app_version_title">Spoof app version</string>
+    <string name="revanced_ryd_attribution_summary">Dislike data is provided by the Return YouTube Dislike API.  Tap here to learn more.</string>
+    <string name="revanced_ryd_compact_layout_summary_off">Like button styled for best appearance</string>
+    <string name="revanced_ryd_compact_layout_summary_on">Like button styled for minimum width</string>
+    <string name="revanced_ryd_compact_layout_title">Compact like button</string>
+    <string name="revanced_ryd_dislike_percentage_summary_off">Dislikes shown as number</string>
+    <string name="revanced_ryd_dislike_percentage_summary_on">Dislikes shown as percentage</string>
+    <string name="revanced_ryd_dislike_percentage_title">Dislikes as percentage</string>
+    <string name="revanced_ryd_enable_summary_off">Dislikes are not shown</string>
+    <string name="revanced_ryd_enable_summary_on">Dislikes are shown</string>
+    <string name="revanced_ryd_enable_title">Enable Return YouTube Dislike</string>
+    <string name="revanced_ryd_failure_client_rate_limit_requested">Dislikes not available (client API limit reached)</string>
+    <string name="revanced_ryd_shorts_summary_off">Dislikes hidden on Shorts</string>
+    <string name="revanced_ryd_shorts_summary_on">Dislikes shown on Shorts</string>
+    <string name="revanced_ryd_shorts_title">Show dislikes on Shorts</string>
+    <string name="revanced_ryd_video_likes_hidden_by_video_owner">Hidden</string>
 </resources>
