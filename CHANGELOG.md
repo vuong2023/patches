@@ -1,3 +1,10 @@
+# [2.191.0](https://github.com/YT-Advanced/patches/compare/v2.190.0...v2.191.0) (2023-09-02)
+
+
+### Features
+
+* RYD for Youtube Music ([f9db14c](https://github.com/YT-Advanced/patches/commit/f9db14cef81477cb67849a4f391a70401e35609f))
+
 # [2.190.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.189.0...v2.190.0) (2023-09-01)
 
 
