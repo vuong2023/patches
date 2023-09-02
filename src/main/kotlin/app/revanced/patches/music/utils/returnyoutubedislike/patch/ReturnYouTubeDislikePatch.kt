@@ -24,7 +24,7 @@ import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextCompone
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentContextFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentTmpFingerprint
 
-import app.revanced.patches.youtube.utils.settings.resource.patch.SettingsPatch
+import app.revanced.patches.music.utils.settings.resource.patch.SettingsPatch
 import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
 import app.revanced.util.integrations.Constants.MUSIC_UTILS_PATH
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
