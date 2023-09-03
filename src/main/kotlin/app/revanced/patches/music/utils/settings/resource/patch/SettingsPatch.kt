@@ -77,7 +77,7 @@ class SettingsPatch : AbstractSettingsResourcePatch(
             }
         }
 
-        context.addReVancedMusicPreference("extended_settings")
+        addReVancedMusicPreference("extended_settings")
 
         /**
          * If a custom branding icon path exists, merge it
@@ -122,6 +122,10 @@ class SettingsPatch : AbstractSettingsResourcePatch(
             contexts.addMusicPreferenceCategory(categoryValue)
             contexts.addMusicPreference("settings", categoryValue, key, defaultValue)
             contexts.sortMusicPreferenceCategory(categoryValue)
+        }
+
+        internal fun addReVancedMusicPreference(key: String) {
+            contexts.addReVancedMusicPreference(key)
         }
 
         internal fun addMusicPreferenceWithIntent(
