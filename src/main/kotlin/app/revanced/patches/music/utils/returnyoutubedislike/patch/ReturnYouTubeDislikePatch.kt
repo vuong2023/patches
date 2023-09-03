@@ -24,10 +24,8 @@ import app.revanced.patches.music.utils.settings.resource.patch.SettingsPatch
 import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
 import app.revanced.util.integrations.Constants.MUSIC_UTILS_PATH
 
-import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.Reference
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Patch
 @Name("Return YouTube Dislike")
@@ -95,9 +93,6 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
     private companion object {
         const val INTEGRATIONS_RYD_CLASS_DESCRIPTOR =
             "$MUSIC_UTILS_PATH/ReturnYouTubeDislikePatch;"
-
-        lateinit var conversionContextFieldReference: Reference
-        var tmpRegister: Int = 12
     }
 
     private fun MethodFingerprint.toPatch(voteKind: Vote) = VotePatch(this, voteKind)
