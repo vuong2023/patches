@@ -8,10 +8,8 @@ import com.android.tools.smali.dexlib2.Opcode
 object SpannedFingerprint : MethodFingerprint(
     returnType = "V",
     opcodes = listOf(
-        Opcode.NOP,
-        Opcode.INVOKE_STATIC,
-        Opcode.MOVE_RESULT_OBJECT, // injection point
-        Opcode.RETURN_OBJECT
+        Opcode.PACKED_SWITCH,
+        Opcode.GOTO_16
     ),
     customFingerprint = { methodDef, _ -> methodDef.isWideLiteralExists(Dislike) }
 )
