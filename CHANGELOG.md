@@ -1,3 +1,10 @@
+## [2.191.3](https://github.com/YT-Advanced/patches/compare/v2.191.2...v2.191.3) (2023-09-03)
+
+
+### Bug Fixes
+
+* New fingerprint ([626971e](https://github.com/YT-Advanced/patches/commit/626971e9f6ae41df5e79a6e76a23a2380e32c3b8))
+
 ## [2.191.2](https://github.com/YT-Advanced/patches/compare/v2.191.1...v2.191.2) (2023-09-03)
 
 
