@@ -144,7 +144,7 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
                         insertIndex + 1, """
                             move-object/from16 v$tmpRegister, p0
                             iget-object v$tmpRegister, v$tmpRegister, $conversionContextFieldReference
-                            invoke-static {v$tmpRegister, v$atomicReferenceRegister, v$charSequenceRegister}, $INTEGRATIONS_RYD_CLASS_DESCRIPTOR->onLithoTextLoaded(Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+                            invoke-static {v$tmpRegister, v$atomicReferenceRegister, v$charSequenceRegister}, $INTEGRATIONS_RYD_CLASS_DESCRIPTOR->onComponentCreated(Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
                             move-result-object v$charSequenceRegister
                             move-object v${moveCharSequenceInstruction.registerA}, v${charSequenceRegister}
                             """
