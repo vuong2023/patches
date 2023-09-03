@@ -159,9 +159,10 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
         /**
          * Add ReVanced Settings
          */
-        SettingsPatch.addReVancedPreference("ryd_settings")
-
-        SettingsPatch.updatePatchStatus("return-youtube-dislike")
+        SettingsPatch.addReVancedMusicPreference("ryd_settings")
+        SettingsPatch.addRYDPreference("revanced_ryd_enable", true)
+        SettingsPatch.addRYDPreference("revanced_ryd_compact_layout", false)
+        SettingsPatch.addRYDPreference("revanced_ryd_dislike_percentage", false)
     }
 
     private companion object {
