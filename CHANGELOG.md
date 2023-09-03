@@ -1,3 +1,10 @@
+## [2.191.1](https://github.com/YT-Advanced/patches/compare/v2.191.0...v2.191.1) (2023-09-03)
+
+
+### Bug Fixes
+
+* Wrong import ([999733c](https://github.com/YT-Advanced/patches/commit/999733cc6c9d018a7c4632caecdf1ac689a56576))
+
 # [2.191.0](https://github.com/YT-Advanced/patches/compare/v2.190.0...v2.191.0) (2023-09-02)
 
 
