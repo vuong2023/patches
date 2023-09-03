@@ -1,3 +1,10 @@
+## [2.191.2](https://github.com/YT-Advanced/patches/compare/v2.191.1...v2.191.2) (2023-09-03)
+
+
+### Bug Fixes
+
+* Crash at start ([ecbe7ea](https://github.com/YT-Advanced/patches/commit/ecbe7ea3a01d0f7f3d79d24d13307ec37696d55b))
+
 ## [2.191.1](https://github.com/YT-Advanced/patches/compare/v2.191.0...v2.191.1) (2023-09-03)
 
 
