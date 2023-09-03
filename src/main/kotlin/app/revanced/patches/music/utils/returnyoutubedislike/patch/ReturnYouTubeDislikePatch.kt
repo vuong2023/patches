@@ -18,7 +18,7 @@ import app.revanced.patches.music.utils.annotations.MusicCompatibility
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.DislikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.LikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.RemoveLikeFingerprint
-import app.revanced.patches.music.utils.returnyoutubedislike.fingerprints.SpannedFingerprint
+import app.revanced.patches.music.returnyoutubedislike.fingerprints.SpannedFingerprint
 
 import app.revanced.patches.music.utils.settings.resource.patch.SettingsPatch
 import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
