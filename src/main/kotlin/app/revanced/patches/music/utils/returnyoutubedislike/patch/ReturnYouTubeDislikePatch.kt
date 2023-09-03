@@ -18,11 +18,7 @@ import app.revanced.patches.music.utils.annotations.MusicCompatibility
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.DislikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.LikeFingerprint
 import app.revanced.patches.shared.fingerprints.returnyoutubedislike.RemoveLikeFingerprint
-import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentAtomicReferenceFingerprint
-import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentAtomicReferenceLegacyFingerprint
-import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentConstructorFingerprint
-import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentContextFingerprint
-import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextComponentTmpFingerprint
+import app.revanced.patches.music.utils.returnyoutubedislike.fingerprints.SpannedFingerprint
 
 import app.revanced.patches.music.utils.settings.resource.patch.SettingsPatch
 import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
@@ -49,7 +45,7 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
         DislikeFingerprint,
         LikeFingerprint,
         RemoveLikeFingerprint,
-        TextComponentConstructorFingerprint
+        SpannedFingerprint
     )
 ) {
     override fun execute(context: BytecodeContext) {
