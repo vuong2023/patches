@@ -96,6 +96,7 @@ internal object MusicResourceHelper {
     }
 
     internal fun ResourceContext.addMusicPreference(
+        parent: String,        
         category: String,
         key: String,
         defaultValue: String
@@ -103,7 +104,7 @@ internal object MusicResourceHelper {
         this.xmlEditor[YOUTUBE_MUSIC_SETTINGS_PATH].use { editor ->
             val tags = editor.file.getElementsByTagName(YOUTUBE_MUSIC_CATEGORY_TAG_NAME)
             List(tags.length) { tags.item(it) as Element }
-                .filter { it.getAttribute("android:key").contains("revanced_settings_$category") }
+                .filter { it.getAttribute("android:key").contains("revanced_$parent_$category") }
                 .forEach {
                     it.adoptChild(YOUTUBE_MUSIC_PREFERENCE_TAG_NAME) {
                         setAttribute("android:title", "@string/$key" + "_title")
@@ -143,7 +144,7 @@ internal object MusicResourceHelper {
         }
     }
 
-    internal fun ResourceContext.addReVancedMusicPreference() {
+    internal fun ResourceContext.addReVancedMusicPreference(key: String) {
         this.xmlEditor[YOUTUBE_MUSIC_SETTINGS_PATH].use { editor ->
             with(editor.file) {
                 doRecursively loop@{
@@ -156,9 +157,9 @@ internal object MusicResourceHelper {
                             it.insertNode("PreferenceScreen", it) {
                                 setAttribute(
                                     "android:title",
-                                    "@string/" + YOUTUBE_MUSIC_SETTINGS_KEY + "_title"
+                                    "@string/revanced_" + key + "_title"
                                 )
-                                setAttribute("android:key", YOUTUBE_MUSIC_SETTINGS_KEY)
+                                setAttribute("android:key", "revanced_" + key)
                             }
                             it.getAttributeNode("app:allowDividerBelow").textContent = "true"
                             return@loop
