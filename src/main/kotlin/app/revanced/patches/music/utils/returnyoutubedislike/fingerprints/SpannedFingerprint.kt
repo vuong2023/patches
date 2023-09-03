@@ -5,7 +5,7 @@ import app.revanced.patches.music.utils.resourceid.patch.SharedResourceIdPatch.C
 import app.revanced.util.bytecode.isWideLiteralExists
 import com.android.tools.smali.dexlib2.Opcode
 
-object ChipCloudFingerprint : MethodFingerprint(
+object SpannedFingerprint : MethodFingerprint(
     returnType = "V",
     opcodes = listOf(
         Opcode.NOP,
