@@ -65,9 +65,9 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
 
         SpannedFingerprint.result?.let {
             it.mutableMethod.apply {
-                val targetRegister =
-                getInstruction<OneRegisterInstruction>(targetIndex - 1).registerA
                 val insertIndex = it.scanResult.patternScanResult!!.endIndex
+                val targetRegister =
+                getInstruction<OneRegisterInstruction>(insertIndex - 1).registerA
 
                 addInstructions(
                     insertIndex, """
