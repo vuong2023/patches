@@ -69,90 +69,20 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
             }
         }
 
+        SpannedFingerprint.result?.let {
+            it.mutableMethod.apply {
+                val targetRegister =
+                getInstruction<OneRegisterInstruction>(targetIndex - 1).registerA
+                val insertIndex = it.scanResult.patternScanResult!!.endIndex
 
-        TextComponentConstructorFingerprint.result?.let { parentResult ->
-
-            TextComponentContextFingerprint.also {
-                it.resolve(
-                    context,
-                    parentResult.classDef
+                addInstructions(
+                    insertIndex, """
+                        invoke-static {v$targetRegister}, $INTEGRATIONS_RYD_CLASS_DESCRIPTOR->onComponentCreated(Landroid/text/Spanned;)Landroid/text/Spanned;
+                        move-result-object v$targetRegister
+                        """
                 )
-            }.result?.let {
-                it.mutableMethod.apply {
-                    val conversionContextIndex = it.scanResult.patternScanResult!!.startIndex
-                    conversionContextFieldReference =
-                        getInstruction<ReferenceInstruction>(conversionContextIndex).reference
-                }
-            } ?: throw TextComponentContextFingerprint.exception
-
-            TextComponentTmpFingerprint.also {
-                it.resolve(
-                    context,
-                    parentResult.classDef
-                )
-            }.result?.let {
-                it.mutableMethod.apply {
-                    val startIndex = it.scanResult.patternScanResult!!.startIndex
-                    tmpRegister =
-                        getInstruction<FiveRegisterInstruction>(startIndex).registerE
-                }
-            } ?: throw TextComponentTmpFingerprint.exception
-
-
-            val textComponentAtomicReferenceResult =
-                TextComponentAtomicReferenceFingerprint.also {
-                    it.resolve(context, parentResult.classDef)
-                }.result
-                    ?: TextComponentAtomicReferenceLegacyFingerprint.also {
-                        it.resolve(context, parentResult.classDef)
-                    }.result
-                    ?: throw TextComponentAtomicReferenceLegacyFingerprint.exception
-
-            TextComponentAtomicReferenceFingerprint.also {
-                it.resolve(context, parentResult.classDef)
-            }.result?.let {
-                it.mutableMethod.apply {
-                    val startIndex = it.scanResult.patternScanResult!!.startIndex
-                    val originalRegisterA =
-                        getInstruction<TwoRegisterInstruction>(startIndex + 2).registerA
-
-                    replaceInstruction(
-                        startIndex + 2,
-                        "move-object v$originalRegisterA, v$tmpRegister"
-                    )
-                    replaceInstruction(
-                        startIndex + 1,
-                        "move-result-object v$tmpRegister"
-                    )
-                }
             }
-
-            textComponentAtomicReferenceResult.let {
-                it.mutableMethod.apply {
-                    val atomicReferenceStartIndex = it.scanResult.patternScanResult!!.startIndex
-                    val insertIndex = it.scanResult.patternScanResult!!.endIndex
-                    val moveCharSequenceInstruction =
-                        getInstruction<TwoRegisterInstruction>(insertIndex)
-
-                    val atomicReferenceRegister =
-                        getInstruction<FiveRegisterInstruction>(atomicReferenceStartIndex).registerC
-
-                    val charSequenceRegister =
-                        moveCharSequenceInstruction.registerB
-
-                    addInstructions(
-                        insertIndex + 1, """
-                            move-object/from16 v$tmpRegister, p0
-                            iget-object v$tmpRegister, v$tmpRegister, $conversionContextFieldReference
-                            invoke-static {v$tmpRegister, v$atomicReferenceRegister, v$charSequenceRegister}, $INTEGRATIONS_RYD_CLASS_DESCRIPTOR->onComponentCreated(Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-                            move-result-object v$charSequenceRegister
-                            move-object v${moveCharSequenceInstruction.registerA}, v${charSequenceRegister}
-                            """
-                    )
-                    removeInstruction(insertIndex)
-                }
-            }
-        } ?: throw TextComponentConstructorFingerprint.exception
+        } ?: throw SpannedFingerprint.exception
 
 
         VideoIdPatch.injectCall("$INTEGRATIONS_RYD_CLASS_DESCRIPTOR->newVideoLoaded(Ljava/lang/String;)V")
