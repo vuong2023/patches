@@ -77,7 +77,7 @@ class SettingsPatch : AbstractSettingsResourcePatch(
             }
         }
 
-        context.addReVancedMusicPreference()
+        context.addReVancedMusicPreference("extended_settings")
 
         /**
          * If a custom branding icon path exists, merge it
@@ -120,7 +120,7 @@ class SettingsPatch : AbstractSettingsResourcePatch(
         ) {
             val categoryValue = category.value
             contexts.addMusicPreferenceCategory(categoryValue)
-            contexts.addMusicPreference(categoryValue, key, defaultValue)
+            contexts.addMusicPreference("settings", categoryValue, key, defaultValue)
             contexts.sortMusicPreferenceCategory(categoryValue)
         }
 
@@ -133,6 +133,16 @@ class SettingsPatch : AbstractSettingsResourcePatch(
             val categoryValue = category.value
             contexts.addMusicPreferenceCategory(categoryValue)
             contexts.addMusicPreferenceWithIntent(categoryValue, key, dependencyKey)
+            contexts.sortMusicPreferenceCategory(categoryValue)
+        }
+        
+        internal fun addRYDPreference(
+            key: String,
+            defaultValue: String
+        ) {
+            val categoryValue = category.value
+            contexts.addMusicPreferenceCategory(categoryValue)
+            contexts.addMusicPreference("ryd", "settings", key, defaultValue)
             contexts.sortMusicPreferenceCategory(categoryValue)
         }
     }
