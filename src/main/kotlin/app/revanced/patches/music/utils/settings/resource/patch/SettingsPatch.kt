@@ -140,10 +140,7 @@ class SettingsPatch : AbstractSettingsResourcePatch(
             key: String,
             defaultValue: String
         ) {
-            val categoryValue = category.value
-            contexts.addMusicPreferenceCategory(categoryValue)
             contexts.addMusicPreference("ryd", "settings", key, defaultValue)
-            contexts.sortMusicPreferenceCategory(categoryValue)
         }
     }
 }
