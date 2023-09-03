@@ -104,7 +104,7 @@ internal object MusicResourceHelper {
         this.xmlEditor[YOUTUBE_MUSIC_SETTINGS_PATH].use { editor ->
             val tags = editor.file.getElementsByTagName(YOUTUBE_MUSIC_CATEGORY_TAG_NAME)
             List(tags.length) { tags.item(it) as Element }
-                .filter { it.getAttribute("android:key").contains("revanced_$parent\_$category") }
+                .filter { it.getAttribute("android:key").contains("revanced_" + parent + "_$category") }
                 .forEach {
                     it.adoptChild(YOUTUBE_MUSIC_PREFERENCE_TAG_NAME) {
                         setAttribute("android:title", "@string/$key" + "_title")
