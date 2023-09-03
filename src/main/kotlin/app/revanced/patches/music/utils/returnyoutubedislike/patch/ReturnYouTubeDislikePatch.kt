@@ -27,6 +27,7 @@ import app.revanced.patches.shared.fingerprints.returnyoutubedislike.TextCompone
 import app.revanced.patches.music.utils.settings.resource.patch.SettingsPatch
 import app.revanced.patches.music.utils.videoid.patch.VideoIdPatch
 import app.revanced.util.integrations.Constants.MUSIC_UTILS_PATH
+
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -160,9 +161,9 @@ class ReturnYouTubeDislikePatch : BytecodePatch(
          * Add ReVanced Settings
          */
         SettingsPatch.addReVancedMusicPreference("ryd_settings")
-        SettingsPatch.addRYDPreference("revanced_ryd_enable", true)
-        SettingsPatch.addRYDPreference("revanced_ryd_compact_layout", false)
-        SettingsPatch.addRYDPreference("revanced_ryd_dislike_percentage", false)
+        SettingsPatch.addRYDPreference("revanced_ryd_enable", "true")
+        SettingsPatch.addRYDPreference("revanced_ryd_compact_layout", "false")
+        SettingsPatch.addRYDPreference("revanced_ryd_dislike_percentage", "false")
     }
 
     private companion object {
